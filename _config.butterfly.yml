@@ -17,7 +17,7 @@ menu:
     Music: /music/ || fas fa-music
     Movie: /movies/ || fas fa-video
   Link: /link/ || fas fa-link
-  About: /about/ || fas fa-heart
+  # About: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -40,42 +40,42 @@ social:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/favicon.png
+favicon: https://jeffreytano.github.io/image/icon/36.png
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: https://jeffreytano.github.io/image/icon/36.png
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img:
+index_img: /image/megumin.png
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: https://jeffreytano.github.io/image/icon/34.png
 
 # The banner image of archive page
-archive_img:
+archive_img: https://jeffreytano.github.io/image/icon/33.png
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img:
+tag_img: https://jeffreytano.github.io/image/icon/32.png
 
 # The banner image of tag page
 # format:
 #  - tag name: xxxxx
-tag_per_img:
+tag_per_img: https://jeffreytano.github.io/image/icon/31.png
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img:
+category_img: https://jeffreytano.github.io/image/icon/30.png
 
 # The banner image of category page
 # format:
 #  - category name: xxxxx
-category_per_img:
+category_per_img: https://jeffreytano.github.io/image/icon/29.png
 
 cover:
   # display the cover or not (是否顯示文章封面)
@@ -154,7 +154,7 @@ toc:
   scroll_percent: true
 
 post_copyright:
-  enable: true
+  enable: false
   decode: false
   author_href:
   license: CC BY-NC-SA 4.0
@@ -273,9 +273,9 @@ aside:
 # busuanzi count for PV / UV in site
 # 訪問人數
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
@@ -749,7 +749,7 @@ hr_icon:
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # Customize typed.js (配置typed.js)
