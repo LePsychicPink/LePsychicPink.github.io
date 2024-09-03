@@ -80,4 +80,4 @@ theme: butterfly
 deploy:
   type: git
   repo: git@github.com:LePsychicPink/LePsychicPink.github.io.git
-  branch: main
+  branch: generate
