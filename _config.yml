@@ -7,7 +7,7 @@ title: LePsychicPink
 subtitle: 救世主様のお出ましや
 description:
 keywords:
-author: Jeffrey Pun
+author: Psychic Pink
 language: en
 timezone:
 
@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
@@ -50,7 +50,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ""
-  per_page: 10
+  per_page: 0
   order_by: -date
 
 # Category & Tag
@@ -67,7 +67,7 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 10
+per_page: 0
 pagination_dir: page
 
 # Extensions

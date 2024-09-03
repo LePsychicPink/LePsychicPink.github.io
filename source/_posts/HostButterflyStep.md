@@ -2,6 +2,8 @@
 title: How to build a butterfly blog in Github Pages
 date: 2024-09-03 21:06:52
 tags: github-page
+categories: Web developping
+top_img: img/megumin.png
 ---
 
 tldr: Follow the [instruction](https://butterfly.js.org/posts/21cfbf15/) from the author
@@ -90,9 +92,7 @@ If you don't see the page being built, try these several things
 
 1.  Toggle the github pages by changing deploy branch to `none` and back to the branch you like
 
-2.  Go to your hexo project and run `hexo generate` to create missing static file
-
-3.  Install hexo git deployer by
+2.  Install hexo git deployer by
 
 ```
 npm install hexo-deployer-git --save
@@ -107,4 +107,11 @@ deploy:
   branch: <branch to deploy>
 ```
 
-then use `hexo deploy` to directly deploy changes to github
+**\*** Do not use main branch to deploy, it will generate files to the branch for deploy, it will messup your source code
+
+then run below to directly deploy changes to github
+
+```
+hexo generate
+hexo deploy
+```

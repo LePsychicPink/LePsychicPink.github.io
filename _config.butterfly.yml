@@ -1,13 +1,8 @@
-# Navigation bar settings (導航欄設置)
-# see https://butterfly.js.org/posts/4aa8abbe/##導航欄設置-Navigation-bar-settings
-# --------------------------------------
-
 nav:
   logo: # image
   display_title: true
   fixed: false # fixed navigation bar
 
-# Menu 目錄
 menu:
   Home: / || fas fa-home
   Archives: /archives/ || fas fa-archive
@@ -29,17 +24,16 @@ highlight_shrink: false # true: shrink the code blocks / false: expand the code 
 highlight_height_limit: false # unit: px
 code_word_wrap: false
 
-# Social Settings (社交圖標設置)
 # formal:
 #   icon: link || the description || color
 social:
   # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
 
-# Image (圖片設置)
+# Image
 # --------------------------------------
 
-# Favicon（網站圖標）
+# Favicon
 favicon: https://jeffreytano.github.io/image/icon/36.png
 
 # Avatar (頭像)
@@ -51,17 +45,17 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: /image/megumin.png
+index_img: img/megumin.png # false to disable home banner image only
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://jeffreytano.github.io/image/icon/34.png
+default_top_img: img/SHIKA.png
 
 # The banner image of archive page
-archive_img: https://jeffreytano.github.io/image/icon/33.png
+archive_img: img/SHIKA.png
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: https://jeffreytano.github.io/image/icon/32.png
+tag_img: img/SHIKA.png
 
 # The banner image of tag page
 # format:
@@ -70,7 +64,7 @@ tag_per_img: https://jeffreytano.github.io/image/icon/31.png
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img: https://jeffreytano.github.io/image/icon/30.png
+category_img: img/SHIKA.png
 
 # The banner image of category page
 # format:
@@ -78,16 +72,16 @@ category_img: https://jeffreytano.github.io/image/icon/30.png
 category_per_img: https://jeffreytano.github.io/image/icon/29.png
 
 cover:
-  # display the cover or not (是否顯示文章封面)
+  # display the cover or not
   index_enable: true
   aside_enable: true
   archives_enable: true
-  # the position of cover in home page (封面顯示的位置)
+  # the position of cover in home page
   # left/right/both
   position: both
-  # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
+  # When cover is not set, the default cover is displayed (
   default_cover:
-    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    - img/36.png
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -102,17 +96,17 @@ error_404:
 
 post_meta:
   page: # Home Page
-    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
-    date_format: date # date/relative 顯示日期還是相對日期
-    categories: true # true or false 主頁是否顯示分類
-    tags: false # true or false 主頁是否顯示標籤
-    label: true # true or false 顯示描述性文字
+    date_type: created # created or updated or both
+    date_format: date # date/relative
+    categories: true # true or false
+    tags: false # true or false
+    label: true # true or false
   post:
-    date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
-    date_format: date # date/relative 顯示日期還是相對日期
-    categories: true # true or false 文章頁是否顯示分類
-    tags: true # true or false 文章頁是否顯示標籤
-    label: true # true or false 顯示描述性文字
+    date_type: both # created or updated or both
+    date_format: date # date/relative
+    categories: true # true or false
+    tags: true # true or false
+    label: true # true or false
 
 # Display the article introduction on homepage
 # 1: description
@@ -134,7 +128,7 @@ anchor:
 photofigcaption: false
 
 # copy settings
-# copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
+# copyright: Add the copyright information after copied content
 copy:
   enable: true
   copyright:
@@ -144,7 +138,6 @@ copy:
 # Post
 # --------------------------------------
 
-# toc (目錄)
 toc:
   post: true
   page: false
@@ -157,8 +150,8 @@ post_copyright:
   enable: false
   decode: false
   author_href:
-  license: CC BY-NC-SA 4.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  license:
+  license_url:
 
 # Sponsor/reward
 reward:
@@ -184,7 +177,7 @@ post_edit:
 related_post:
   enable: true
   limit: 6 # Number of posts displayed
-  date_type: created # or created or updated 文章日期顯示創建日或者更新日
+  date_type: created # or created or updated
 
 # post_pagination (分頁)
 # value: 1 || 2 || false
@@ -193,7 +186,7 @@ related_post:
 # false: disable pagination
 post_pagination: 1
 
-# Displays outdated notice for a post (文章過期提醒)
+# Displays outdated notice for a post
 noticeOutdate:
   enable: false
   style: flat # style: simple/flat
@@ -228,7 +221,7 @@ aside:
     enable: true
     description:
     button:
-      enable: true
+      enable: false
       icon: fab fa-github
       text: Follow Me
       link: https://github.com/xxxxxx
@@ -289,7 +282,7 @@ newest_comments:
   sort_order: # Don't modify the setting unless you know how it works
   limit: 6
   storage: 10 # unit: mins, save data to localStorage
-  avatar: true
+  avatar: false
 
 # Bottom right button (右下角按鈕)
 # --------------------------------------
@@ -419,14 +412,14 @@ disqus:
   apikey: # For newest comments widget
 
 # Alternative Disqus - Render comments with Disqus API
-# DisqusJS 評論系統，可以實現在網路審查地區載入 Disqus 評論列表，兼容原版
+# DisqusJS
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
   shortname:
   apikey:
   option:
 
-# livere (來必力)
+# livere
 # https://www.livere.com/
 livere:
   uid:
@@ -757,9 +750,6 @@ subtitle:
   typed_option:
   # source 調用第三方服務
   # source: false 關閉調用
-  # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/
-  # source: 2  調用一句網（簡體） https://yijuzhan.com/
-  # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
   source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
