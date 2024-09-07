@@ -490,6 +490,8 @@ class WidgetHolder(QWidget):
 
 ## QtDesigner
 
+If you could not find your qt designer, it propably in some path like this `C:\Python311\Lib\site-packages\PySide6\designer.exe`
+
 ### QUiLoader
 
 If you use QtDesigner to draft your ui, you need to use QUiLoader to load it
@@ -518,7 +520,14 @@ class UserInterface(QtCore.QObject):
 
 ### compile ui into py
 
-use cmd line
+its recommand to use venv
+
+```PowerShell
+python -m venv env
+env\Scripts\activate
+```
+
+make sure your ui file is here and type
 
 ```PowerShell
 pyside6-uic target.ui > output.py
