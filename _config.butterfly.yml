@@ -33,22 +33,22 @@ social:
 # Image
 # --------------------------------------
 
-# Favicon
-favicon: https://jeffreytano.github.io/image/icon/36.png
+# Favicon icon in the tab
+favicon: img/36.png
 
 # Avatar (頭像)
 avatar:
-  img: https://jeffreytano.github.io/image/icon/36.png
+  img: img/36.png
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: img/megumin.png # false to disable home banner image only
+index_img: false # false to disable home banner image only
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: img/SHIKA.png
+default_top_img: img/hisameTop.png
 
 # The banner image of archive page
 archive_img: img/SHIKA.png
@@ -60,7 +60,7 @@ tag_img: img/SHIKA.png
 # The banner image of tag page
 # format:
 #  - tag name: xxxxx
-tag_per_img: https://jeffreytano.github.io/image/icon/31.png
+tag_per_img:
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
@@ -69,7 +69,7 @@ category_img: img/SHIKA.png
 # The banner image of category page
 # format:
 #  - category name: xxxxx
-category_per_img: https://jeffreytano.github.io/image/icon/29.png
+category_per_img:
 
 cover:
   # display the cover or not
@@ -81,7 +81,8 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (
   default_cover:
-    - img/36.png
+    - img/hisameTop.png
+    - img/SHIKA.png
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:

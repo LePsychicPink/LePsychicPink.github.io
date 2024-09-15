@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -69,6 +69,31 @@ time_format: HH:mm:ss
 ## Set per_page to 0 to disable pagination
 per_page: 0
 pagination_dir: page
+
+marked:
+  gfm: true
+  pedantic: false
+  breaks: true
+  smartLists: true
+  smartypants: true
+  quotes: "“”‘’"
+  modifyAnchors: 0
+  anchorAlias: false
+  autolink: true
+  mangle: true
+  sanitizeUrl: false
+  dompurify: false
+  headerIds: true
+  lazyload: false
+  figcaption: false
+  prependRoot: true
+  postAsset: false
+  external_link:
+    enable: false
+    exclude: []
+    nofollow: false
+  disableNunjucks: false
+  descriptionLists: true
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/

@@ -3,6 +3,7 @@ title: Concept of PySide6(PyQt)
 date: 2024-09-04 01:20:39
 tags: python
 categories: programming
+top_img: img/hisameTop.png
 ---
 
 Using YouTube Video from [freeCodeCamp](https://www.youtube.com/watch?v=Z1N9JzNax2k&t=15000s) as reference
@@ -34,9 +35,6 @@ window.show() # calling the window to show because it is hidden in default
 app.exec() # start the event loop
 ```
 
-And we will get sth like this
-![](1.png)
-
 ### Level 2
 
 To add a simple button, here is the code
@@ -59,8 +57,6 @@ window.show()
 
 app.exec()
 ```
-
-![](2.png)
 
 ### Level 3
 
