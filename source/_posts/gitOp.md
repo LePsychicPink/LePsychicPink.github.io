@@ -2,7 +2,7 @@
 title: Git operation
 date: 2024-09-04 00:00:34
 tags: git
-categories: programming
+categories: Programming
 cover: img/hisameTop.png
 ---
 

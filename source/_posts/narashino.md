@@ -1,7 +1,7 @@
 ---
 title: 習志野ドーム
 date: 2024-09-06 19:54:26
-tags: HBR
+tags: Hvbn
 categories: Games
 top_img: img/hisameTop.png
 ---
@@ -15,6 +15,10 @@ top_img: img/hisameTop.png
 4.  バー屋
 5.  斡旋屋
 6.  雑貨屋
-    7．祈禱屋(正式)
-    8．アンテナ角度調整屋
-    9．治療屋
+7.  祈禱屋(正式)
+8.  アンテナ角度調整屋
+9.  治療屋
+10. 小説家と闇引き取り屋(名前出してないけど)(Day2)
+11. 機織り屋
+12. 食材屋
+13. 魚屋
