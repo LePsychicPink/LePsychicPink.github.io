@@ -51,3 +51,14 @@ test.describe("GroupName", () => {
 | page.getByTitle()       | title                              | await page.getByTitle('Title')                     |
 | page.getByTestId()      | test id                            | await page.getByTestId('TestId')                   |
 | .nth(index)             | get the i-th element under locator | await page.locator('.className').nth(1)            |
+
+### locator iteration
+
+```Typescript
+  // selectedBrand = xpath locator with multiple results
+
+  let brands = new Set(); //in case you want to get value
+  for (const item of await selectedBrand.all()) {
+    if (item) brands.add(item.getAttribute("value"));
+  }
+```
