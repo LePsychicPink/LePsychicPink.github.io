@@ -3,7 +3,6 @@ title: AITool
 date: 2024-09-23 18:58:53
 tags: AI
 categories: Programming
-mathJax: false
 ---
 
 ### vercel v0
