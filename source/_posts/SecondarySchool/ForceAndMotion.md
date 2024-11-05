@@ -4,7 +4,9 @@ date: 2024-09-20 23:56:40
 tags:
   - Physics
   - Force
-categories: Secondary school
+categories: 
+  - Secondary School
+  - School
 mathjax: true
 ---
 
