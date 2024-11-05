@@ -1,7 +1,7 @@
 ---
 title: 習志野ドーム
 date: 2024-09-06 19:54:26
-tags: Hvbn
+tags: ヘブバン
 categories: Games
 top_img: img/hisameTop.png
 ---

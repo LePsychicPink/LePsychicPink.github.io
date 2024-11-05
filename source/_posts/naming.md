@@ -10,3 +10,6 @@ Naming list
 - Psychic Pink (ヘブバン)
 - だる (Baden's neru)
 - たらこパスタ (ぶっさん)
+- Le Silent (LS reference)
+- 得其所哉
+- 仁者，其言也訒
