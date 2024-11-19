@@ -26,3 +26,7 @@ categories: Programming
 [perplexity.ai](http://perplexity.ai)
 
 ### supabase
+
+### ElevenLab
+
+[ElevenLab](https://elevenlabs.io/) is an AI text to speech service that support voice cloning
