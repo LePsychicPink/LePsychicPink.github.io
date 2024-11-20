@@ -7,15 +7,19 @@ categories: Music
 
 ### ヘブバン
 
-Before I Rise  
-Burn My Soul  
-Burn My Universe  
-Indigo in Blue  
-Sad Creature  
-Dance! Dance! Dance!  
-ありふれた Battle Song ～いつも戦闘は面倒だ～
-贅沢な感情  
-死にゆく季節の君へ
+| 歌名                    | 歌手               | Remarkable Lyrics  |
+| ----------------------- | ------------------ | -------------------- |
+| Before I Rise                       |        |           |
+| Burn My Soul                |         |      |
+| Burn My Universe               |        |        |
+| Indigo in Blue                     |                    |          |
+| Sad Creature        |            |              |
+|Dance! Dance! Dance!  |
+|ありふれた Battle Song ～いつも戦闘は面倒だ～|
+|贅沢な感情  |
+|死にゆく季節の君へ|
+|Long Long Spell | | ああこれすでに観たやつだ けどやることないから観ちゃう|
+
 
 ### Milgram
 

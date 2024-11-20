@@ -10,7 +10,7 @@ categories:
 
 ---
 
-## Setup and run [Playwright](https://playwright.dev/){:target="\_blank"}
+## Setup and run [Playwright](https://playwright.dev/)
 
 ### Install playwright
 
