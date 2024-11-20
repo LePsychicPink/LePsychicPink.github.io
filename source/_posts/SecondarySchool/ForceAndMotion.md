@@ -5,8 +5,9 @@ tags:
   - Physics
   - Force
 categories: 
-  - Secondary School
   - School
+  - Secondary School
+
 mathjax: true
 ---
 

@@ -5,8 +5,9 @@ tags:
   - playwright
   - Typescript
 categories:
-  - Testing
   - Programming
+  - Testing
+
 ---
 
 ## Setup and run [Playwright](https://playwright.dev/){:target="\_blank"}
