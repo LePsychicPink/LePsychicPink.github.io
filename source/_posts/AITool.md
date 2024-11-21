@@ -30,3 +30,7 @@ categories: Programming
 ### ElevenLab
 
 [ElevenLab](https://elevenlabs.io/) is an AI text to speech service that support voice cloning
+
+### JavaScript Obfuscator Tool
+
+[JavaScript Obfuscator Tool](https://obfuscator.io/) is a js translator into computer language, which made it harder to read
