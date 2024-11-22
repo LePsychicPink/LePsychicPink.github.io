@@ -1,8 +1,10 @@
 ---
 title: Food Label Alert
 date: 2024-09-16 00:18:05
-tags: Eat
-categories: DrBerg
+tags:
+  - Eat
+  - DrBerg
+categories: Health
 ---
 
 # Maltodextrin 麥芽糊精

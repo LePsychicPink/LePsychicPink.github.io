@@ -7,19 +7,20 @@ categories: Music
 
 ### ヘブバン
 
-| 歌名                    | 歌手               | Remarkable Lyrics  |
-| ----------------------- | ------------------ | -------------------- |
-| Before I Rise                       |        |           |
-| Burn My Soul                |         |      |
-| Burn My Universe               |        |        |
-| Indigo in Blue                     |                    |          |
-| Sad Creature        |            |              |
-|Dance! Dance! Dance!  |
-|ありふれた Battle Song ～いつも戦闘は面倒だ～|
-|贅沢な感情  |
-|死にゆく季節の君へ|
-|Long Long Spell | | ああこれすでに観たやつだ けどやることないから観ちゃう|
-
+| 歌名                                          | 歌手          | Remarkable Lyrics                                     |
+| --------------------------------------------- | ------------- | ----------------------------------------------------- |
+| Before I Rise                                 | やなぎなぎ    |                                                       |
+| Burn My Soul                                  | She is legend |                                                       |
+| Burn My Universe                              | やなぎなぎ    |                                                       |
+| Indigo in Blue                                | やなぎなぎ    |                                                       |
+| Sad Creature                                  |               |                                                       |
+| きみの横顔                                    | やなぎなぎ    |
+| Dance! Dance! Dance!                          | やなぎなぎ    |
+| ありふれた Battle Song ～いつも戦闘は面倒だ～ | She is legend |
+| 贅沢な感情                                    |
+| 死にゆく季節の君へ                            | やなぎなぎ    |
+| Long Long Spell                               |               | ああこれすでに観たやつだ けどやることないから観ちゃう |
+| Seabird Song                                  | 佐々木恵梨                         |      |
 
 ### Milgram
 
@@ -65,6 +66,7 @@ Distortion
 | 羽ばたきのバースデイ    |                    | 天使の 3P!           |
 | Cry Baby                | Official 髭男 dism | 東京リベンジャー     |
 | 君の知らない物語        | supercell          |                      |
+| Gate of STEINER         | 佐々木恵梨         | Stein;Gate           |
 
 ### Other song
 

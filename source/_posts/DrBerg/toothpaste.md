@@ -1,8 +1,10 @@
 ---
 title: Toothpaste
 date: 2024-10-14 03:11:53
-tags: DentalHealth
-categories: DrBerg
+tags:
+  - DentalHealth
+  - DrBerg
+categories: Health
 ---
 
 [Source](!https://www.youtube.com/watch?v=yO1dHlbIry0)

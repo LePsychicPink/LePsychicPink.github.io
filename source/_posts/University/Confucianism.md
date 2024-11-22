@@ -2,9 +2,7 @@
 title: 儒家
 date: 2024-09-23 18:58:53
 tags: 溫帶維
-categories: 
- - School
- - University
+categories: University
 ---
 # 禮崩樂壞
 先秦問題︰禮崩樂壞，民不聊生，社會動盪，以至於價值崩潰，一個長期穩定的社會制度不再有效。人在這情況應該如何生活？如何重建社會秩序？
