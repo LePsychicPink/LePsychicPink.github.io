@@ -14,7 +14,7 @@ categories: Tools
 | Cursor        | https://www.cursor.com/  |                                                      |
 | GPTEngineer   | https://gptengineer.app/ |                                                      |
 | perplexity.ai | http://perplexity.ai     |                                                      |
-| devv,ai       | https://devv.ai          |
+| devv.ai       | https://devv.ai          |
 | supabase      |                          |                                                      |
 | ElevenLab     | https://elevenlabs.io/   | AI text to speech service that support voice cloning |
 
