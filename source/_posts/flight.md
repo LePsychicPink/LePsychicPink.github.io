@@ -2,7 +2,7 @@
 title: HKExpress優惠記錄
 date: 2024-09-28 15:53:46
 tags: flight
-categories: Travel
+categories: travel
 ---
 
 HKExpress優惠記錄

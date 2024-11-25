@@ -2,7 +2,7 @@
 title: GoogleSpreadSheet
 date: 2024-09-23 18:58:53
 tags: GoogleSpreadSheet
-categories: Programming
+categories: programming
 ---
 
 ### VLOOKUP
@@ -11,8 +11,8 @@ categories: Programming
 
 - index > 0 (first column → 1)
 - is_sorted (DEFAULT TRUE)
-    - TRUE → Approximate match
-    - FALSE → Exact match
+  - TRUE → Approximate match
+  - FALSE → Exact match
 
 ### FILTER
 

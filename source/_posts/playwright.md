@@ -5,9 +5,7 @@ tags:
   - playwright
   - Typescript
   - Testing
-categories: Programming
-
-
+categories: programming
 ---
 
 ## Setup and run [Playwright](https://playwright.dev/)

@@ -2,7 +2,7 @@
 title: Live2D Tutorials
 date: 2024-10-26 00:30:19
 tags: Live2D
-categories: Animation
+categories: animation
 ---
 
 # Blinking

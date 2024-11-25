@@ -2,7 +2,7 @@
 title: State Management Tools
 date: 2024-09-14 01:27:25
 tags: React
-categories: Programming
+categories: programming
 ---
 
 The most popular example of state management is Redux

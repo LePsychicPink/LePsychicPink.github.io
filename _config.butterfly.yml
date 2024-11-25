@@ -83,6 +83,7 @@ cover:
   default_cover:
     - img/hisameTop.png
     - img/SHIKA.png
+    - img/biribiriTama.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
