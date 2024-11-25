@@ -20,7 +20,7 @@ categories: Music
 | 贅沢な感情                                    |
 | 死にゆく季節の君へ                            | やなぎなぎ    |
 | Long Long Spell                               |               | ああこれすでに観たやつだ けどやることないから観ちゃう |
-| Seabird Song                                  | 佐々木恵梨                         |      |
+| Seabird Song                                  | 佐々木恵梨    |                                                       |
 
 ### Milgram
 
@@ -45,28 +45,35 @@ Distortion
 星座になれたら
 フラッシュバッカー
 転がる岩、君に朝が降る
-月並みに輝け
+[月並みに輝け](https://www.youtube.com/watch?v=anCp-VnUQtM)
+僕と三原色
 
 ### アニメソン
 
-| 歌名                    | 歌手               | アニメ               | Remark |
-| ----------------------- | ------------------ | -------------------- | ------ |
-| O2                      | ORANGE RANGE       | Code Geass           |        |
-| 光のない街              | nano.RIPE          | はたらく魔王さま     |        |
-| ハナノイロ              | nano.RIPE          | 花咲くいろは         | op     |
-| Hazy                    |                    | 花咲くいろは         |        |
-| 神様のシンドローム      | 彩音               | ひぐらし             |        |
-| 不規則性エントローピー  | 彩音               | ひぐらし             |        |
-| I believe what you said | 亜咲花             | ひぐらし             |        |
-| Resonance               | T.M.Revolution     | Soul Eater           | op     |
-| 夢の続き                |                    | さくら荘             | op 2   |
-| over and over           | やなぎなぎ         | Just Because         | op     |
-| DREAMS                  |                    | 機動新世紀ガンダム X |
-| Resolution              |                    | 機動新世紀ガンダム X |
-| 羽ばたきのバースデイ    |                    | 天使の 3P!           |
-| Cry Baby                | Official 髭男 dism | 東京リベンジャー     |
-| 君の知らない物語        | supercell          |                      |
-| Gate of STEINER         | 佐々木恵梨         | Stein;Gate           |
+| 歌名                                                  | 歌手                     | アニメ               | Remark                                       |
+| ----------------------------------------------------- | ------------------------ | -------------------- | -------------------------------------------- |
+| O2                                                    | ORANGE RANGE             | Code Geass           |                                              |
+| 光のない街                                            | nano.RIPE                | はたらく魔王さま     |                                              |
+| ハナノイロ                                            | nano.RIPE                | 花咲くいろは         | op                                           |
+| Hazy                                                  |                          | 花咲くいろは         |                                              |
+| 神様のシンドローム                                    | 彩音                     | ひぐらし             |                                              |
+| 不規則性エントローピー                                | 彩音                     | ひぐらし             |                                              |
+| I believe what you said                               | 亜咲花                   | ひぐらし             |                                              |
+| Resonance                                             | T.M.Revolution           | Soul Eater           | op                                           |
+| 夢の続き                                              |                          | さくら荘             | op 2                                         |
+| over and over                                         | やなぎなぎ               | Just Because         | op                                           |
+| DREAMS                                                |                          | 機動新世紀ガンダム X |
+| Resolution                                            |                          | 機動新世紀ガンダム X |
+| 羽ばたきのバースデイ                                  |                          | 天使の 3P!           |
+| Cry Baby                                              | Official 髭男 dism       | 東京リベンジャー     |
+| 君の知らない物語                                      | supercell                |                      |
+| Hacking to the Gate                                   | いとう かなこ            | Stein;Gate           |
+| スカイクラッドの観測者                                | いとう かなこ            | Stein;Gate           | 「0」が過去で「1」が未来「今」は何処にもない |
+| Gate of STEINER                                       | 佐々木恵梨               | Stein;Gate           |
+| 星の奏でる歌                                          | 椎名かがり(CV: 潘めぐみ) | Stein;Gate           |                                              |
+| [Alive](https://www.youtube.com/watch?v=7jqVuqVQvvA)  | ReoNa                    | Arknight             | S1 OP                                        |
+| [平行線](https://www.youtube.com/watch?v=kKOkybfh9bE) | さユり                   | クズの本懐           | ED                                           |
+| ミカヅキ                                              | さユり                   | 乱歩奇譚             | ED                                           |
 
 ### Other song
 
@@ -90,3 +97,15 @@ Distortion
 | Numb                   | Linkin Park          |          |
 | In the end             | Linkin Park          |          |
 | 愛的故事上集           | 孫耀威               |          |
+
+### 歌手
+
+| 歌手          | Example         | Remark |
+| ------------- | --------------- | ------ |
+| やなぎなぎ    |                 |
+| nano.RIPE     |                 |
+| She is legend |                 |
+| ReoNa         | ALive           |
+| supercell     |                 |
+| 佐々木恵梨    | Gate of Steiner |
+| さユり        | 平行線          | RIP    |

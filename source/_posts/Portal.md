@@ -14,6 +14,7 @@ categories: Tools
 | Cursor        | https://www.cursor.com/  |                                                      |
 | GPTEngineer   | https://gptengineer.app/ |                                                      |
 | perplexity.ai | http://perplexity.ai     |                                                      |
+| devv,ai       | https://devv.ai          |
 | supabase      |                          |                                                      |
 | ElevenLab     | https://elevenlabs.io/   | AI text to speech service that support voice cloning |
 
@@ -27,4 +28,4 @@ categories: Tools
 
 | Tool names        | url                                                             | Remark                                       |
 | ----------------- | --------------------------------------------------------------- | -------------------------------------------- |
-| Holidays Calendar | https://holidays-calendar.net/2025/calendar/japan_calendar.html | Able to see HK + JP holiday at the same time |
+| Holidays Calendar | [https://holidays-calendar.net](https://holidays-calendar.net/2025/calendar/japan_calendar.html) | Able to see HK + JP holiday at the same time |

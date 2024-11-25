@@ -61,3 +61,45 @@ test.describe("GroupName", () => {
     if (item) brands.add(item.getAttribute("value"));
   }
 ```
+
+## [Fixture](https://www.youtube.com/watch?v=2O7dyz6XO2s)
+
+Create a custom `test` object which extend the original `test()` function from playwright
+ - setup duplicated action
+ - setup action after `use`
+
+```
+const myTest = test.extend({
+  webApp: async({page},use) => {
+    console.log('setup')
+    await use(page)
+    console.log('finished')
+  }
+})
+
+myTest("Test Description", async ({webApp}) => {
+  await expect(webApp.getByTestId("TestID")).toBeVisible() //action
+})
+```
+
+What it does is: 'setup' > the action > 'finished'
+
+For the predefined Fixture across multiple ts use,
+`setup.ts`
+```
+const {test, expect} = require{"@playwright/test"}
+const {ac, pw} = process.env // take login details from .env
+
+exports.expect = expect // export the original expect from original playwright
+exports.test = test.extends({
+  webApp: async ({page},use)=>{
+    // do all the login things here
+    await use(page)
+  },
+})
+```
+
+and import the custom test and expect from other ts
+```
+const { test , expect } = require("./setup")
+```
