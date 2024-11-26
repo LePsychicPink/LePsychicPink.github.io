@@ -44,14 +44,14 @@
     toc: true,
     rightside: false,
   },
-  autoDarkmode: false
+  autoDarkmode: true
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
   title: 'LePsychicPink',
   isPost: false,
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-11-26 02:03:58'
+  postUpdate: '2024-11-27 00:46:59'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -130,9 +130,28 @@
       }
       const t = saveToLocal.get('theme')
     
-        if (t === 'dark') activateDarkMode()
-        else if (t === 'light') activateLightMode()
-      
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
       const asideStatus = saveToLocal.get('aside-status')
       if (asideStatus !== undefined) {
         if (asideStatus === 'hide') {
@@ -148,11 +167,11 @@
         }
       }
       detectApple()
-    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/36.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">32</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">27</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">14</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="LePsychicPink"><span class="site-name">LePsychicPink</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2024/11/25/Typescript/" title="Typescript"><img class="post-bg" src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Typescript"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/11/25/Typescript/" title="Typescript">Typescript</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-11-24T19:26:41.000Z" title="Created 2024-11-25 04:26:41">2024-11-25</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/programming/">Programming</a></span></div><div class="content">Objectinterface1234interface NewInterface &#123;    s : String;    n : number;&#125;
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/36.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">34</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">13</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="LePsychicPink"><span class="site-name">LePsychicPink</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/Typescript/" title="Typescript"><img class="post-bg" src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Typescript"></a></div><div class="recent-post-info"><a class="article-title" href="/Typescript/" title="Typescript">Typescript</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-11-24T19:26:41.000Z" title="Created 2024-11-25 04:26:41">2024-11-25</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/programming/">programming</a></span></div><div class="content">Objectinterface1234interface NewInterface &#123;    s : String;    n : number;&#125;
 
 Opeartor??Operator ?? is similar to ||,it take the right hand side if left hand side is undefined or null.
 Difference:?? → use RHS when LHS is null or undefined|| → use RHS when LHS is null or undefined or False or 0
-</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/11/24/tailwind/" title="Tailwind"><img class="post-bg" src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Tailwind"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/11/24/tailwind/" title="Tailwind">Tailwind</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-11-24T12:48:28.000Z" title="Created 2024-11-24 21:48:28">2024-11-24</time></span></div><div class="content">LayoutAspect ratio
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/tailwind/" title="Tailwind"><img class="post-bg" src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Tailwind"></a></div><div class="recent-post-info"><a class="article-title" href="/tailwind/" title="Tailwind">Tailwind</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-11-24T12:48:28.000Z" title="Created 2024-11-24 21:48:28">2024-11-24</time></span></div><div class="content">LayoutAspect ratio
 
 
 value
@@ -234,7 +253,7 @@ px
 
 
 2
-8px &#x3 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/10/26/skullFeather/" title="異時層スカルフェザー"><img class="post-bg" src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="異時層スカルフェザー"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/10/26/skullFeather/" title="異時層スカルフェザー">異時層スカルフェザー</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-26T04:43:29.000Z" title="Created 2024-10-26 13:43:29">2024-10-26</time></span></div><div class="content">source
+8px &#x3 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/skullFeather/" title="異時層スカルフェザー"><img class="post-bg" src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="異時層スカルフェザー"></a></div><div class="recent-post-info"><a class="article-title" href="/skullFeather/" title="異時層スカルフェザー">異時層スカルフェザー</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-26T04:43:29.000Z" title="Created 2024-10-26 13:43:29">2024-10-26</time></span></div><div class="content">source
 First DPTurn 1: 行動なし蒼井　ゆんゆん　タマを前に - 閃光 SP+1
 Turn 2: 全体攻撃 厄 &#x2F; 単体攻撃タマ　ユイナ　ゆんゆん
 Turn 3: 全体攻撃DP 余裕の 3 人
@@ -247,7 +266,7 @@ Turn 7: 単体攻撃攻撃されたら　 Fill Recover
 Turn 8:　単体攻撃
 Turn 9: 単体攻撃&#x2F;全体攻撃 STUNムウア 快感スプリント マリ Diamond Dust アーさん後衛
 Turn 10: 溜めSP 足りない二人　＋　アーさん心意活性
-Turn 11: 単体攻撃　攻撃デバフアーさん以外　 DP 余裕の ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/10/26/live2dTutor/" title="Live2D Tutorials"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Live2D Tutorials"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/10/26/live2dTutor/" title="Live2D Tutorials">Live2D Tutorials</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-25T15:30:19.000Z" title="Created 2024-10-26 00:30:19">2024-10-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/animation/">animation</a></span></div><div class="content">Blinkingsource
+Turn 11: 単体攻撃　攻撃デバフアーさん以外　 DP 余裕の ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/live2dTutor/" title="Live2D Tutorials"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Live2D Tutorials"></a></div><div class="recent-post-info"><a class="article-title" href="/live2dTutor/" title="Live2D Tutorials">Live2D Tutorials</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-25T15:30:19.000Z" title="Created 2024-10-26 00:30:19">2024-10-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/animation/">animation</a></span></div><div class="content">Blinkingsource
 Meshing
 Select your target object
 Click the manual meshing button to enter meshing mode (Ctrl+E)
@@ -277,7 +296,7 @@ Stroke meshing
 Tune the details by setting offsets
 
 
-Auto meshing ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/10/14/DrBerg/FoodToEat/" title="Recommanding food"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Recommanding food"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/10/14/DrBerg/FoodToEat/" title="Recommanding food">Recommanding food</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-13T18:11:53.000Z" title="Created 2024-10-14 03:11:53">2024-10-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/health/">Health</a></span></div><div class="content">Source1
+Auto meshing ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/DrBerg/FoodToEat/" title="Recommanding food"><img class="post-bg" src="/img/biribiriTama.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Recommanding food"></a></div><div class="recent-post-info"><a class="article-title" href="/DrBerg/FoodToEat/" title="Recommanding food">Recommanding food</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-13T18:11:53.000Z" title="Created 2024-10-14 03:11:53">2024-10-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/health/">health</a></span></div><div class="content">Source1
 For those who have bad teethSource
 
 
@@ -309,7 +328,7 @@ Greens
 
 
 Carbonated water (no sugar)CO2 water
-</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/10/14/DrBerg/toothpaste/" title="Toothpaste"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Toothpaste"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/10/14/DrBerg/toothpaste/" title="Toothpaste">Toothpaste</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-13T18:11:53.000Z" title="Created 2024-10-14 03:11:53">2024-10-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/health/">Health</a></span></div><div class="content">Source
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/DrBerg/toothpaste/" title="Toothpaste"><img class="post-bg" src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Toothpaste"></a></div><div class="recent-post-info"><a class="article-title" href="/DrBerg/toothpaste/" title="Toothpaste">Toothpaste</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-13T18:11:53.000Z" title="Created 2024-10-14 03:11:53">2024-10-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/health/">health</a></span></div><div class="content">Source
 Ingredients
 
 
@@ -334,7 +353,7 @@ Clove &#x2F; cinnamon &#x2F; oregano
 3 drops
 
 
-</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/10/08/MusicPages/HBRLyrics/" title="ヘブバン歌詞"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ヘブバン歌詞"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/10/08/MusicPages/HBRLyrics/" title="ヘブバン歌詞">ヘブバン歌詞</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-08T13:57:36.000Z" title="Created 2024-10-08 22:57:36">2024-10-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/music/">Music</a></span></div><div class="content">ヘブバン
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/MusicPages/HBRLyrics/" title="ヘブバン歌詞"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ヘブバン歌詞"></a></div><div class="recent-post-info"><a class="article-title" href="/MusicPages/HBRLyrics/" title="ヘブバン歌詞">ヘブバン歌詞</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-08T13:57:36.000Z" title="Created 2024-10-08 22:57:36">2024-10-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/music/">music</a></span></div><div class="content">ヘブバン
 
 
 歌
@@ -413,586 +432,12 @@ Seabird Song
 Before I Rise
 その首に口付け　　　　　　　　　　　　　　　把口貼在你的頸邊 
 匂いを嗅いでたい　　　　　　　　　　　　　　想要嗅你的體臭
-あるいはここ ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/10/08/MusicPages/music/" title="Music"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Music"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/10/08/MusicPages/music/" title="Music">Music</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-08T13:57:36.000Z" title="Created 2024-10-08 22:57:36">2024-10-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/music/">Music</a></span></div><div class="content">ヘブバン
-
-
-歌名
-歌手
-Remarkable Lyrics
-
-
-
-Before I Rise
-やなぎなぎ
-
-
-
-Burn My Soul
-She is legend
-
-
-
-Burn My Universe
-やなぎなぎ
-
-
-
-Indigo in Blue
-やなぎなぎ
-
-
-
-Sad Creature
-
-
-
-
-きみの横顔
-やなぎなぎ
-
-
-
-Dance! Dance! Dance!
-やなぎなぎ
-
-
-
-ありふれた Battle Song ～いつも戦闘は面倒だ～
-She is legend
-
-
-
-贅沢な感情
-
-
-
-
-死にゆく季節の君へ
-やなぎなぎ
-
-
-
-Long Long Spell
-
-ああこれすでに観たやつだ けどやることないから観ちゃう
-
-
-Seabird Song
-佐々木恵梨
-
-
-
-Milgram弱肉共食Umbilical事変上等After PainThrow Down
-結束バンド青春コンプレックスひとりぼっち東京Distortionギターと孤独と蒼い惑星ラブソングが歌えないあのバンドカラカラ小さな海なにが悪い忘れてやらない星座になれたらフラッシュバッカー転がる岩、君に朝が降る月並みに輝け ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/10/08/seisha/" title="正射必中"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="正射必中"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/10/08/seisha/" title="正射必中">正射必中</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-08T08:26:19.000Z" title="Created 2024-10-08 17:26:19">2024-10-08</time></span></div><div class="content">正射必中日本弓道有句話「正射必中」，其意為正確的「射」就必定導向「的中」。但「的中」並不代表你的射為「正確」。所以修練弓道的人並不著眼於有沒有射中目標。而在於自己的射有甚麼改進空間，從而令自己日後在任何情況，任何環境之下都能確保自己「皆中」。
-那正確的射又是甚麼？我相信即使是段位最高的人也無法定義正確的「射」，頂多只能達到最接近完美的射。所以人必需要把持一種不斷追求更高層次的心態，並虛心接受任何意見，切忌盲信自己正確，理解自己任何一黠也未必是對的。即使自己的意見「的中率」比人高，你的「射」也不是正確的。要追求更正確的「射」，就必需理解自己也有做錯的地方，可能「的中率」比你低的人正好就在你錯誤的地方做對了。
-既然沒有人能做到完美的「射」，「正射」就無法被定義了。
-我把「正射」理解為一種精神上的目標，雖然是人無法達到的高點，但人可以一點一點地靠近。弓道有一種活動叫「百射會」，這並非只限能夠「百射皆中」的人參加，無論任何段位的人也夠參與。有師兄說話「百射會」的目的不是比拼的中率，而是為自己的的中率做一個記錄。知道自己這次百射的中率後，在下次「百射會」之前不斷練習。期望自己在下次的「百射會」有 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/10/04/playwright/" title="playwright"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="playwright"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/10/04/playwright/" title="playwright">playwright</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-03T19:26:41.000Z" title="Created 2024-10-04 04:26:41">2024-10-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/programming/">programming</a></span></div><div class="content">Setup and run PlaywrightInstall playwright1npm init playwright@latest
-
-Run playwright in UI Mode1npx playwright test --ui
-
-Basic Syntaxtest Describer - group tests
-12345678test.describe(&quot;GroupName&quot;, () =&gt; &#123;    test.beforeEach(async (&#123; page &#125;) =&gt; &#123;    //reload target page for each test    await page.goto(&quot;https://playwright.dev&quot;);  &#125;);  test(&quot;testName&quot;, async (&#123; page &#125;) =&gt; &#123;  &#125;);&#125;);
-
-
-
-
-Element Retriver
-Expla ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/10/01/QRcode/" title="QRcode"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="QRcode"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/10/01/QRcode/" title="QRcode">QRcode</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-01T14:14:12.000Z" title="Created 2024-10-01 23:14:12">2024-10-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/signal-processing/">Signal Processing</a></span></div><div class="content">Reference{:target&#x3D;”_blank”}
-Quiet ZoneOutside of the QR code, without any infos
-Position Squares3 8x8 sqaures on top-left, top-right and bottom-left corners.
-Formed by a 7x7 black squres, 5x5 white squares and a filled 3x3 black sqaure and outlined by white.
-
-
-Alignment Pattern (the bottom right square)Formed by 5x5 black squares, 3x3 white squares and a filled 1x1 black square.
-Offset by 4 from the bottom and 4 from the right
-
-
-Timeing StripsGenerated along the 7x7 black squares of positio ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/09/28/flight/" title="HKExpress優惠記錄"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HKExpress優惠記錄"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/28/flight/" title="HKExpress優惠記錄">HKExpress優惠記錄</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-28T06:53:46.000Z" title="Created 2024-09-28 15:53:46">2024-09-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/travel/">travel</a></span></div><div class="content">HKExpress優惠記錄
-
-
-
-預訂日期
-旅遊日期
-備註
-
-
-
-2024年9月26日
-2024年10月2日至2025年3月29日
-台北、台中、高雄
-
-
-2024年9月24日
-2024年10月15日至2025年3月29日
-東京、仙台
-
-
-2024年9月18日
-2024年9月22日至2025年3月29日
-大阪及名古屋
-
-
-2024年9月16日
-2024年9月23日至22025年3月29日
-首爾、釜山和濟洲
-
-
-2024年9月15日
-2024年9月19日至22025年3月28日
-高松、廣島
-
-
-2024年9月12日
-2024年9月18日至22025年3月29日
-台北、台中或高雄
-
-
-2024年8月31日
-2024年11月1日至2025年3月29日
-廣島
-
-
-2024年8月29日
-2024年9月1日至10月31日
-福岡、名古屋、沖繩
-
-
-2024年8月27日
-2024年9月1日至10月31日
-大阪及高松
-
-
-2024年8月25日
-2024年9月1日至10月31日
-韓國
-
-
-2024年8月13日
-2024年8月20日至11月30日
-韓國
-
-
-2024年8月10日
-2024年8月30日至2025 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/09/27/Reverse1999/" title="Reverse1999"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Reverse1999"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/27/Reverse1999/" title="Reverse1999">Reverse1999</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-27T07:54:13.000Z" title="Created 2024-09-27 16:54:13">2024-09-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/games/">Games</a></span></div><div class="content">GameWith
-素材参考
-</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/09/23/University/DavidWan/" title="溫帶維的理解"><img class="post-bg" src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="溫帶維的理解"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/23/University/DavidWan/" title="溫帶維的理解">溫帶維的理解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-23T09:58:53.000Z" title="Created 2024-09-23 18:58:53">2024-09-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/university/">University</a></span></div><div class="content">Lecture1
-罷課罷課的定義是學生犠牲自己的學習機會去逼使政府回應訴求，同時鼓動工人階級響應罷工。如果老師在學生罷課後為學生補課，結果上能夠如期畢業且成畢不變，則等於沒有罷課。結果不幸的只有真正犠牲生計罷工的工人。
-建議學者林朝成 - 佛學概論陳永明 - 原來孔子姚蒸民 - 韓非子通論高柏園 - 孟子哲學與先秦思想王邦雄、岑溢成 - 中國哲學史錢穆 - 論語新解
-文化香港文化普通人 -&gt; 魚蛋、菠蘿油、奶茶、曾灶財（九龍皇帝）的字
-
-我們熟習的東西
-魚蛋、菠蘿油，我們經常吃
-曾灶財的字，我們經常見
-
-
-
-溫教授對文化的定義
-文化︰一個團體的人的行為的潛在指導
-例子︰人碰到熱水 -&gt; 縮手（本能，不是文化）+ 爆粗 &#x2F; 哎呀 &#x2F; 熱死 （香港文化） &#x2F; Shit (美國文化)。行為會跟本能一致同時發生，不會碰到熱水時想︰Shit or 哎呀？
-功能︰宣洩不滿
-
-
-例子︰ 中國建築 -&gt; 斜頂（不論南北）-&gt;南方落雨 &#x2F; 北方落雪 -&gt; 滑水 -&gt; 不會平 &#x2F; 凹 | 墨西哥的建築-&gt; 平頂 - ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/09/23/University/Confucianism/" title="儒家"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="儒家"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/23/University/Confucianism/" title="儒家">儒家</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-23T09:58:53.000Z" title="Created 2024-09-23 18:58:53">2024-09-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/university/">University</a></span></div><div class="content">禮崩樂壞先秦問題︰禮崩樂壞，民不聊生，社會動盪，以至於價值崩潰，一個長期穩定的社會制度不再有效。人在這情況應該如何生活？如何重建社會秩序？
-儒︰問題不在於禮，在於執行不善。因此應該復禮。道︰禮制不行？其實不單是禮制問題，只要是制度就有問題。所以應小國寡民。
-周禮維繫宗法制度的工具
-宗法制度宗 - 嫡長子（正室所生的長子）宗法制度 &#x3D; 嫡長子繼承制
-父親的財產、權力、社會地位完全由嫡長子繼承。
-→權力與財富的分配原則→大家不用爭→早已決定由由嫡長子繼承（解決紛爭的第一原則）
-問題︰嫡長子無才無德，怎麼辦？ → 小的要輔助他問題︰為甚麼要輔助無能之人？ → 無他，純粹是禮的規範
-禮禮儀具體的行為規範 （日常生活 至 公眾地方）
-天子分封諸侯 → 親戚 + 通婚 → 自己人以宗法制度確保後世繼承者都是堂兄弟 → 以血脈關係、親屬關係維繫執權者
-諸侯為甚麼不攻打天子或其他諸侯？「自己堂兄也打，不太好吧？」→不太穩固。不論堂兄弟，親兄弟大於4人也不太親。→具體禮儀 → 要求人不論私人場合、公眾場合也要執行 → 提醒自己「你算老幾」
-禮儀分四種︰吉兇賓家
-官制官位職務
-權力分配每個階層的 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/09/23/University/Philosophy/" title="哲學"><img class="post-bg" src="/img/biribiriTama.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哲學"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/23/University/Philosophy/" title="哲學">哲學</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-23T09:58:53.000Z" title="Created 2024-09-23 18:58:53">2024-09-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/university/">university</a></span></div><div class="content">哲學哲 -&gt; 明白
-哲學一詞源自於日本日本用「哲學」一詞嘗試翻譯 Philosophy
-Philo + Sophia
-理性且系統追求答案
-宗教始於信心哲學始於懷疑科學始於哲學，後來脫離哲學（凡是找到答案的就脫離哲學）
-Philo希臘字 - 愛對事物的愛，以至於不斷追求
-Sophia希臘字 - 智慧
-Philosphia對智慧的追求
-形上學宇宙的終極真相
-道家算是形上學
-西方形上學分兩大派
-
-唯心
-唯物
-
-唯心主觀唯心論心靈的投射
-
-意識以外的事物不存在 →「你合埋眼我就消失」
-
-感覺像「人的三次死亡」 - 肉體的死亡︰心臟停頓 - 社會性死亡︰被下葬、被參加喪禮、被宣告在社會上消失 - 他人記憶上死亡︰最後一個記得自己存在的人忘記自己
-真的要說，「人的三次死亡」並不一定都發生，也不一定順次序發生 → 可能應該說「三種死亡」
-
-有人進入假死狀態 → 被埋葬 → 當事人在棺材窒息致死（第二種死亡先於第一種死亡）
-
-有人戰死沙場或 MIA，不被埋葬，家人不知其生死何從（可能沒有第二種死亡）
-
-有人不太社交且，流落荒島 60 年，其他人都不記得他，但他依然生存（第三種死亡先於第一種死亡） ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/09/23/GoogleSpreadSheet/" title="GoogleSpreadSheet"><img class="post-bg" src="/img/biribiriTama.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="GoogleSpreadSheet"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/23/GoogleSpreadSheet/" title="GoogleSpreadSheet">GoogleSpreadSheet</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-23T09:58:53.000Z" title="Created 2024-09-23 18:58:53">2024-09-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/programming/">programming</a></span></div><div class="content">VLOOKUP&#x3D;VLOOKUP(search_key,range,iindex,is_sorted)
-
-index &gt; 0 (first column → 1)
-is_sorted (DEFAULT TRUE)
-TRUE → Approximate match
-FALSE → Exact match
-
-
-
-FILTER&#x3D;FILTER(range,condition1,[condition2, …])
-1=FILTER(B1:B50,C1=A1:B50)
-
-
-range → data to be filtered
-condition1 → Column of Boolean
-
-Returns Column of value in B1:B50 where Column A matches value in C1Placed at D1 and It will print D1:D50 if all values are matched
-</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/09/23/Portal/" title="UsefulPortal"><img class="post-bg" src="/img/biribiriTama.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="UsefulPortal"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/23/Portal/" title="UsefulPortal">UsefulPortal</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-23T09:58:53.000Z" title="Created 2024-09-23 18:58:53">2024-09-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/tools/">Tools</a></span></div><div class="content">AI
-
-
-Tool names
-url
-Remark
-
-
-
-vercel v0
-https://v0.dev/chat
-
-
-
-Claude
-https://claude.ai/
-not available in HK
-
-
-Cursor
-https://www.cursor.com/
-
-
-
-GPTEngineer
-https://gptengineer.app/
-
-
-
-perplexity.ai
-http://perplexity.ai
-
-
-
-devv.ai
-https://devv.ai
-
-
-
-supabase
-
-
-
-
-ElevenLab
-https://elevenlabs.io/
-AI text to speech service that support voice cloning
-
-
-Translator
-
-
-Tool names
-url
-Remark
-
-
-
-JavaScript Obfuscator Tool
-https://obfuscator.io/
-js translator into computer language, made it harder to read
- ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/09/23/ToLearnList/" title="To-do or To-learn"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="To-do or To-learn"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/23/ToLearnList/" title="To-do or To-learn">To-do or To-learn</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-23T09:58:53.000Z" title="Created 2024-09-23 18:58:53">2024-09-23</time></span></div><div class="content">To-Learn
-
-
-Item
-Usage
-Reference
-
-
-
-Google Apps Script
-Google SpreadSheet Encryption
-
-
-
-Machine Learning Models
-
-
-
-
-Live2D Cubism
-
-
-
-
-Python in advance
-
-
-
-
-Panda
-
-
-
-
-Numpy
-
-
-
-
-WordPress
-
-
-
-
-Unreal Engine
-
-
-
-
-To-DoCheck the GoogleSpreadsheet instead
-</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/09/21/kokorononaka/" title="心中不敢說的發洩"><img class="post-bg" src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="心中不敢說的發洩"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/21/kokorononaka/" title="心中不敢說的發洩">心中不敢說的發洩</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-21T09:30:12.000Z" title="Created 2024-09-21 18:30:12">2024-09-21</time></span></div><div class="content">為了報答養育之恩搬到山邊之地，欲養之人逝去不夠半年就去台灣。子とアルバムなど雑貨は取り残される。
-為了滿足購買欲而買東西給我是你的事，用不用是我的事。
-一發不響就突然長居台灣，一年不見就突然說要結婚。
-找我去台灣想不懂用意，接機的空餘都沒有看不到重視。在樓下接的士很有記憶，忘了我不喜歡煙味極為深刻。
-回來租住宅式酒店，「為了我」留了一間充滿雜物的房間。
-「他一把年紀就由他吧」，我年紀輕輕不怕二手煙？
-2019 年 12 月的聖誕節，是我最煎熬的一次聖誕節。
-你只是不願放手，即使想要的兩種東西有衝突。
-要賣才看的書不是你想看的書。
-詩になれるかもしれないもの早上醒來 十分鐘就可以出門
-早安？出門了？有甚麼意義？
-</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/09/20/SecondarySchool/ForceAndMotion/" title="Force and Motion"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Force and Motion"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/20/SecondarySchool/ForceAndMotion/" title="Force and Motion">Force and Motion</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-20T14:56:40.000Z" title="Created 2024-09-20 23:56:40">2024-09-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/secondary-school/">secondary school</a></span></div><div class="content">CheatsheetEquation of unitformly accelerated motionAssume that a is constant,$$ s&#x3D;\frac{1}{2}(u+v)\times t$$$$ v&#x3D;u + at$$$$ s &#x3D; ut+\frac{1}{2}at^2$$$$v^2 - u^2 &#x3D; 2as$$$g &#x3D; 9.81 ms^{-2}$ or $g &#x3D; 10 ms^{-2}$, depends on question provide※ Remember to identify the direction compare to the motion
-Percenatage Error$$PercentageError &#x3D; \frac{T_R}{T_M} \times 100 % $$where ${T_R}$ is reaction time and ${T_M}$ is measured time
-Distance and DisplacementDistance (距離) - Sca ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/09/20/SecondarySchool/F3Math/" title="F3Math"><img class="post-bg" src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="F3Math"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/20/SecondarySchool/F3Math/" title="F3Math">F3Math</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-20T14:20:13.000Z" title="Created 2024-09-20 23:20:13">2024-09-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/mathcore/">MathCore</a></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/09/18/tango/" title="日本語単語"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日本語単語"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/18/tango/" title="日本語単語">日本語単語</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-17T15:09:28.000Z" title="Created 2024-09-18 00:09:28">2024-09-18</time></span></div><div class="content">サマポケさしずめ【差し詰め】1．つまるところ、結局
-くすむ
-目立たない地味なようすになる
-
-むさぼる【貪る】
-飽きることなくほしがる
-際限なくある行為を続ける
-がつがつ食べる
-
-ひなびた【鄙びた】
-閑として田舎っぽいさま。場所について言う。
-
-ぽくり
-物がもろく、折れたりとれたりするさま、転じて、元気だった人が突然死ぬさまを表わす語例：ぽくりと亡くなった
-
-レトルト食品レトルト殺菌で殺菌された食品
-
-
-ぽつんと
-他とは離れて、一人で佇んでいるさま、一つだけ置いてあるさまなどを指す表現例：ぽつんと、控えめな光をこぼす家があった
-
-こぼす【零す／翻す／溢す】
-容器を、うっかりひっくり返したり傾けたりして、中に入っている物を外に出してしまう。また、液体、粉末、粒状のものを容器などからあふれさせたり、物の間から漏らしたりして外へとり落とす。「水を—・す」「御飯を—・す」「あせって返球を—・してしまう」
-涙などを不覚にも落とす。「思わず涙を—・す」「よだれを—・す」
-うれしさなどの感情を表に出す。「笑みを—・す」
-不満や泣き言などを胸に収めておけないでつい人に言ってしまう。ぶつぶつ言って訴える。 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/09/16/DrBerg/foodLabel/" title="Food Label Alert"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Food Label Alert"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/16/DrBerg/foodLabel/" title="Food Label Alert">Food Label Alert</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-15T15:18:05.000Z" title="Created 2024-09-16 00:18:05">2024-09-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/health/">Health</a></span></div><div class="content">Maltodextrin 麥芽糊精Reference
-Alternative names
-
-Dextrin 糊精
-Modified food starch 食用化製澱粉
-Glucose syrup 葡萄糖漿
-Corn syrup 玉米糖漿
-Food starch 食用澱粉
-
-</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/09/15/naming/" title="naming"><img class="post-bg" src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="naming"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/15/naming/" title="naming">naming</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-15T09:54:32.000Z" title="Created 2024-09-15 18:54:32">2024-09-15</time></span></div><div class="content">Naming list
-
-Psychic Pink (ヘブバン)
-だる (Baden’s neru)
-たらこパスタ (ぶっさん)
-Le Silent (LS reference)
-得其所哉
-仁者，其言也訒
-
-</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/09/14/ReactFreqError/" title="Frequent Error for React"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Frequent Error for React"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/14/ReactFreqError/" title="Frequent Error for React">Frequent Error for React</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-13T16:27:25.000Z" title="Created 2024-09-14 01:27:25">2024-09-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/programming/">programming</a></span></div><div class="content">ENOENT: no such file or directory
-
-Solution
-1rm package-lock.json &amp;&amp; npm i
-
-Sth requires a peer of other package but none is installed1npm install --save-dev the other package
-</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/09/14/stateManagement/" title="State Management Tools"><img class="post-bg" src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="State Management Tools"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/14/stateManagement/" title="State Management Tools">State Management Tools</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-13T16:27:25.000Z" title="Created 2024-09-14 01:27:25">2024-09-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/programming/">programming</a></span></div><div class="content">The most popular example of state management is Redux
-Altenatives for state management in React
-Zustand
-Flux
-
-Redux Tool Kit (RTK)Zustandcreate a store.ts in wherever you want
-123456789101112131415import &#123; create &#125; from &quot;zustand&quot;;interface BearState &#123;  bears: number;  increasePopulation: () =&gt; void;  removeAllBears: () =&gt; void;  updateBears: (newBears: number) =&gt; void;&#125;export const useStore = create&lt;BearState&gt;()((set) =&gt; (&#123;  bears: 0,  increas ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/09/06/narashino/" title="習志野ドーム"><img class="post-bg" src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="習志野ドーム"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/06/narashino/" title="習志野ドーム">習志野ドーム</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-06T10:54:26.000Z" title="Created 2024-09-06 19:54:26">2024-09-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/games/">Games</a></span></div><div class="content">習志野ドーム出場順
-祈禱屋(名前出してないけど)
-救急車屋(Day0)
-氷菓子屋(Day1)
-スクラップ屋
-バー屋
-斡旋屋
-雑貨屋
-祈禱屋(正式)
-アンテナ角度調整屋
-治療屋
-小説家と闇引き取り屋(名前出してないけど)(Day2)
-機織り屋
-食材屋
-魚屋
-
-</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/09/06/HvbnNote/" title="ヘブバン能力値"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ヘブバン能力値"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/06/HvbnNote/" title="ヘブバン能力値">ヘブバン能力値</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-06T10:54:26.000Z" title="Created 2024-09-06 19:54:26">2024-09-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/games/">Games</a></span></div><div class="content">参考文献
-閾值ダメージ　&#x2F;　デバフ → 105 + SP×3 　+ 20× 宝珠回復　&#x2F;　バフ → 160 + SP×8 + 60× 宝珠
-ゆんゆん（無中生有） &#x3D; 160 + 11×8 + 60×5&#x3D; 548→ ゆんゆんは知性 548 超えると意味ない
-バフ（知性）
-
-
-
-SP
-閾值
-宝珠閾值
-
-
-
-5
-200
-500
-
-
-6
-208
-508
-
-
-7
-216
-516
-
-
-8
-224
-524
-
-
-9
-232
-532
-
-
-10
-240
-540
-
-
-11
-248
-548
-
-
-12
-256
-556
-
-
-13
-264
-564
-
-
-14
-272
-572
-
-
-15
-280
-580
-
-
-16
-288
-588
-
-
-17
-296
-596
-
-
-18
-304
-604
-
-
-19
-312
-612
-
-
-20
-320
-620
-
-
-デバフ （運 × ２＋知性&#x2F;知性 × ２＋運）
-
-
-
-SP
-閾值
-宝珠閾值
-
-
-
-5
-120+敵能力値
-220+敵能力値
-
-
-6
-123+敵能力値
-223+敵能力値
-
-
-7
-126+敵能力値
-226+敵能力値
-
-
-8
-129+敵能力値
-22 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/09/04/PyQt/" title="Concept of PySide6(PyQt)"><img class="post-bg" src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Concept of PySide6(PyQt)"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/04/PyQt/" title="Concept of PySide6(PyQt)">Concept of PySide6(PyQt)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-03T16:20:39.000Z" title="Created 2024-09-04 01:20:39">2024-09-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/programming/">programming</a></span></div><div class="content">Using YouTube Video from freeCodeCamp as reference
-UI creation can be done by QtWidget and QML, and this post is using Qt.
-Requirement
-Python3
-Pyside6
-Qt Designer
-
-Step 1 - Code understandingLevel 1Here is the most basic code to create an empty window of python application with ui
-12345678910from PySide6.QtWidgets import QApplication, QWidgetimport sys # mean nothing here but important if we need to handle command line argumentapp = QApplication(sys.argv)window = QWidget()window.show() # calling ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/09/04/gitOp/" title="Git operation"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Git operation"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/04/gitOp/" title="Git operation">Git operation</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-03T15:00:34.000Z" title="Created 2024-09-04 00:00:34">2024-09-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/programming/">programming</a></span></div><div class="content">Staging → git add &#123;files&#125;
-Unstaging → git restore --staged &#123;files&#125;
-Commit → git commit &quot;&quot;commit message
-commit without staging → git commit -a -m &quot;message
-amend commit → git commit -m &quot;message&quot; --amend
-Go back to specific commit git reset &#123;commitID&#125;
-Cancel git reset git reset &#39;HEAD@&#123;1&#125;&#39;
-create new branch git branch &#123;branch name&#125;
-check branch git branch
-switch branch git switch &#123;branch name&#125;
-delete branch ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/09/03/HostButterflyStep/" title="How to build a butterfly blog in Github Pages"><img class="post-bg" src="/img/hisameCover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="How to build a butterfly blog in Github Pages"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/09/03/HostButterflyStep/" title="How to build a butterfly blog in Github Pages">How to build a butterfly blog in Github Pages</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-03T13:06:52.000Z" title="Created 2024-09-03 22:06:52">2024-09-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/web-developping/">Web developping</a></span></div><div class="content">tldr: Follow the instruction from the author
-Step 1 - Initialize a hexo projectSet up a brand new hexo project by hexo init
-After the init, these files should be appeared
-
-In the hexo root folder, clone the butterfly theme and download the hexo-renderer-pug and hexo renderer-stylus
-123git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterflynpm install hexo-renderer-pug hexo-renderer-stylus --save
-
-go to themes/butterfly/_config.yml. Copy all the content, create  ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/36.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Psychic Pink</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">32</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">27</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">14</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/11/25/Typescript/" title="Typescript"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Typescript"/></a><div class="content"><a class="title" href="/2024/11/25/Typescript/" title="Typescript">Typescript</a><time datetime="2024-11-24T19:26:41.000Z" title="Created 2024-11-25 04:26:41">2024-11-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/11/24/tailwind/" title="Tailwind"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Tailwind"/></a><div class="content"><a class="title" href="/2024/11/24/tailwind/" title="Tailwind">Tailwind</a><time datetime="2024-11-24T12:48:28.000Z" title="Created 2024-11-24 21:48:28">2024-11-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/26/skullFeather/" title="異時層スカルフェザー"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="異時層スカルフェザー"/></a><div class="content"><a class="title" href="/2024/10/26/skullFeather/" title="異時層スカルフェザー">異時層スカルフェザー</a><time datetime="2024-10-26T04:43:29.000Z" title="Created 2024-10-26 13:43:29">2024-10-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/26/live2dTutor/" title="Live2D Tutorials"><img src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Live2D Tutorials"/></a><div class="content"><a class="title" href="/2024/10/26/live2dTutor/" title="Live2D Tutorials">Live2D Tutorials</a><time datetime="2024-10-25T15:30:19.000Z" title="Created 2024-10-26 00:30:19">2024-10-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/14/DrBerg/FoodToEat/" title="Recommanding food"><img src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Recommanding food"/></a><div class="content"><a class="title" href="/2024/10/14/DrBerg/FoodToEat/" title="Recommanding food">Recommanding food</a><time datetime="2024-10-13T18:11:53.000Z" title="Created 2024-10-14 03:11:53">2024-10-14</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+あるいはここ ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/36.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Psychic Pink</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">34</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">29</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">13</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/Typescript/" title="Typescript"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Typescript"/></a><div class="content"><a class="title" href="/Typescript/" title="Typescript">Typescript</a><time datetime="2024-11-24T19:26:41.000Z" title="Created 2024-11-25 04:26:41">2024-11-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/tailwind/" title="Tailwind"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Tailwind"/></a><div class="content"><a class="title" href="/tailwind/" title="Tailwind">Tailwind</a><time datetime="2024-11-24T12:48:28.000Z" title="Created 2024-11-24 21:48:28">2024-11-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/skullFeather/" title="異時層スカルフェザー"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="異時層スカルフェザー"/></a><div class="content"><a class="title" href="/skullFeather/" title="異時層スカルフェザー">異時層スカルフェザー</a><time datetime="2024-10-26T04:43:29.000Z" title="Created 2024-10-26 13:43:29">2024-10-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/live2dTutor/" title="Live2D Tutorials"><img src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Live2D Tutorials"/></a><div class="content"><a class="title" href="/live2dTutor/" title="Live2D Tutorials">Live2D Tutorials</a><time datetime="2024-10-25T15:30:19.000Z" title="Created 2024-10-26 00:30:19">2024-10-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/DrBerg/FoodToEat/" title="Recommanding food"><img src="/img/biribiriTama.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Recommanding food"/></a><div class="content"><a class="title" href="/DrBerg/FoodToEat/" title="Recommanding food">Recommanding food</a><time datetime="2024-10-13T18:11:53.000Z" title="Created 2024-10-14 03:11:53">2024-10-14</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
             <i class="fas fa-folder-open"></i>
             <span>Categories</span>
             <a class="card-more-btn" href="/categories/" title="View More">
     <i class="fas fa-angle-right"></i></a>
             </div>
             <ul class="card-category-list" id="aside-cat-list">
-            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/games/"><span class="card-category-list-name">Games</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/health/"><span class="card-category-list-name">Health</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/mathcore/"><span class="card-category-list-name">MathCore</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/music/"><span class="card-category-list-name">Music</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/programming/"><span class="card-category-list-name">Programming</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/signal-processing/"><span class="card-category-list-name">Signal Processing</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/tools/"><span class="card-category-list-name">Tools</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/university/"><span class="card-category-list-name">University</span><span class="card-category-list-count">2</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/%E3%82%AD%E3%83%A3%E3%83%A9%E4%BD%9C%E3%82%8A/" style="font-size: 1.1em; color: #999">キャラ作り</a> <a href="/tags/thinking/" style="font-size: 1.1em; color: #999">Thinking</a> <a href="/tags/qrcode/" style="font-size: 1.1em; color: #999">QRcode</a> <a href="/tags/dentalhealth/" style="font-size: 1.1em; color: #999">DentalHealth</a> <a href="/tags/%E6%BA%AB%E5%B8%B6%E7%B6%AD/" style="font-size: 1.37em; color: #99a4b2">溫帶維</a> <a href="/tags/testing/" style="font-size: 1.1em; color: #999">Testing</a> <a href="/tags/live2d/" style="font-size: 1.1em; color: #999">Live2D</a> <a href="/tags/playwright/" style="font-size: 1.1em; color: #999">playwright</a> <a href="/tags/react/" style="font-size: 1.23em; color: #999ea6">React</a> <a href="/tags/reverse1999/" style="font-size: 1.1em; color: #999">Reverse1999</a> <a href="/tags/git/" style="font-size: 1.1em; color: #999">git</a> <a href="/tags/force/" style="font-size: 1.1em; color: #999">Force</a> <a href="/tags/python/" style="font-size: 1.1em; color: #999">python</a> <a href="/tags/drberg/" style="font-size: 1.37em; color: #99a4b2">DrBerg</a> <a href="/tags/physics/" style="font-size: 1.1em; color: #999">Physics</a> <a href="/tags/flight/" style="font-size: 1.1em; color: #999">flight</a> <a href="/tags/eat/" style="font-size: 1.23em; color: #999ea6">Eat</a> <a href="/tags/math/" style="font-size: 1.1em; color: #999">Math</a> <a href="/tags/googlespreadsheet/" style="font-size: 1.1em; color: #999">GoogleSpreadSheet</a> <a href="/tags/typescript/" style="font-size: 1.23em; color: #999ea6">Typescript</a> <a href="/tags/learning/" style="font-size: 1.1em; color: #999">Learning</a> <a href="/tags/gametheme/" style="font-size: 1.1em; color: #999">GameTheme</a> <a href="/tags/github-page/" style="font-size: 1.1em; color: #999">github-page</a> <a href="/tags/lyrics/" style="font-size: 1.1em; color: #999">Lyrics</a> <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="font-size: 1.1em; color: #999">日本語</a> <a href="/tags/%E3%83%98%E3%83%96%E3%83%90%E3%83%B3/" style="font-size: 1.5em; color: #99a9bf">ヘブバン</a> <a href="/tags/portal/" style="font-size: 1.1em; color: #999">Portal</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/11/"><span class="card-archive-list-date">November 2024</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/10/"><span class="card-archive-list-date">October 2024</span><span class="card-archive-list-count">9</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/09/"><span class="card-archive-list-date">September 2024</span><span class="card-archive-list-count">21</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">32</div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-11-25T17:03:58.654Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Psychic Pink</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div></div></body></html>
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/mathcore/"><span class="card-category-list-name">MathCore</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/traffic/"><span class="card-category-list-name">Traffic</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/animation/"><span class="card-category-list-name">animation</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/games/"><span class="card-category-list-name">games</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/health/"><span class="card-category-list-name">health</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/music/"><span class="card-category-list-name">music</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/programming/"><span class="card-category-list-name">programming</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/secondary-school/"><span class="card-category-list-name">secondary-school</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="font-size: 1.1em; color: #999">日本語</a> <a href="/tags/%E3%83%98%E3%83%96%E3%83%90%E3%83%B3/" style="font-size: 1.5em; color: #99a9bf">ヘブバン</a> <a href="/tags/qrcode/" style="font-size: 1.1em; color: #999">QRcode</a> <a href="/tags/%E6%BA%AB%E5%B8%B6%E7%B6%AD/" style="font-size: 1.37em; color: #99a4b2">溫帶維</a> <a href="/tags/math/" style="font-size: 1.1em; color: #999">Math</a> <a href="/tags/testing/" style="font-size: 1.1em; color: #999">Testing</a> <a href="/tags/python/" style="font-size: 1.1em; color: #999">python</a> <a href="/tags/music/" style="font-size: 1.1em; color: #999">music</a> <a href="/tags/github-page/" style="font-size: 1.1em; color: #999">github-page</a> <a href="/tags/typescript/" style="font-size: 1.23em; color: #999ea6">Typescript</a> <a href="/tags/playwright/" style="font-size: 1.1em; color: #999">playwright</a> <a href="/tags/%E3%82%AD%E3%83%A3%E3%83%A9%E4%BD%9C%E3%82%8A/" style="font-size: 1.1em; color: #999">キャラ作り</a> <a href="/tags/eat/" style="font-size: 1.23em; color: #999ea6">Eat</a> <a href="/tags/thinking/" style="font-size: 1.1em; color: #999">Thinking</a> <a href="/tags/react/" style="font-size: 1.23em; color: #999ea6">React</a> <a href="/tags/googlespreadsheet/" style="font-size: 1.1em; color: #999">GoogleSpreadSheet</a> <a href="/tags/force/" style="font-size: 1.1em; color: #999">Force</a> <a href="/tags/lyrics/" style="font-size: 1.1em; color: #999">Lyrics</a> <a href="/tags/git/" style="font-size: 1.1em; color: #999">git</a> <a href="/tags/portal/" style="font-size: 1.1em; color: #999">Portal</a> <a href="/tags/live2d/" style="font-size: 1.1em; color: #999">Live2D</a> <a href="/tags/physics/" style="font-size: 1.1em; color: #999">Physics</a> <a href="/tags/flight/" style="font-size: 1.1em; color: #999">flight</a> <a href="/tags/reverse1999/" style="font-size: 1.1em; color: #999">Reverse1999</a> <a href="/tags/dentalhealth/" style="font-size: 1.1em; color: #999">DentalHealth</a> <a href="/tags/gametheme/" style="font-size: 1.1em; color: #999">GameTheme</a> <a href="/tags/drberg/" style="font-size: 1.37em; color: #99a4b2">DrBerg</a> <a href="/tags/learning/" style="font-size: 1.1em; color: #999">Learning</a> <a href="/tags/mtr/" style="font-size: 1.23em; color: #999ea6">MTR</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/11/"><span class="card-archive-list-date">November 2024</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/10/"><span class="card-archive-list-date">October 2024</span><span class="card-archive-list-count">9</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/09/"><span class="card-archive-list-date">September 2024</span><span class="card-archive-list-count">23</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">34</div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-11-26T15:46:59.780Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Psychic Pink</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div></div></body></html>
