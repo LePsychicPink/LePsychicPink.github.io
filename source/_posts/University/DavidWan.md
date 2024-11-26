@@ -2,7 +2,7 @@
 title: 溫帶維的理解
 date: 2024-09-23 18:58:53
 tags: 溫帶維
-categories: University
+categories: university
 ---
 
 [Lecture1](https://www.youtube.com/watch?v=xYE4sx0dXdU&)

@@ -4,7 +4,7 @@ date: 2024-10-08 22:57:36
 tags:
   - ヘブバン
   - Lyrics
-categories: Music
+categories: music
 ---
 
 ## ヘブバン

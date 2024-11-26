@@ -2,7 +2,7 @@
 title: Typescript
 date: 2024-11-25 04:26:41
 tags: Typescript
-categories: Programming
+categories: programming
 
 ---
 

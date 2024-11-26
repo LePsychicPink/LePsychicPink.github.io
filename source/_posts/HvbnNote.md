@@ -2,7 +2,7 @@
 title: ヘブバン能力値
 date: 2024-09-06 19:54:26
 tags: ヘブバン
-categories: Games
+categories: games
 top_img: img/hisameTop.png
 ---
 
