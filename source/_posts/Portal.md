@@ -2,7 +2,7 @@
 title: UsefulPortal
 date: 2024-09-23 18:58:53
 tags: Portal
-categories: tools
+categories: Tools
 ---
 
 ### AI
@@ -26,6 +26,6 @@ categories: tools
 
 ### Planning
 
-| Tool names        | url                                                             | Remark                                       |
-| ----------------- | --------------------------------------------------------------- | -------------------------------------------- |
+| Tool names        | url                                                                                              | Remark                                       |
+| ----------------- | ------------------------------------------------------------------------------------------------ | -------------------------------------------- |
 | Holidays Calendar | [https://holidays-calendar.net](https://holidays-calendar.net/2025/calendar/japan_calendar.html) | Able to see HK + JP holiday at the same time |

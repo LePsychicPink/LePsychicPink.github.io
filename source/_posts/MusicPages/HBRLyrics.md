@@ -4,7 +4,7 @@ date: 2024-10-08 22:57:36
 tags:
   - ヘブバン
   - Lyrics
-categories: music
+categories: Music
 ---
 
 ## ヘブバン
@@ -20,7 +20,7 @@ categories: music
 | ありふれた Battle Song ～いつも戦闘は面倒だ～ | She is Legend                      | 三章               | [Link](#ありふれた-battle-song-いつも戦闘は面倒だ) |
 | 贅沢な感情                                    | XAI                                | 四章               | [Link](#贅沢な感情)                                |
 | 死にゆく季節の君へ                            | やなぎなぎ                         | 四章               | [Link](#死にゆく季節の君へ)                        |
-| Sailing Ship                                  |                          |      |
+| Sailing Ship                                  |                                    |                    |
 | Seabird Song                                  | 佐々木恵梨                         | うみとら冒険譚     |
 
 ### Before I Rise
