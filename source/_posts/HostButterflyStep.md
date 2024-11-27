@@ -2,7 +2,6 @@
 title: How to build a butterfly blog in Github Pages
 date: 2024-09-03 21:06:52
 tags: github-page
-categories: web-developping
 top_img: img/hisameTop.png
 cover: img/hisameCover.png
 ---

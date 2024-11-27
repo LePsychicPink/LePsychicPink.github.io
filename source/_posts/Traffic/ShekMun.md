@@ -1,8 +1,7 @@
 ---
 title: 石門
 date: 2024-09-04 00:00:34
-tags: MTR
-categories: Traffic
+categories: traffic
 ---
 
 ## MTR

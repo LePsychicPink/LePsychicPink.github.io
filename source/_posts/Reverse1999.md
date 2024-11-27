@@ -2,7 +2,7 @@
 title: Reverse1999
 date: 2024-09-27 16:54:13
 tags: Reverse1999
-categories: Games
+categories: game
 ---
 
 [GameWith](https://gamewith.jp/reverse1999/)

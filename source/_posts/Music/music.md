@@ -1,8 +1,7 @@
 ---
-title: Music
+title: 音樂
 date: 2024-10-08 22:57:36
-tags: music
-categories: Music
+categories: song
 ---
 
 ### ヘブバン

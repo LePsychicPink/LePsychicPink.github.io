@@ -4,7 +4,7 @@ date: 2024-10-14 03:11:53
 tags:
   - DentalHealth
   - DrBerg
-categories: Health
+categories: healthy
 ---
 
 [Source](!https://www.youtube.com/watch?v=yO1dHlbIry0)

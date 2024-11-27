@@ -1,8 +1,7 @@
 ---
 title: UsefulPortal
-date: 2024-09-23 18:58:53
 tags: Portal
-categories: Tools
+categories: tool
 ---
 
 ### AI
