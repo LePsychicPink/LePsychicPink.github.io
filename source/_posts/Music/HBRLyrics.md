@@ -21,6 +21,7 @@ categories: music
 | 贅沢な感情                                    | XAI                                | 四章               | [Link](#贅沢な感情)                                |
 | 死にゆく季節の君へ                            | やなぎなぎ                         | 四章               | [Link](#死にゆく季節の君へ)                        |
 | Sailing Ship                                  |                          |      |
+|さよならの速度|
 | Seabird Song                                  | 佐々木恵梨                         | うみとら冒険譚     |
 
 ### Before I Rise
