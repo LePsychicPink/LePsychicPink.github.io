@@ -22,6 +22,14 @@ npm init playwright@latest
 npx playwright test --ui
 ```
 
+### Run test
+
+npx playwright test `filename`.spec.ts --config=`config file name`.config.ts --workers=4 --retries=3 --project="mschromium" --trace on -g "(?=.\*zh_CN)" --headed
+
+```Powershell
+npx playwright test merchant-directory.spec.ts --config=playwright.monocart.config.ts --workers=4 --retries=3 --project="mschromium" --trace on -g "(?=.*zh_CN)" --headed
+```
+
 ## Basic Syntax
 
 test Describer - group tests
@@ -49,7 +57,7 @@ test.describe("GroupName", () => {
 | page.getByAltText()     | alt text                           | await page.getByAltText('AltText')                 |
 | page.getByTitle()       | title                              | await page.getByTitle('Title')                     |
 | page.getByTestId()      | test id                            | await page.getByTestId('TestId')                   |
-| .nth(index)             | get the i-th element under locator | await page.locator('.className').nth(1)            |
+| locator.nth(index)      | get the i-th element under locator | await page.locator('.className').nth(1)            |
 
 ### locator iteration
 
@@ -65,8 +73,9 @@ test.describe("GroupName", () => {
 ## [Fixture](https://www.youtube.com/watch?v=2O7dyz6XO2s)
 
 Create a custom `test` object which extend the original `test()` function from playwright
- - setup duplicated action
- - setup action after `use`
+
+- setup duplicated action
+- setup action after `use`
 
 ```
 const myTest = test.extend({
@@ -86,6 +95,7 @@ What it does is: 'setup' > the action > 'finished'
 
 For the predefined Fixture across multiple ts use,
 `setup.ts`
+
 ```
 const {test, expect} = require{"@playwright/test"}
 const {ac, pw} = process.env // take login details from .env
@@ -100,6 +110,7 @@ exports.test = test.extends({
 ```
 
 and import the custom test and expect from other ts
+
 ```
 const { test , expect } = require("./setup")
 ```
