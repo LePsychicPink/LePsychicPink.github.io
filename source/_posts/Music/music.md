@@ -73,6 +73,8 @@ Distortion
 | [Alive](https://www.youtube.com/watch?v=7jqVuqVQvvA)  | ReoNa              | Arknight         | S1 OP                                             |
 | [平行線](https://www.youtube.com/watch?v=kKOkybfh9bE) | さユり             | クズの本懐       | ED                                                |
 | ミカヅキ                                              | さユり             | 乱歩奇譚         | ED                                                |
+| フラッグを立てろ                                      | YUKI               | 3月のライオン   |
+| アンサー                                              | BUMP OF CHICKEN    | 3月のライオン   |
 
 ### Other song
 
@@ -108,3 +110,4 @@ Distortion
 | supercell     |                 |
 | 佐々木恵梨    | Gate of Steiner |
 | さユり        | 平行線          | RIP    |
+|BUMP OF CHICKEN|
