@@ -45,19 +45,22 @@ test.describe("GroupName", () => {
 });
 ```
 
-| Element Retriver        | Explaination                       | Example                                            |
-| ----------------------- | ---------------------------------- | -------------------------------------------------- |
-| page.locator()          | xPath                              | await page.locator('//div[@class="className"]')    |
-| page.locator()          | id                                 | await page.locator('#targetId')                    |
-| page.locator()          | class name                         | await page.locator('.className')                   |
-| page.getByRole()        | role                               | await page.getByRole('button', { name: 'Submit' }) |
-| page.getByText()        | text                               | await page.getByText('Text')                       |
-| page.getByLabel()       | label                              | await page.getByLabel('Label')                     |
-| page.getByPlaceholder() | placeholder                        | await page.getByPlaceholder('Placeholder')         |
-| page.getByAltText()     | alt text                           | await page.getByAltText('AltText')                 |
-| page.getByTitle()       | title                              | await page.getByTitle('Title')                     |
-| page.getByTestId()      | test id                            | await page.getByTestId('TestId')                   |
-| locator.nth(index)      | get the i-th element under locator | await page.locator('.className').nth(1)            |
+| Element Retriver        | Explaination                                                              | Example                                                                      |
+| ----------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| page.locator()          | [React locator](https://playwright.dev/docs/other-locators#react-locator) | await page.locator('\_react=ComponentName[enabled=true])                     |
+| page.locator()          | [xPath](https://playwright.dev/docs/other-locators#xpath-locator)         | await page.locator('//div[@class="className"]/div/a')                        |
+|                         |                                                                           | await page.locator('..div[@class="className"][position()=3]')                |
+|                         | xPath union                                                               | await page.locator('//span[contains(@class, 'keyword')] \| //div[@id='id']') |
+| page.locator()          | id                                                                        | await page.locator('#targetId')                                              |
+| page.locator()          | class name                                                                | await page.locator('.className > div > a')                                   |
+| page.getByRole()        | role                                                                      | await page.getByRole('button', { name: 'Submit' })                           |
+| page.getByText()        | text                                                                      | await page.getByText('Text')                                                 |
+| page.getByLabel()       | label                                                                     | await page.getByLabel('Label')                                               |
+| page.getByPlaceholder() | placeholder                                                               | await page.getByPlaceholder('Placeholder')                                   |
+| page.getByAltText()     | alt text                                                                  | await page.getByAltText('AltText')                                           |
+| page.getByTitle()       | title                                                                     | await page.getByTitle('Title')                                               |
+| page.getByTestId()      | test id                                                                   | await page.getByTestId('TestId')                                             |
+| locator.nth(index)      | get the i-th element under locator                                        | await page.locator('.className').nth(1)                                      |
 
 ### locator iteration
 
