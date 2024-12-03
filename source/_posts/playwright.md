@@ -73,6 +73,16 @@ test.describe("GroupName", () => {
   }
 ```
 
+### xPath Conditions
+
+| Conditions                             | Explaination              | Example                                                                      |
+| -------------------------------------- | ------------------------- | ---------------------------------------------------------------------------- |
+| Raw xPath                              | start by // or .. is same | await page.locator('..div[@class="className"]')                              |
+| followed by child                      |                           | await page.locator('//div[@class="className"]/div/a')                        |
+| only select the nth child of same type |                           | await page.locator('//div[@class="className"]/div[1]')                       |
+|                                        | xPath union               | await page.locator('//span[contains(@class, 'keyword')] \| //div[@id='id']') |
+| page.locator()                         | id                        | await page.locator('#targetId')                                              |
+
 ## [Fixture](https://www.youtube.com/watch?v=2O7dyz6XO2s)
 
 Create a custom `test` object which extend the original `test()` function from playwright
