@@ -9,20 +9,20 @@ categories: song
 
 ## ヘブバン
 
-| 歌                                            | 歌手                               | Remark             | Link                                               |
-| --------------------------------------------- | ---------------------------------- | ------------------ | -------------------------------------------------- |
-| Before I Rise                                 | やなぎなぎ　\(acoustic ver.: XAI\) | Opening            | [Link](#before-i-rise)                             |
-| Burn My Soul                                  | She is legend                      | 一章               | [Link](#burn-my-soul)                              |
-| Burn My Universe                              | やなぎなぎ                         |                    | [Link](#burn-my-universe)                          |
-| Indigo in Blue                                | やなぎなぎ                         |                    | [Link](#indigo-in-blue)                            |
-| Sad Creature                                  | やなぎなぎ                         | Death Slug phase 2 | [Link](#sad-creature)                              |
-| Dance! Dance! Dance!                          | She is Legend                      | 二章               | [Link](#dance-dance-dance)                         |
-| ありふれた Battle Song ～いつも戦闘は面倒だ～ | She is Legend                      | 三章               | [Link](#ありふれた-battle-song-いつも戦闘は面倒だ) |
-| 贅沢な感情                                    | XAI                                | 四章               | [Link](#贅沢な感情)                                |
-| 死にゆく季節の君へ                            | やなぎなぎ                         | 四章               | [Link](#死にゆく季節の君へ)                        |
-| Sailing Ship                                  |                                    |                    |
-| さよならの速度                                |
-| Seabird Song                                  | 佐々木恵梨                         | うみとら冒険譚     |
+| 歌                             | 歌手                           | Remark             | Link                                 |
+| ----------------------------- | ---------------------------- | ------------------ | ------------------------------------ |
+| Before I Rise                 | やなぎなぎ　\(acoustic ver.: XAI\) | Opening            | [Link](#before-i-rise)               |
+| Burn My Soul                  | She is legend                | 一章                 | [Link](#burn-my-soul)                |
+| Burn My Universe              | やなぎなぎ                        |                    | [Link](#burn-my-universe)            |
+| Indigo in Blue                | やなぎなぎ                        |                    | [Link](#indigo-in-blue)              |
+| Sad Creature                  | やなぎなぎ                        | Death Slug phase 2 | [Link](#sad-creature)                |
+| Dance! Dance! Dance!          | She is Legend                | 二章                 | [Link](#dance-dance-dance)           |
+| ありふれた Battle Song ～いつも戦闘は面倒だ～ | She is Legend                | 三章                 | [Link](#ありふれた-battle-song-いつも戦闘は面倒だ) |
+| 贅沢な感情                         | XAI                          | 四章                 | [Link](#贅沢な感情)                       |
+| 死にゆく季節の君へ                     | やなぎなぎ                        | 四章                 | [Link](#死にゆく季節の君へ)                   |
+| Sailing Ship                  | やなぎなぎ                        |                    |                                      |
+| さよならの速度                       | She is Legend                |                    |                                      |
+| Seabird Song                  | 佐々木恵梨                        | うみとら冒険譚            |                                      |
 
 ### Before I Rise
 

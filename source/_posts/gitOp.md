@@ -29,11 +29,35 @@ Staging → `git add {files}`
 
 Unstaging → `git restore --staged {files}`
 
-Cancel git reset `git reset 'HEAD@{1}'`
+Cancel git reset 
 
+### Reset
+```
+git reset 'HEAD@{1}
+```
+or
+```
+git reset {commitID}
+```
+reset the base to certain commit and keep your own working directory
+
+```
+git reset --hard {commitID}
+```
+force the working directory into the certain commit, changes will not be kept
 ### Remove a commit / force push old commit
 
 ```
 git reset --hard {commitID}
 git push --force
+```
+
+### When you hard reset and lost all your changes
+1. Find the lost commit id by
+```
+git reflog
+```
+2. hard reset to the commit
+```
+git reset --hard {lostCommitID}
 ```
