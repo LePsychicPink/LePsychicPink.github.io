@@ -81,6 +81,10 @@ test.describe("GroupName", () => {
 |                                        | xPath union               | await page.locator('//span[contains(@class, 'keyword')] \| //div[@id='id']') |
 | page.locator()                         | id                        | await page.locator('#targetId')                                              |
 
+### locator actions
+| Actions         | Explaination                                                                | Example                             |
+| --------------- | --------------------------------------------------------------------------- | ----------------------------------- |
+| .click(option?) | optional to specify position of element<br>x,y where 0,0 is top-left corner | await page.locator.click({x:1,y:1}) |
 ## [Fixture](https://www.youtube.com/watch?v=2O7dyz6XO2s)
 
 Create a custom `test` object which extend the original `test()` function from playwright

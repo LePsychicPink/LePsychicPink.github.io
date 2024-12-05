@@ -33,7 +33,7 @@ Cancel git reset
 
 ### Reset
 ```
-git reset 'HEAD@{1}
+git reset 'HEAD@{1}'
 ```
 or
 ```
