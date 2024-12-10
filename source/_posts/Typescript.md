@@ -12,11 +12,23 @@ categories: programming
 
 ``` Typescript
 interface NewInterface {
-    s : String;
+    s : string;
     n : number;
 }
 ```
+### type
+```
+type = newType = {
+	s : string;
+	n : number;
+}
+```
 
+## Array
+| property | usage                |
+| -------- | -------------------- |
+| pop      | get the last element |
+|          |                      |
 ## Opeartor
 
 ### ??

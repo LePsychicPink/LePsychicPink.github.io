@@ -31,6 +31,8 @@ Unstaging → `git restore --staged {files}`
 
 Cancel git reset 
 
+Stashing untracked file → `git stash --include-untracked`
+
 ### Reset
 ```
 git reset 'HEAD@{1}'

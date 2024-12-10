@@ -1,7 +1,9 @@
 ---
 title: Frequent Error for React
 date: 2024-09-14 01:27:25
-tags: React
+tags:
+  - React
+  - Typescript
 categories: programming
 ---
 
@@ -20,3 +22,4 @@ rm package-lock.json && npm i
 ```PowerShell
 npm install --save-dev the other package
 ```
+
