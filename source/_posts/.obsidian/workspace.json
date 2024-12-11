@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Typescript.md",
+                "file": "Music/HBRLyrics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Typescript"
+              "title": "HBRLyrics"
             }
           }
         ]
@@ -164,9 +164,10 @@
   },
   "active": "a75e63ef1b13a4fc",
   "lastOpenFiles": [
-    "gitOp.md",
     "playwright.md",
+    "Traffic/ShekMun.md",
     "Typescript.md",
+    "gitOp.md",
     "ReactFreqError.md",
     "ReactFreqError/error1.png",
     "Portal.md",
