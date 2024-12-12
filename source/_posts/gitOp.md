@@ -8,13 +8,14 @@ cover: img/hisameTop.png
 
 ### Branch
 
-| Operation                    | command                           |
-| ---------------------------- | --------------------------------- |
-| create new branch            | `git branch {branch name}`        |
-| check branch                 | `git branch`                      |
-| switch branch                | `git switch {branch name}`        |
-| delete branch                | `git branch -d {branch name}`     |
-| switch and create new branch | `git switch -c {new branch name}` |
+| Operation                    | command                            |
+| ---------------------------- | ---------------------------------- |
+| create new branch            | `git branch {branch name}`         |
+| check branch                 | `git branch`                       |
+| switch branch                | `git switch {branch name}`         |
+| delete branch                | `git branch -d {branch name}`      |
+| switch and create new branch | `git switch -c {new branch name}`  |
+| push branch to origin        | `git push -u origin {branch name}` |
 
 ### Commit
 

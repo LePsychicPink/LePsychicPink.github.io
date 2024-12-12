@@ -51,6 +51,7 @@ test.describe("GroupName", () => {
 | page.locator()          | [xPath](https://playwright.dev/docs/other-locators#xpath-locator)         | await page.locator('//div[@class="className"]')          |
 | page.locator()          | id                                                                        | await page.locator('#targetId')                          |
 | page.locator()          | class name                                                                | await page.locator('.className > div > a')               |
+| page.locator()          | css                                                                       | await page.locator('div:text("innerText")')              |
 | page.getByRole()        | role                                                                      | await page.getByRole('button', { name: 'Submit' })       |
 | page.getByText()        | text                                                                      | await page.getByText('Text')                             |
 | page.getByLabel()       | label                                                                     | await page.getByLabel('Label')                           |
@@ -73,13 +74,24 @@ test.describe("GroupName", () => {
 
 ### xPath Conditions
 
-| Conditions                             | Explaination              | Example                                                                      |
-| -------------------------------------- | ------------------------- | ---------------------------------------------------------------------------- |
-| Raw xPath                              | start by // or .. is same | await page.locator('..div[@class="className"]')                              |
-| followed by child                      |                           | await page.locator('//div[@class="className"]/div/a')                        |
-| only select the nth child of same type |                           | await page.locator('//div[@class="className"]/div[1]')                       |
-|                                        | xPath union               | await page.locator('//span[contains(@class, 'keyword')] \| //div[@id='id']') |
-| page.locator()                         | id                        | await page.locator('#targetId')                                              |
+| Conditions                             | Explaination              | Example                                                             |
+| -------------------------------------- | ------------------------- | ------------------------------------------------------------------- |
+| Raw xPath                              | start by // or .. is same | await page.locator('..div[@class="className"]')                     |
+| followed by child                      |                           | await page.locator('//div[@class="className"]/div/a')               |
+| only select the nth child of same type |                           | await page.locator('//div[@class="className"]/div[1]')              |
+| attribute cotains                      |                           | await page.locator('//span[contains(@class, 'keyword')]             |
+| xPath union                            |                           | await page.locator('//div(@class="className")] \| //div[@id='id']') |
+| page.locator()                         | id                        | await page.locator('#targetId')                                     |
+
+### CSS Conditions
+
+| Conditions    | Explaination                                   | Example                                                 |
+| ------------- | ---------------------------------------------- | ------------------------------------------------------- |
+| :has-text     | find childrens<br>contains<br>case-insensitive | await page.locator('div:has-text("innerText")')         |
+| :is-text      | find childrens<br>exact text<br>case-sensitive | await page.locator('div:is-text("innerText")')          |
+| :text         | exact text<br>case-insensitive                 | await page.locator('div:text("innerText")')             |
+| :text-matches | regex                                          | await page.locator('div:text-matches("reg?ex", "i")')   |
+| :nth-match    | nth match 1-based                              | await page.locator(':nth-match(:text("innerText"), 1)') |
 
 ### locator actions
 | Actions         | Explaination                                                                | Example                             |
