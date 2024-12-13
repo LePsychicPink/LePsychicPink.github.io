@@ -28,3 +28,9 @@ categories: tool
 | Tool names        | url                                                                                              | Remark                                       |
 | ----------------- | ------------------------------------------------------------------------------------------------ | -------------------------------------------- |
 | Holidays Calendar | [https://holidays-calendar.net](https://holidays-calendar.net/2025/calendar/japan_calendar.html) | Able to see HK + JP holiday at the same time |
+
+### Other
+
+| Tool names        | url                                                                                              | Remark                                       |
+| ----------------- | ------------------------------------------------------------------------------------------------ | -------------------------------------------- |
+| erynith |https://erynith.github.io/movie-web-instances/ | animes |
