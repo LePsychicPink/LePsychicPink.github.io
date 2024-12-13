@@ -10,3 +10,4 @@ public/
 .vercel
 themes/*
 .obsidian/*
+source/_posts/.obsidian/*
