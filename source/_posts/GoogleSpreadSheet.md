@@ -6,8 +6,10 @@ categories: programming
 ---
 
 ### VLOOKUP
+```
+=VLOOKUP(search_key,range,index,is_sorted)
+```
 
-=VLOOKUP(search_key,range,iindex,is_sorted)
 
 - index > 0 (first column → 1)
 - is_sorted (DEFAULT TRUE)

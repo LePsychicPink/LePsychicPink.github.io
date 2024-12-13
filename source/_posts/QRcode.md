@@ -4,7 +4,7 @@ date: 2024-10-01 23:14:12
 categories: dsp
 ---
 
-[Reference](https://www.youtube.com/watch?v=w5ebcowAJD8){:target="\_blank"}
+[Reference](https://www.youtube.com/watch?v=w5ebcowAJD8)
 
 ### Quiet Zone
 
