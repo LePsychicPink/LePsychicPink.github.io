@@ -1,28 +1,63 @@
 ---
-title: HKExpress優惠記錄
+title: Japan trip guide
 date: 2024-09-28 15:53:46
-tags: flight
+tags: trip
 categories: travel
 ---
 
-HKExpress 優惠記錄
+## Preparation
 
-| 預訂日期                        | 旅遊日期                                 | 備註                                 |
-| ------------------------------- | ---------------------------------------- | ------------------------------------ |
-| 2024 年 9 月 26 日              | 2024 年 10 月 2 日至 2025 年 3 月 29 日  | 台北、台中、高雄                     |
-| 2024 年 9 月 24 日              | 2024 年 10 月 15 日至 2025 年 3 月 29 日 | 東京、仙台                           |
-| 2024 年 9 月 18 日              | 2024 年 9 月 22 日至 2025 年 3 月 29 日  | 大阪及名古屋                         |
-| 2024 年 9 月 16 日              | 2024 年 9 月 23 日至 22025 年 3 月 29 日 | 首爾、釜山和濟洲                     |
-| 2024 年 9 月 15 日              | 2024 年 9 月 19 日至 22025 年 3 月 28 日 | 高松、廣島                           |
-| 2024 年 9 月 12 日              | 2024 年 9 月 18 日至 22025 年 3 月 29 日 | 台北、台中或高雄                     |
-| 2024 年 8 月 31 日              | 2024 年 11 月 1 日至 2025 年 3 月 29 日  | 廣島                                 |
-| 2024 年 8 月 29 日              | 2024 年 9 月 1 日至 10 月 31 日          | 福岡、名古屋、沖繩                   |
-| 2024 年 8 月 27 日              | 2024 年 9 月 1 日至 10 月 31 日          | 大阪及高松                           |
-| 2024 年 8 月 25 日              | 2024 年 9 月 1 日至 10 月 31 日          | 韓國                                 |
-| 2024 年 8 月 13 日              | 2024 年 8 月 20 日至 11 月 30 日         | 韓國                                 |
-| 2024 年 8 月 10 日              | 2024 年 8 月 30 日至 2025 年 2 月 28 日  | 沖繩                                 |
-| 2024 年 7 月 30 日              | 2024 年 8 月 20 日至 12 月 10 日         | 台北、台中同高雄                     |
-| 2024 年 7 月 19 日至 7 月 21 日 | 2024 年 8 月 20 日至 10 月 26 日         | 東京、大阪、福岡、名古屋、高松、沖繩 |
-| 2024 年 6 月 27 日              | 2024 年 8 月 25 日至 2025 年 3 月 14 日  | 東京（羽田）                         |
-| 2024 年 5 月 9 日               | 2024 年 5 月 20 日至 2025 年 3 月 22 日  | 東京（成田）                         |
-| 2024 年 2 月 13 日              | 2024 年 2 月 26 日至 4 月 30 日          | 東京（成田／羽田）、大阪             |
+1. Water Bottle
+
+- Used to get water in airport
+- Container for drinks if share a large volume drinks
+
+2. Transformers, 拖版 and wires
+3. 頸枕
+
+- sleep when in flight (especially morning flight)
+
+4. Passport and identifier (hand carry)
+5. 指甲鉗
+6. Entertainer
+
+- wired earphone
+- books
+- anime in pc / ipad
+
+7. 散銀包 for coins
+8. (Immigration Form)[https://www.vjw.digital.go.jp/main/#/vjwplo001]
+
+## Boarding
+
+### NRT
+
+#### Option 1: Skyaccess
+
+#### Option 2: Skyliner
+
+Price: 2580 yen
+Last record: 09:24 (from NRT) --> 1031 (to 浅草橋)
+
+07:34 arrived 09:00 Able to leave airport 09:24 Skyliner departure 1031 arrived 浅草橋
+
+### HND
+
+## Time estimation
+
+| Section                          | Variations | Time                         |
+| -------------------------------- | ---------- | ---------------------------- |
+| Departure from home              | Taxi       |                              |
+|                                  | Bus        |                              |
+| From check-in to the gate        |            |                              |
+| Plane Departure to arrival       |            | 4 hour + 1 hour delay buffer |
+| arrival to ready to leave        | NRT        | 90 mins                      |
+|                                  | HND        |                              |
+| leave airport to Tokyo city      | skyliner   | 40mins                       |
+|                                  | Skyaccess  |                              |
+| Return to airport                | NRT        | 90mins                       |
+|                                  | HND        |                              |
+| From check-in to the gate        |            |                              |
+| Return departure to arrival      |            |                              |
+| Arrival to out of forbidden zone |            |                              |
+| Airport to Home                  |            |                              |
