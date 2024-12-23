@@ -1,6 +1,5 @@
 ---
 title: ヘブバン歌詞
-date: 2024-10-08 22:57:36
 tags:
   - ヘブバン
   - Lyrics
@@ -9,24 +8,46 @@ categories: song
 
 ## ヘブバン
 
-| 歌                                  | 歌手                              | Remark             | Link                                 |
-| ---------------------------------- | ------------------------------- | ------------------ | ------------------------------------ |
-| Before I Rise                      | やなぎなぎ<br>\(acoustic ver.: XAI\) | Opening            | [Link](#before-i-rise)               |
-| Burn My Soul                       | She is legend                   | 一章                 | [Link](#burn-my-soul)                |
-| Burn My Universe                   | やなぎなぎ                           |                    | [Link](#burn-my-universe)            |
-| Indigo in Blue                     | やなぎなぎ                           |                    | [Link](#indigo-in-blue)              |
-| Sad Creature                       | やなぎなぎ                           | Death Slug phase 2 | [Link](#sad-creature)                |
-| Dance! Dance! Dance!               | She is Legend                   | 二章                 | [Link](#dance-dance-dance)           |
-| ありふれた Battle Song <br> ～いつも戦闘は面倒だ～ | She is Legend                   | 三章                 | [Link](#ありふれた-battle-song-いつも戦闘は面倒だ) |
-| 贅沢な感情                              | XAI                             | 四章                 | [Link](#贅沢な感情)                       |
-| 死にゆく季節の君へ                          | やなぎなぎ                           | 四章                 | [Link](#死にゆく季節の君へ)                   |
-| Sailing Ship                       | やなぎなぎ                           |                    |                                      |
-| さよならの速度                            | She is Legend                   |                    |                                      |
-| Seabird Song                       | 佐々木恵梨                           | うみとら冒険譚            |                                      |
-| Dear R. Heinlein                   | She is Legend                   | あんまりです めぐみさん！      |                                      |
-|                                    |                                 |                    |                                      |
-|                                    |                                 |                    |                                      |
+| 歌                                  | 歌手                              | Remark             | Link                              |
+| ---------------------------------- | ------------------------------- | ------------------ | --------------------------------- |
+| Before I Rise                      | やなぎなぎ<br>\(acoustic ver.: XAI\) | Opening            | [Link](#Before%20I%20Rise)        |
+| Burn My Soul                       | She is legend                   | 一章                 | [Link](#Burn%20My%20Soul)         |
+| Burn My Universe                   | やなぎなぎ                           |                    | [Link](#Burn%20My%20Universe)     |
+| Indigo in Blue                     | やなぎなぎ                           |                    | [Link](#Indigo%20in%20Blue)       |
+| Sad Creature                       | やなぎなぎ                           | Death Slug phase 2 | [Link](#Sad%20Creature)           |
+| Dance! Dance! Dance!               | She is Legend                   | 二章                 | [Link](#Dance!%20Dance!%20Dance!) |
+| ありふれた Battle Song <br> ～いつも戦闘は面倒だ～ | She is Legend                   | 三章                 |                                   |
+| 夏気球                                |                                 | 断章I                |                                   |
+| 贅沢な感情                              | XAI                             | 四章前編               | [Link](#贅沢な感情)                    |
+| 起死廻生                               | She is Legend                   | 四章前編               |                                   |
+| 死にゆく季節の君へ                          | やなぎなぎ                           | 四章後編               | [Link](#死にゆく季節の君へ)                |
+| シヴァ                                | やなぎなぎ                           | 四章後編               |                                   |
+| 死にゆく季節でぼくは                         | She is Legend                   | 断章II               |                                   |
+| 陽のさす向こうへ                           |                                 | 五章前編               |                                   |
+| World We Changed                   | She is Legend                   | 五章前編               |                                   |
+| Bougainvillea                      | やなぎなぎ                           | 五章前編               |                                   |
+| ワルキューレの叙事詩                         |                                 | 五章前編               |                                   |
+| くそ暑い日の誓い                           |                                 | 五章前編               |                                   |
+| ディベートソルジャー                         |                                 | 五章前編               |                                   |
+| Welcome to the Front Line!         |                                 | 五章前編               |                                   |
 
+## イベント
+
+| 歌                          | 歌手            | Remark                            | Link |
+| -------------------------- | ------------- | --------------------------------- | ---- |
+| さよならの速度                    | She is Legend | きみはこの夏のFairy、<br>ぼくはその姿を瞳の奥にRec.  |      |
+| How's everything           |               | 緋に染まる袖時雨                          |      |
+| Long Long Spell            |               | Letters on The Back               |      |
+|                            |               | 私立セラフィム学園 ~<br>蒼井、アイドルになります！~     |      |
+| Sailing Ship (Broken Ver.) |               | 怪人ノートと銀の時計                        |      |
+| 春眠旅団                       | She is Legend | 28メートルの永遠                         |      |
+| 闇夜のKomachi Vampire         | She is Legend | アイリーン・レドメインの事件簿 <br>－名探偵と森の魔女－    |      |
+| ガラス越しのスペクタクル               | She is Legend | Silhouette of Summer Light Square |      |
+| Dear R. Heinlein           | She is Legend | あんまりです めぐみさん！                     |      |
+| ヤになって閉ざしたハート               | She is Legend | BAD GIRLS DESTRUCTION             |      |
+|                            |               | 心優しき死神より                          |      |
+| Come on baby               |               | 丸い幸せに祈りを込めて                       |      |
+| Seabird Song               | 佐々木恵梨         | うみとら冒険譚                           |      |
 ### Before I Rise
 
 <pre>
@@ -84,7 +105,7 @@ categories: song
 どうか神様　　　　　　　　　　　　　　　　　求求你神明大人
 </pre>
 
-[Back to top](#table)
+[Back to top](#ヘブバン)
 
 ### Burn My Soul
 
@@ -144,7 +165,7 @@ Ah, it's her wish quest for me undying
 いつか神話に祝福をあげる　　　　　　　　　　總有一天要向這神話獻上祝福
 </pre>
 
-[Back to top](#table)
+[Back to top](#ヘブバン)
 
 ### Burn My Universe
 
@@ -204,7 +225,7 @@ Ah, it's her wish quest for me undying
 いつか神話に祝福あげる　　　　　　　　　　　總有一天要向這神話獻上祝福
 </pre>
 
-[Back to top](#table)
+[Back to top](#ヘブバン)
 
 ### Indigo in Blue
 
@@ -246,7 +267,7 @@ And why?
 君すらも嘘　　　　　　　　　　　　　　　　　連你也是一個謊言
 </pre>
 
-[Back to top](#table)
+[Back to top](#ヘブバン)
 
 ### Sad Creature
 
@@ -294,7 +315,7 @@ Ah
 なんてね　　　　　　　　　　　　　　　　　　就是這樣呢
 </pre>
 
-[Back to top](#table)
+[Back to top](#ヘブバン)
 
 ### Dance! Dance! Dance!
 
@@ -353,9 +374,9 @@ This is my dying cry!
 This is me at last!
 </pre>
 
-[Back to top](#table)
+[Back to top](#ヘブバン)
 
-### ありふれた Battle Song ～いつも戦闘は面倒だ～
+### ありふれたBattle Song～いつも戦闘は面倒だ～
 
 <pre>
 Ready Come or Die!
@@ -422,7 +443,7 @@ Ready Come, Break Time！
 
 </pre>
 
-[Back to top](#table)
+[Back to top](#ヘブバン)
 
 ### 贅沢な感情
 
@@ -457,7 +478,7 @@ don’t be scared
 新しい朝に目覚めなきゃ分かってる　　　　　　也要醒來面向對新的一天　我是明白
 </pre>
 
-[Back to top](#table)
+[Back to top](#ヘブバン)
 
 ### 死にゆく季節の君へ
 

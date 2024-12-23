@@ -1,7 +1,7 @@
 ---
 title: 日本語単語
-date: 2024-09-18 00:09:28
-tags: 日本語
+tags:
+  - 日本語
 categories: language
 ---
 

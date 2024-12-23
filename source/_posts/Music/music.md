@@ -1,51 +1,61 @@
 ---
 title: 音樂
-date: 2024-10-08 22:57:36
 categories: song
 ---
-
 ### ヘブバン
 
-| 歌名                                          | 歌手          | Remarkable Lyrics                                          |
-| --------------------------------------------- | ------------- | ---------------------------------------------------------- |
-| Before I Rise                                 | やなぎなぎ    |                                                            |
-| Burn My Soul                                  | She is legend |                                                            |
-| Burn My Universe                              | やなぎなぎ    |                                                            |
-| Indigo in Blue                                | やなぎなぎ    |                                                            |
-| Sad Creature                                  |               |                                                            |
-| きみの横顔                                    | やなぎなぎ    |
-| Dance! Dance! Dance!                          | やなぎなぎ    |
-| ありふれた Battle Song ～いつも戦闘は面倒だ～ | She is legend |
-| 贅沢な感情                                    |
-| 死にゆく季節の君へ                            | やなぎなぎ    |
-| Long Long Spell                               |               | ああこれすでに観たやつだ <br> けどやることないから観ちゃう |
-| Seabird Song                                  | 佐々木恵梨    |                                                            |
+| 歌名                                | 歌手            | Remarkable Lyrics               |
+| --------------------------------- | ------------- | ------------------------------- |
+| Before I Rise                     | やなぎなぎ         |                                 |
+| Burn My Soul                      | She is legend |                                 |
+| Burn My Universe                  | やなぎなぎ         |                                 |
+| Indigo in Blue                    | やなぎなぎ         |                                 |
+| Sad Creature                      |               |                                 |
+| きみの横顔                             | やなぎなぎ         |                                 |
+| Dance! Dance! Dance!              | やなぎなぎ         |                                 |
+| ありふれた Battle Song <br>～いつも戦闘は面倒だ～ | She is legend |                                 |
+| 贅沢な感情                             |               |                                 |
+| 死にゆく季節の君へ                         | やなぎなぎ         |                                 |
+| Long Long Spell                   |               | ああこれすでに観たやつだ <br>けどやることないから観ちゃう |
+| Dear R. Heinlein                  |               |                                 |
+| ヤになって閉ざしたハート                      | She is legend |                                 |
+| Seabird Song                      | 佐々木恵梨         |                                 |
+| Sailing Ship                      |               |                                 |
+| Bougainvillea                     |               |                                 |
+| ワルキューレの叙事詩                        | やなぎなぎ         |                                 |
+| くそ暑い日の誓い                          |               |                                 |
+| ディベートソルジャー                        |               |                                 |
+| Welcome to the Front Line!        |               |                                 |
 
 ### Milgram
 
-弱肉共食
-Umbilical
-事変上等
-After Pain
-Throw Down
+| Song       | Character | Trial |
+| ---------- | --------- | ----- |
+| 弱肉共食       |           | 1     |
+| Umbilical  |           |       |
+| 事変上等       |           |       |
+| After Pain |           |       |
+| Throw Down |           |       |
 
 ### 結束バンド
 
-青春コンプレックス
-ひとりぼっち東京
-Distortion
-ギターと孤独と蒼い惑星
-ラブソングが歌えない
-あのバンド
-カラカラ
-小さな海
-なにが悪い
-忘れてやらない
-星座になれたら
-フラッシュバッカー
-転がる岩、君に朝が降る
-[月並みに輝け](https://www.youtube.com/watch?v=anCp-VnUQtM)
-僕と三原色
+| Song                                                  |     |
+| ----------------------------------------------------- | --- |
+| 青春コンプレックス                                             |     |
+| ひとりぼっち東京                                              |     |
+| Distortion                                            |     |
+| ギターと孤独と蒼い惑星                                           |     |
+| ラブソングが歌えない                                            |     |
+| あのバンド                                                 |     |
+| カラカラ                                                  |     |
+| 小さな海                                                  |     |
+| なにが悪い                                                 |     |
+| 忘れてやらない                                               |     |
+| 星座になれたら                                               |     |
+| フラッシュバッカー                                             |     |
+| 転がる岩、君に朝が降る                                           |     |
+| [月並みに輝け](https://www.youtube.com/watch?v=anCp-VnUQtM) |     |
+| 僕と三原色                                                 |     |
 
 ### アニメソン
 

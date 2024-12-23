@@ -1,6 +1,5 @@
 ---
 title: Frequent Error for React
-date: 2024-09-14 01:27:25
 tags:
   - React
   - Typescript
