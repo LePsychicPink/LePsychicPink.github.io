@@ -4,7 +4,17 @@ date: 2024-09-23 18:58:53
 tags: GoogleSpreadSheet
 categories: programming
 ---
+## Hotkey
+| Key    |                  |
+| ------ | ---------------- |
+| Ctrl+U | Toggle underline |
+|        |                  |
 
+### Date functions
+| Function | input                  | Example          | usage                          |
+| -------- | ---------------------- | ---------------- | ------------------------------ |
+| DATE     | (YEAR,MONTH,DAY)       | =DATE(A1,B1,C1)  | return a date value by 3 value |
+| DAYS     | (End Date, Start Date) | =DAYS(End,Start) | return number of day between   |
 ### VLOOKUP
 ```
 =VLOOKUP(search_key,range,index,is_sorted)

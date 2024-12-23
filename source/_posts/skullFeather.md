@@ -1,7 +1,7 @@
 ---
 title: 異時層スカルフェザー
-date: 2024-10-26 13:43:29
-tags: ヘブバン
+tags:
+  - ヘブバン
 categories: game
 ---
 
