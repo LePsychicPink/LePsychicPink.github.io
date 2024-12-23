@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "narashino.md",
+                "file": "playwright.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "narashino"
+              "title": "playwright"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "games",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,8 +73,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -165,22 +164,25 @@
   },
   "active": "23881d486d8bfd9e",
   "lastOpenFiles": [
-    "naming.md",
+    "IdentifierConvention.md",
     "GameReference.md",
+    "gitOp.md",
+    "GoogleAppScript.md",
+    "GoogleSpreadSheet.md",
+    "kokorononaka.md",
+    "live2dTutor.md",
+    "naming.md",
+    "Portal.md",
     "ReactFreqError.md",
+    "seisha.md",
+    "Typescript.md",
+    "narashino.md",
     "Music/HBRLyrics.md",
     "Music/music.md",
-    "kokorononaka.md",
     "Japan.md",
     "HvbnNote.md",
     "HostButterflyStep.md",
-    "GoogleSpreadSheet.md",
-    "gitOp.md",
-    "Typescript.md",
     "University/Confucianism.md",
-    "GoogleAppScript.md",
-    "live2dTutor.md",
-    "seisha.md",
     "skullFeather.md",
     "stateManagement.md",
     "tailwind.md",
@@ -188,9 +190,6 @@
     "Before-I-Rise.md",
     "QRcode.md",
     "ToLearnList.md",
-    "flight.md",
-    "Traffic/TrafficPrice.md",
-    "Traffic/WongTaiSin.md",
     "ReactFreqError/error1.png"
   ]
 }

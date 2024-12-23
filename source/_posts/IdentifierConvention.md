@@ -1,7 +1,9 @@
 ---
-title: Naming Convention
+title: IdentifierConvention
 categories: programming
 ---
+
+[Reference](https://stackoverflow.com/questions/17326185/what-are-the-different-kinds-of-cases)
 ## CapitalCamelCase / PascalCase
 EveryFirstLetterOfWordIsCapital
 - Class
