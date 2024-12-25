@@ -164,6 +164,8 @@
   },
   "active": "23881d486d8bfd9e",
   "lastOpenFiles": [
+    "Portal.md",
+    "ToDoList.md",
     "playwright.md",
     "IdentifierConvention.md",
     "GameReference.md",
@@ -173,7 +175,6 @@
     "kokorononaka.md",
     "live2dTutor.md",
     "naming.md",
-    "Portal.md",
     "ReactFreqError.md",
     "seisha.md",
     "Typescript.md",
@@ -189,7 +190,6 @@
     "tailwind.md",
     "tango.md",
     "Before-I-Rise.md",
-    "QRcode.md",
     "ReactFreqError/error1.png"
   ]
 }

@@ -1,7 +1,9 @@
 ---
 title: UsefulPortal
-tags: Portal
+tags:
+  - Portal
 categories: tool
+date: 2025-12-31
 ---
 
 ### AI
