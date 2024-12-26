@@ -4,11 +4,11 @@ tags: DailyCheck
 date: 2026-1-1
 ---
 ## Short Term To-do
-- [ ] Buy Tissues
 - [ ] Put trash to carousel
 - [ ] Sell the old GPU and CPU
 ## Long Term To-do
-1. Eat 
+1. Buy a big backpack
+2. Eat 
 	-  Acqua pazza
 	- アヒージョ
-1. Cancel WeWa (2026-12-1)
+3. Cancel WeWa (2026-12-1)
