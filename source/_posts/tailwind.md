@@ -1,7 +1,7 @@
 ---
 title: Tailwind
-date: 2024-11-24 21:48:28
-tags: Tailwind
+tags:
+  - Tailwind
 categories: programming
 ---
 
