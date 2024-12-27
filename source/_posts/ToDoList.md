@@ -8,8 +8,9 @@ date: 2026-1-1
 - [ ] Sell the old GPU and CPU
 ## Long Term To-do
 1. Buy a big backpack
-2. Eat 
+2. Buy a portable size manual generator
+3. Eat 
 	-  Acqua pazza
 	- アヒージョ
 	- ノンホモ牛乳
-1. Cancel WeWa (2026-12-1)
+4. Cancel WeWa (2026-12-1)

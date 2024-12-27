@@ -4,28 +4,29 @@ categories: song
 ---
 ### ヘブバン
 
-| 歌名                                | 歌手            | Remarkable Lyrics               |
-| --------------------------------- | ------------- | ------------------------------- |
-| Before I Rise                     | やなぎなぎ         |                                 |
-| Burn My Soul                      | She is legend |                                 |
-| Burn My Universe                  | やなぎなぎ         |                                 |
-| Indigo in Blue                    | やなぎなぎ         |                                 |
-| Sad Creature                      |               |                                 |
-| きみの横顔                             | やなぎなぎ         |                                 |
-| Dance! Dance! Dance!              | やなぎなぎ         |                                 |
-| ありふれた Battle Song <br>～いつも戦闘は面倒だ～ | She is legend |                                 |
-| 贅沢な感情                             |               |                                 |
-| 死にゆく季節の君へ                         | やなぎなぎ         |                                 |
-| Long Long Spell                   |               | ああこれすでに観たやつだ <br>けどやることないから観ちゃう |
-| Dear R. Heinlein                  |               |                                 |
-| ヤになって閉ざしたハート                      | She is legend |                                 |
-| Seabird Song                      | 佐々木恵梨         |                                 |
-| Sailing Ship                      |               |                                 |
-| Bougainvillea                     |               |                                 |
-| ワルキューレの叙事詩                        | やなぎなぎ         |                                 |
-| くそ暑い日の誓い                          |               |                                 |
-| ディベートソルジャー                        |               |                                 |
-| Welcome to the Front Line!        |               |                                 |
+| 歌名                                      | 歌手            | Remarkable Lyrics               |
+| --------------------------------------- | ------------- | ------------------------------- |
+| Before I Rise                           | やなぎなぎ         |                                 |
+| Burn My Soul                            | She is legend |                                 |
+| Burn My Universe                        | やなぎなぎ         |                                 |
+| Indigo in Blue                          | やなぎなぎ         |                                 |
+| Sad Creature                            |               |                                 |
+| きみの横顔                                   | やなぎなぎ         |                                 |
+| Dance! Dance! Dance!                    | やなぎなぎ         |                                 |
+| ありふれた Battle Song <br>～いつも戦闘は面倒だ～       | She is legend |                                 |
+| 贅沢な感情                                   |               |                                 |
+| Thank you for playing～<br>あなたに出会えてよかった～ |               | 猫の世話もできないほど                     |
+| 死にゆく季節の君へ                               | やなぎなぎ         |                                 |
+| Long Long Spell                         |               | ああこれすでに観たやつだ <br>けどやることないから観ちゃう |
+| Dear R. Heinlein                        |               |                                 |
+| ヤになって閉ざしたハート                            | She is legend |                                 |
+| Seabird Song                            | 佐々木恵梨         |                                 |
+| Sailing Ship                            |               |                                 |
+| Bougainvillea                           |               |                                 |
+| ワルキューレの叙事詩                              | やなぎなぎ         |                                 |
+| くそ暑い日の誓い                                |               |                                 |
+| ディベートソルジャー                              |               |                                 |
+| Welcome to the Front Line!              | やなぎなぎ         | 鳴らせ~じゃかじゃん                      |
 
 ### Milgram
 

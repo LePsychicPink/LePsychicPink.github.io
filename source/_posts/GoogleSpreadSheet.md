@@ -9,7 +9,10 @@ categories: programming
 | ------ | ---------------- |
 | Ctrl+U | Toggle underline |
 |        |                  |
-
+### Visual
+| Function  | input              | Example | usage |
+| --------- | ------------------ | ------- | ----- |
+| SPARKLINE | (data, \[option\]) |         |       |
 ### Date functions
 | Function | input                  | Example          | usage                          |
 | -------- | ---------------------- | ---------------- | ------------------------------ |

@@ -15,29 +15,36 @@ categories: song
 | Burn My Universe                   | やなぎなぎ                           |                    | [Link](#Burn%20My%20Universe)     |
 | Indigo in Blue                     | やなぎなぎ                           |                    | [Link](#Indigo%20in%20Blue)       |
 | Sad Creature                       | やなぎなぎ                           | Death Slug phase 2 | [Link](#Sad%20Creature)           |
+| きみの横顔                              | やなぎなぎ                           |                    |                                   |
+| Everlasting Night                  | やなぎなぎ                           |                    |                                   |
+| 星の墓標                               |                                 |                    |                                   |
+| White Spell                        |                                 |                    |                                   |
 | Dance! Dance! Dance!               | She is Legend                   | 二章                 | [Link](#Dance!%20Dance!%20Dance!) |
 | ありふれた Battle Song <br> ～いつも戦闘は面倒だ～ | She is Legend                   | 三章                 |                                   |
 | 夏気球                                |                                 | 断章I                |                                   |
 | 贅沢な感情                              | XAI                             | 四章前編               | [Link](#贅沢な感情)                    |
 | 起死廻生                               | She is Legend                   | 四章前編               |                                   |
+| 幻想都市                               | やなぎなぎ                           | 四章後編               |                                   |
 | 死にゆく季節の君へ                          | やなぎなぎ                           | 四章後編               | [Link](#死にゆく季節の君へ)                |
 | シヴァ                                | やなぎなぎ                           | 四章後編               |                                   |
 | 死にゆく季節でぼくは                         | She is Legend                   | 断章II               |                                   |
-| 陽のさす向こうへ                           |                                 | 五章前編               |                                   |
+| 陽のさす向こうへ                           | XAI                             | 五章前編               |                                   |
 | World We Changed                   | She is Legend                   | 五章前編               |                                   |
 | Bougainvillea                      | やなぎなぎ                           | 五章前編               |                                   |
 | ワルキューレの叙事詩                         |                                 | 五章前編               |                                   |
 | くそ暑い日の誓い                           |                                 | 五章前編               |                                   |
 | ディベートソルジャー                         |                                 | 五章前編               |                                   |
-| Welcome to the Front Line!         |                                 | 五章前編               |                                   |
+| Welcome to the Front Line!         | やなぎなぎ                           | 五章前編               |                                   |
 
 ## イベント
 
 | 歌                          | 歌手            | Remark                            | Link                         |
 | -------------------------- | ------------- | --------------------------------- | ---------------------------- |
+| 放課後のメロディ                   | She is Legend | 君に読む憧れ                            |                              |
+| Autumn Howl                | She is Legend | 罪と罰と愛と                            |                              |
 | さよならの速度                    | She is Legend | きみはこの夏のFairy、<br>ぼくはその姿を瞳の奥にRec.  |                              |
-| How's everything           |               | 緋に染まる袖時雨                          |                              |
-| Long Long Spell            |               | Letters on The Back               | [Link](#Long%20Long%20Spell) |
+| How's everything           | She is Legend | 緋に染まる袖時雨                          |                              |
+| Long Long Spell            | She is Legend | Letters on The Back               | [Link](#Long%20Long%20Spell) |
 |                            |               | 私立セラフィム学園 ~<br>蒼井、アイドルになります！~     |                              |
 | Sailing Ship (Broken Ver.) |               | 怪人ノートと銀の時計                        |                              |
 | 春眠旅団                       | She is Legend | 28メートルの永遠                         |                              |
@@ -550,7 +557,7 @@ A creature no better than a bug!
 それを読んでるぼくがここに居て　　　　　　　　但是有在讀著這文章的我在
 お互い大変で　でもそれでもいいじゃん　　　　　大家都辛苦了　但這不也挺好　
 今誰がそばに居て　　　　　　　　　　　　　　　此時此刻有人在身邊
-この長い呪詛聞いて　　　　　　　　　　　　　　在聽著這冗長的咒罵
+この長い呪詛聞いて　　　　　　　　　　　　　　在聽著這冗長的咒文
 やれやれだと思っているんだろう？　　　　　　　然後在想「真的受不了」吧？
 
 遠い星は　　　　　　　　　　　　　　　　　　　遠方的繁星
@@ -587,7 +594,7 @@ A creature no better than a bug!
 それを読んでるぼくがここに居て　　　　　　　　但是有在讀著這文章的我在
 お互い大変で　でもそれでもいいじゃん　　　　　大家都辛苦了　但這不也挺好　
 今誰がそばに居て　　　　　　　　　　　　　　　此時此刻有人在身邊
-この長い呪詛聞いて　　　　　　　　　　　　　　在聽著這冗長的咒罵
+この長い呪詛聞いて　　　　　　　　　　　　　　在聽著這冗長的咒文
 やれやれだと思っているんだろう？　　　　　　　然後在想「真的受不了」吧？
 
 La la la la la la  
