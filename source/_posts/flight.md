@@ -8,8 +8,8 @@ categories: travel
 ## Preparation
 
 - [ ] Cloths (of course)
-- [ ] ToothBrush (of course)
-- [ ] Water Bottle
+- [ ] Tooth brush (of course)
+- [ ] Water bottle
 	- Used to get water in airport
 	- Container for drinks if share a large volume drinks
 - [ ] Transformers, 拖版 and wires
