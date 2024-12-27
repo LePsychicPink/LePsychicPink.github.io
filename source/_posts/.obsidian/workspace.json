@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Japan.md",
+                "file": "Music/HBRLyrics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Japan"
+              "title": "HBRLyrics"
             }
           }
         ]
@@ -164,18 +164,20 @@
   },
   "active": "23881d486d8bfd9e",
   "lastOpenFiles": [
-    "jpgourmet.md",
-    "Japan.md",
-    "live2dTutor.md",
+    "Music/music.md",
+    "GoogleSpreadSheet.md",
+    "HostButterflyStep.md",
     "flight.md",
     "GameReference.md",
+    "Japan.md",
     "ToDoList.md",
+    "jpgourmet.md",
+    "live2dTutor.md",
     "Portal.md",
     "playwright.md",
     "IdentifierConvention.md",
     "gitOp.md",
     "GoogleAppScript.md",
-    "GoogleSpreadSheet.md",
     "kokorononaka.md",
     "naming.md",
     "ReactFreqError.md",
@@ -183,9 +185,7 @@
     "Typescript.md",
     "narashino.md",
     "Music/HBRLyrics.md",
-    "Music/music.md",
     "HvbnNote.md",
-    "HostButterflyStep.md",
     "University/Confucianism.md",
     "skullFeather.md",
     "stateManagement.md",
