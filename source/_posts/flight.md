@@ -12,7 +12,7 @@ categories: travel
 - [ ] Water bottle
 	- Used to get water in airport
 	- Container for drinks if share a large volume drinks
-- [ ] Transformers, 拖版 and wires
+- [ ] Transformers, 拖板 and wires
 - [ ] 頸枕
 	- Sleep when in flight (especially early morning flight)
 - [ ] Passport and identifier (hand carry)
@@ -22,6 +22,7 @@ categories: travel
 	- Books
 	- Anime in pc / ipad
 - [ ] 散銀包 for coins
+- [ ] IC card
 - [ ] [Immigration Form](https://www.vjw.digital.go.jp/main/#/vjwplo001)
 
 ## Boarding
