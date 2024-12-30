@@ -22,6 +22,14 @@ categories: school
 王邦雄、岑溢成 - 中國哲學史
 錢穆 - 論語新解
 
+
+## 價值觀
+### X-Generation
+### Y-Generation
+80年代
+微波爐、錄影機 --> 不用等
+### Z-Generation
+
 ## 文化
 
 ### 香港文化

@@ -8,7 +8,14 @@ categories: programming
 | Key    |                  |
 | ------ | ---------------- |
 | Ctrl+U | Toggle underline |
-|        |                  |
+| Ctrl+B | Toggle bold      |
+### Functions
+| Function | Input  | Example                                     |                             |
+| -------- | ------ | ------------------------------------------- | --------------------------- |
+| INDIRECT | String | =SUM(INDIRECT(CONCATENATE("A",A2,":Z",A3))) | Turn String into cell range |
+| TO_TEXT  | Value  |                                             | Turn value to string        |
+|          |        |                                             |                             |
+
 ### Visual
 | Function  | input              | Example | usage |
 | --------- | ------------------ | ------- | ----- |
@@ -31,7 +38,7 @@ categories: programming
 
 ### FILTER
 
-=FILTER(range,condition1,[condition2, ...])
+=FILTER(range,condition1,\[condition2, ...\])
 
 ```
 =FILTER(B1:B50,C1=A1:B50)
