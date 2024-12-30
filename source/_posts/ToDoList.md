@@ -8,12 +8,10 @@ date: 2026-1-1
 - [ ] Check HKExpress 
 ## Short Term To-do
 - [ ] Put trash to carousel
-- [ ] Write a list of standard respond
 - [ ] Write a short intro
 - [ ] Sell the old GPU and CPU
 - [ ] Buy walkie talkie
 - [ ] Build a app for accounting + todo list reminder
-- [ ] Find out the bookmark string
 - [ ] reply Ray about availability
 - [ ] Handle PCC web before 1-2
 - [ ] get material from jp at 1-6
@@ -27,3 +25,16 @@ date: 2026-1-1
 	- アヒージョ
 	- ノンホモ牛乳
 5. Cancel WeWa (2026-12-1)
+
+## To-Learn
+
+| Item                    | Usage                         | Reference |
+| ----------------------- | ----------------------------- | --------- |
+| Google Apps Script      | Google SpreadSheet Encryption |           |
+| Machine Learning Models |                               |           |
+| Live2D Cubism           |                               |           |
+| Python in advance       |                               |           |
+| Panda                   |                               |           |
+| Numpy                   |                               |           |
+| WordPress               |                               |           |
+| Unreal Engine           |                               |           |
