@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Music/HBRLyrics.md",
+                "file": "Learning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HBRLyrics"
+              "title": "Learning"
             }
           }
         ]
@@ -164,13 +164,14 @@
   },
   "active": "23881d486d8bfd9e",
   "lastOpenFiles": [
+    "ToDoList.md",
+    "Music/HBRLyrics.md",
     "Music/music.md",
     "GoogleSpreadSheet.md",
     "HostButterflyStep.md",
     "flight.md",
     "GameReference.md",
     "Japan.md",
-    "ToDoList.md",
     "jpgourmet.md",
     "live2dTutor.md",
     "Portal.md",
@@ -184,7 +185,6 @@
     "seisha.md",
     "Typescript.md",
     "narashino.md",
-    "Music/HBRLyrics.md",
     "HvbnNote.md",
     "University/Confucianism.md",
     "skullFeather.md",

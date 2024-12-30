@@ -20,3 +20,4 @@ tags: Learning
 ## To-Do
 
 Check the [GoogleSpreadsheet](https://docs.google.com/spreadsheets/d/1HqYdcL1VBh9IAFbJQTiceuSw8OmERYOx0ifigz3si1I/edit?gid=1314221794#gid=1314221794) instead
+
