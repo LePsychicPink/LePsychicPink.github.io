@@ -4,6 +4,7 @@ tags:
   - BMTI
   - Response
 ---
+
 | Item |             |
 | ---- | ----------- |
 | MBTI | INFP / INTP |

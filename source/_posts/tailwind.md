@@ -94,12 +94,12 @@ example: `<div class="container sm">`
 ## Text
 
 ### text (font-size + line-height)
-| value | equals         |
-| ----- | -------------- |
-| text-xs     | font-size:  12px <br> line-height: 16px            |
-| text-sm    | font-size:  14px <br> line-height: 20px            |
-| text-base   | font-size:  16px <br> line-height: 24px            |
-| text-lg    | font-size:  18px <br> line-height: 28px            |
-| text-xl   | font-size:  20px <br> line-height: 28px            |
-| text-2xl     | font-size:  24px <br> line-height: 32px            |
-| text-3xl     | font-size:  30px <br> line-height: 36px            |
+| value     | equals                                 |
+| --------- | -------------------------------------- |
+| text-xs   | font-size:  12px <br>line-height: 16px |
+| text-sm   | font-size:  14px <br>line-height: 20px |
+| text-base | font-size:  16px <br>line-height: 24px |
+| text-lg   | font-size:  18px <br>line-height: 28px |
+| text-xl   | font-size:  20px <br>line-height: 28px |
+| text-2xl  | font-size:  24px <br>line-height: 32px |
+| text-3xl  | font-size:  30px <br>line-height: 36px |

@@ -10,12 +10,12 @@ date: 2025-12-31
 
 | Tool names    | url                      | Remark                                               |
 | ------------- | ------------------------ | ---------------------------------------------------- |
-| vercel v0     | https://v0.dev/chat      |                                                      |
+| vercel v0     | https://v0.dev/chat      | React front-end generation                           |
 | Claude        | https://claude.ai/       | not available in HK                                  |
 | Cursor        | https://www.cursor.com/  |                                                      |
 | GPTEngineer   | https://gptengineer.app/ |                                                      |
 | perplexity.ai | http://perplexity.ai     |                                                      |
-| devv.ai       | https://devv.ai          |
+| devv.ai       | https://devv.ai          |                                                      |
 | supabase      |                          |                                                      |
 | ElevenLab     | https://elevenlabs.io/   | AI text to speech service that support voice cloning |
 
@@ -33,6 +33,6 @@ date: 2025-12-31
 
 ### Other
 
-| Tool names        | url                                                                                              | Remark                                       |
-| ----------------- | ------------------------------------------------------------------------------------------------ | -------------------------------------------- |
-| erynith |https://erynith.github.io/movie-web-instances/ | animes |
+| Tool names | url                                            | Remark     |
+| ---------- | ---------------------------------------------- | ---------- |
+| erynith    | https://erynith.github.io/movie-web-instances/ | anime site |
