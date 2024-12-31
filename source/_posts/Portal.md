@@ -31,6 +31,14 @@ date: 2025-12-31
 | ----------------- | ------------------------------------------------------------------------------------------------ | -------------------------------------------- |
 | Holidays Calendar | [https://holidays-calendar.net](https://holidays-calendar.net/2025/calendar/japan_calendar.html) | Able to see HK + JP holiday at the same time |
 
+
+### Game
+
+| Game         | Site                                                                         |     |
+| ------------ | ---------------------------------------------------------------------------- | --- |
+| Reverse:1999 | [素材周回参考](https://reverse1999.wikiru.jp/?%E7%B4%A0%E6%9D%90%E5%91%A8%E5%9B%9) |     |
+| Reverse:1999 | [GameWith](https://gamewith.jp/reverse1999/)                                 |     |
+
 ### Other
 
 | Tool names | url                                            | Remark     |

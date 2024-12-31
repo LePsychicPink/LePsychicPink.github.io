@@ -10,16 +10,16 @@ categories: song
 
 | 歌                                  | 歌手                              | Remark             | Link                              |
 | ---------------------------------- | ------------------------------- | ------------------ | --------------------------------- |
-| Before I Rise                      | やなぎなぎ<br>\(acoustic ver.: XAI\) | Opening            | [Link](#Before%20I%20Rise)        |
-| Burn My Soul                       | She is legend                   | 一章                 | [Link](#Burn%20My%20Soul)         |
-| Burn My Universe                   | やなぎなぎ                           |                    | [Link](#Burn%20My%20Universe)     |
-| Indigo in Blue                     | やなぎなぎ                           |                    | [Link](#Indigo%20in%20Blue)       |
-| Sad Creature                       | やなぎなぎ                           | Death Slug phase 2 | [Link](#Sad%20Creature)           |
+| Before I Rise                      | やなぎなぎ<br>\(acoustic ver.: XAI\) | Opening            | [Link](#Before-I-Rise)            |
+| Burn My Soul                       | She is legend                   | 一章                 | [Link](#Burn-My-Soul)             |
+| Burn My Universe                   | やなぎなぎ                           |                    | [Link](#Burn-My-Universe)     |
+| Indigo in Blue                     | やなぎなぎ                           |                    | [Link](#Indigo-in-Blue)       |
+| Sad Creature                       | やなぎなぎ                           | Death Slug phase 2 | [Link](#Sad-Creature)           |
 | きみの横顔                              | やなぎなぎ                           |                    |                                   |
 | Everlasting Night                  | やなぎなぎ                           |                    |                                   |
 | 星の墓標                               |                                 |                    |                                   |
 | White Spell                        |                                 |                    |                                   |
-| Dance! Dance! Dance!               | She is Legend                   | 二章                 | [Link](#Dance!%20Dance!%20Dance!) |
+| Dance! Dance! Dance!               | She is Legend                   | 二章                 | [Link](#Dance!-Dance!-Dance!) |
 | ありふれた Battle Song <br> ～いつも戦闘は面倒だ～ | She is Legend                   | 三章                 |                                   |
 | 夏気球                                |                                 | 断章I                |                                   |
 | 贅沢な感情                              | XAI                             | 四章前編               | [Link](#贅沢な感情)                    |
@@ -38,23 +38,23 @@ categories: song
 
 ## イベント
 
-| 歌                          | 歌手            | Remark                            | Link                         |
-| -------------------------- | ------------- | --------------------------------- | ---------------------------- |
-| 放課後のメロディ                   | She is Legend | 君に読む憧れ                            |                              |
-| Autumn Howl                | She is Legend | 罪と罰と愛と                            |                              |
-| さよならの速度                    | She is Legend | きみはこの夏のFairy、<br>ぼくはその姿を瞳の奥にRec.  |                              |
-| How's everything           | She is Legend | 緋に染まる袖時雨                          |                              |
-| Long Long Spell            | She is Legend | Letters on The Back               | [Link](#Long%20Long%20Spell) |
-|                            |               | 私立セラフィム学園 ~<br>蒼井、アイドルになります！~     |                              |
-| Sailing Ship (Broken Ver.) |               | 怪人ノートと銀の時計                        |                              |
-| 春眠旅団                       | She is Legend | 28メートルの永遠                         |                              |
-| 闇夜のKomachi Vampire         | She is Legend | アイリーン・レドメインの事件簿 <br>－名探偵と森の魔女－    |                              |
-| ガラス越しのスペクタクル               | She is Legend | Silhouette of Summer Light Square |                              |
-| Dear R. Heinlein           | She is Legend | あんまりです めぐみさん！                     |                              |
-| ヤになって閉ざしたハート               | She is Legend | BAD GIRLS DESTRUCTION             |                              |
-|                            |               | 心優しき死神より                          |                              |
-| Come on baby               |               | 丸い幸せに祈りを込めて                       |                              |
-| Seabird Song               | 佐々木恵梨         | うみとら冒険譚                           |                              |
+| 歌                          | 歌手            | Remark                            | Link                     |
+| -------------------------- | ------------- | --------------------------------- | ------------------------ |
+| 放課後のメロディ                   | She is Legend | 君に読む憧れ                            |                          |
+| Autumn Howl                | She is Legend | 罪と罰と愛と                            |                          |
+| さよならの速度                    | She is Legend | きみはこの夏のFairy、<br>ぼくはその姿を瞳の奥にRec.  |                          |
+| How's everything           | She is Legend | 緋に染まる袖時雨                          |                          |
+| Long Long Spell            | She is Legend | Letters on The Back               | [Link](#Long-Long-Spell) |
+|                            |               | 私立セラフィム学園 \~<br>蒼井、アイドルになります！\~   |                          |
+| Sailing Ship (Broken Ver.) |               | 怪人ノートと銀の時計                        |                          |
+| 春眠旅団                       | She is Legend | 28メートルの永遠                         |                          |
+| 闇夜のKomachi Vampire         | She is Legend | アイリーン・レドメインの事件簿 <br>－名探偵と森の魔女－    |                          |
+| ガラス越しのスペクタクル               | She is Legend | Silhouette of Summer Light Square |                          |
+| Dear R. Heinlein           | She is Legend | あんまりです めぐみさん！                     |                          |
+| ヤになって閉ざしたハート               | She is Legend | BAD GIRLS DESTRUCTION             |                          |
+|                            |               | 心優しき死神より                          |                          |
+| Come on baby               |               | 丸い幸せに祈りを込めて                       |                          |
+| Seabird Song               | 佐々木恵梨         | うみとら冒険譚                           |                          |
 ### Before I Rise
 
 <pre>
