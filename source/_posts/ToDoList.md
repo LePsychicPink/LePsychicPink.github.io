@@ -5,15 +5,15 @@ date: 2026-1-1
 ---
 
 ## Daily
-- [ ] Check HKExpress 
+- [ ] 
 ## Short Term To-do
 - [ ] Put trash to carousel
+- [ ] Find jp hotel (ginza?)
+- [ ] Buy SSD and enclosure in [link](https://www.price.com.hk/product.php?p=576311)(未來科技可以+38換購外置盒)
 - [ ] Write a short intro
 - [ ] Sell the old GPU and CPU
 - [ ] Buy walkie talkie
 - [ ] Build a app for accounting + todo list reminder
-- [ ] reply Ray about availability
-- [ ] Handle PCC web before 1-2
 - [ ] get material from jp at 1-6
 - [ ] finish jp web before 1-19
 ## Long Term To-do
