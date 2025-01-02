@@ -1,6 +1,5 @@
 ---
 title: playwright
-date: 2024-10-04 04:26:41
 tags:
   - playwright
   - Typescript

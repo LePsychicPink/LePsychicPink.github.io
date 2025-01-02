@@ -1,6 +1,5 @@
 ---
 title: Toothpaste
-date: 2024-10-14 03:11:53
 tags:
   - DentalHealth
   - DrBerg

@@ -14,17 +14,18 @@ date: 2026-1-1
 - [ ] Sell the old GPU and CPU
 - [ ] Buy walkie talkie
 - [ ] Build a app for accounting + todo list reminder
+- [ ] Write a [widget in Android](https://dev.to/rushitjivani/react-native-ultimate-guide-to-create-a-home-screen-widget-for-ios-and-android-1h9g) to display lyrics
 - [ ] get material from jp at 1-6
 - [ ] finish jp web before 1-19
 ## Long Term To-do
 1. Buy a big backpack
-2. Buy a SSD for storing HBR record stuff
-3. Buy a portable size manual generator
-4. Eat 
+3. Buy a SSD for storing HBR record stuff
+4. Buy a portable size manual generator
+5. Eat 
 	-  Acqua pazza
 	- アヒージョ
 	- ノンホモ牛乳
-5. Cancel WeWa (2026-12-1)
+6. Cancel WeWa (2026-12-1)
 
 ## To-Learn
 

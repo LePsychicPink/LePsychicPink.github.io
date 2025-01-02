@@ -1,7 +1,7 @@
 ---
 title: GoogleSpreadSheet
-date: 2024-09-23 18:58:53
-tags: GoogleSpreadSheet
+tags:
+  - GoogleSpreadSheet
 categories: programming
 ---
 ## Hotkey

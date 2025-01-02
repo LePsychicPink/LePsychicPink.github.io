@@ -1,6 +1,5 @@
 ---
 title: Food Label Alert
-date: 2024-09-16 00:18:05
 tags:
   - Eat
   - DrBerg

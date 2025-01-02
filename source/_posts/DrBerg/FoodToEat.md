@@ -1,6 +1,5 @@
 ---
 title: Recommanding food
-date: 2024-10-14 03:11:53
 tags:
   - Eat
   - DrBerg

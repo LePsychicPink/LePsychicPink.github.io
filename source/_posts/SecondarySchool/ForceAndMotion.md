@@ -1,12 +1,10 @@
 ---
 title: Force and Motion
-date: 2024-09-20 23:56:40
 tags:
   - Physics
   - Force
   - secondary-school
 categories: school
-
 mathjax: true
 ---
 

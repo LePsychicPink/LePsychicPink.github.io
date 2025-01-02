@@ -1,7 +1,7 @@
 ---
 title: Concept of PySide6(PyQt)
-date: 2024-09-04 01:20:39
-tags: python
+tags:
+  - python
 categories: programming
 top_img: img/hisameTop.png
 ---
