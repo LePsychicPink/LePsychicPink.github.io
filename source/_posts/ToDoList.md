@@ -8,6 +8,7 @@ date: 2026-1-1
 - [ ] 
 ## Short Term To-do
 - [ ] Put trash to carousel
+- [ ] Watch Chap4 day1 free time (asamin conversation)
 - [ ] Find jp hotel (ginza?)
 - [ ] Buy SSD and enclosure in [link](https://www.price.com.hk/product.php?p=576311)(未來科技可以+38換購外置盒)
 - [ ] Write a short intro

@@ -9,53 +9,58 @@ date: 2025-12-30
 
 ## ヘブバン
 
-| 歌                                  | 歌手                              | Remark             | Link                              |
-| ---------------------------------- | ------------------------------- | ------------------ | --------------------------------- |
-| Before I Rise                      | やなぎなぎ<br>\(acoustic ver.: XAI\) | Opening            | [Link](#Before-I-Rise)            |
-| Burn My Soul                       | She is legend                   | 一章                 | [Link](#Burn-My-Soul)             |
-| Burn My Universe                   | やなぎなぎ                           |                    | [Link](#Burn-My-Universe)     |
-| Indigo in Blue                     | やなぎなぎ                           |                    | [Link](#Indigo-in-Blue)       |
-| Sad Creature                       | やなぎなぎ                           | Death Slug phase 2 | [Link](#Sad-Creature)           |
-| きみの横顔                              | やなぎなぎ                           |                    |                                   |
-| Everlasting Night                  | やなぎなぎ                           |                    |                                   |
-| 星の墓標                               |                                 |                    |                                   |
-| White Spell                        |                                 |                    |                                   |
-| Dance! Dance! Dance!               | She is Legend                   | 二章                 | [Link](#Dance!-Dance!-Dance!) |
-| ありふれた Battle Song <br> ～いつも戦闘は面倒だ～ | She is Legend                   | 三章                 |                                   |
-| 夏気球                                |                                 | 断章I                |                                   |
-| 贅沢な感情                              | XAI                             | 四章前編               | [Link](#贅沢な感情)                    |
-| 起死廻生                               | She is Legend                   | 四章前編               |                                   |
-| 幻想都市                               | やなぎなぎ                           | 四章後編               |                                   |
-| 死にゆく季節の君へ                          | やなぎなぎ                           | 四章後編               | [Link](#死にゆく季節の君へ)                |
-| シヴァ                                | やなぎなぎ                           | 四章後編               |                                   |
-| 死にゆく季節でぼくは                         | She is Legend                   | 断章II               |                                   |
-| 陽のさす向こうへ                           | XAI                             | 五章前編               |                                   |
-| World We Changed                   | She is Legend                   | 五章前編               |                                   |
-| Bougainvillea                      | やなぎなぎ                           | 五章前編               |                                   |
-| ワルキューレの叙事詩                         |                                 | 五章前編               |                                   |
-| くそ暑い日の誓い                           |                                 | 五章前編               |                                   |
-| ディベートソルジャー                         |                                 | 五章前編               |                                   |
-| Welcome to the Front Line!         | やなぎなぎ                           | 五章前編               |                                   |
+| 歌                                  | 歌手                              | Remark             | Lyrics                                         |
+| ---------------------------------- | ------------------------------- | ------------------ | ---------------------------------------------- |
+| Before I Rise                      | やなぎなぎ<br>\(acoustic ver.: XAI\) | Opening            | [Finished](#Before-I-Rise)                     |
+| Burn My Soul                       | She is legend                   | 一章                 | [Finished](#Burn-My-Soul)                      |
+| Burn My Universe                   | やなぎなぎ                           |                    | [Finished](#Burn-My-Universe)                  |
+| Everlasting Night                  | やなぎなぎ                           |                    | [Finished](#Everlasting-Night)                 |
+| Indigo in Blue                     | やなぎなぎ                           |                    | [Finished](#Indigo-in-Blue)                    |
+| Sad Creature                       | やなぎなぎ                           | Death Slug phase 2 | [Finished](#Sad-Creature)                      |
+| 星の墓標                               |                                 |                    | [Finished](#星の墓標)                              |
+| Particle Effect                    |                                 |                    | [Finished](#Particle-Effect)                   |
+| 銀河旅団                               |                                 |                    |                                                |
+| インドラ                               |                                 |                    |                                                |
+| Light Years                        |                                 |                    |                                                |
+| きみの横顔                              | やなぎなぎ                           |                    |                                                |
+| White Spell                        |                                 |                    |                                                |
+| Dance! Dance! Dance!               | She is Legend                   | 二章                 | [Finished](#Dance!-Dance!-Dance!)              |
+| ありふれた Battle Song <br> ～いつも戦闘は面倒だ～ | She is Legend                   | 三章                 | [Finished](#ありふれた%20Battle-Song%20～いつも戦闘は面倒だ～) |
+| 夏気球                                |                                 | 断章 I               |                                                |
+| 贅沢な感情                              | XAI                             | 四章前編               | [Finished](#贅沢な感情)                             |
+| 起死廻生                               | She is Legend                   | 四章前編               |                                                |
+| 幻想都市                               | やなぎなぎ                           | 四章後編               |                                                |
+| 死にゆく季節の君へ                          | やなぎなぎ                           | 四章後編               | [Finished](#死にゆく季節の君へ)                         |
+| シヴァ                                | やなぎなぎ                           | 四章後編               |                                                |
+| 死にゆく季節でぼくは                         | She is Legend                   | 断章 II              |                                                |
+| 陽のさす向こうへ                           | XAI                             | 五章前編               |                                                |
+| World We Changed                   | She is Legend                   | 五章前編               |                                                |
+| Bougainvillea                      | やなぎなぎ                           | 五章前編               |                                                |
+| ワルキューレの叙事詩                         |                                 | 五章前編               |                                                |
+| くそ暑い日の誓い                           |                                 | 五章前編               |                                                |
+| ディベートソルジャー                         |                                 | 五章前編               |                                                |
+| Welcome to the Front Line!         | やなぎなぎ                           | 五章前編               |                                                |
 
 ## イベント
 
-| 歌                          | 歌手            | Remark                            | Link                     |
-| -------------------------- | ------------- | --------------------------------- | ------------------------ |
-| 放課後のメロディ                   | She is Legend | 君に読む憧れ                            |                          |
-| Autumn Howl                | She is Legend | 罪と罰と愛と                            |                          |
-| さよならの速度                    | She is Legend | きみはこの夏のFairy、<br>ぼくはその姿を瞳の奥にRec.  |                          |
-| How's everything           | She is Legend | 緋に染まる袖時雨                          |                          |
-| Long Long Spell            | She is Legend | Letters on The Back               | [Link](#Long-Long-Spell) |
-|                            |               | 私立セラフィム学園 \~<br>蒼井、アイドルになります！\~   |                          |
-| Sailing Ship (Broken Ver.) |               | 怪人ノートと銀の時計                        |                          |
-| 春眠旅団                       | She is Legend | 28メートルの永遠                         |                          |
-| 闇夜のKomachi Vampire         | She is Legend | アイリーン・レドメインの事件簿 <br>－名探偵と森の魔女－    |                          |
-| ガラス越しのスペクタクル               | She is Legend | Silhouette of Summer Light Square |                          |
-| Dear R. Heinlein           | She is Legend | あんまりです めぐみさん！                     |                          |
-| ヤになって閉ざしたハート               | She is Legend | BAD GIRLS DESTRUCTION             |                          |
-|                            |               | 心優しき死神より                          |                          |
-| Come on baby               |               | 丸い幸せに祈りを込めて                       |                          |
-| Seabird Song               | 佐々木恵梨         | うみとら冒険譚                           |                          |
+| 歌                         | 歌手          | Remark                                                  | Lyrics                       |
+| -------------------------- | ------------- | ------------------------------------------------------- | ---------------------------- |
+| 放課後のメロディ           | She is Legend | 君に読む憧れ                                            |                              |
+| Autumn Howl                | She is Legend | 罪と罰と愛と                                            |                              |
+| さよならの速度             | She is Legend | きみはこの夏の Fairy、<br>ぼくはその姿を瞳の奥に Rec.   |                              |
+| How's everything           | She is Legend | 緋に染まる袖時雨                                        |                              |
+| Long Long Spell            | She is Legend | Letters on The Back                                     | [Finished](#Long-Long-Spell) |
+|                            |               | 私立セラフィム学園 \~<br>蒼井、アイドルになります！\~   |                              |
+| Sailing Ship (Broken Ver.) |               | 怪人ノートと銀の時計                                    |                              |
+| 春眠旅団                   | She is Legend | 28 メートルの永遠                                       |                              |
+| 闇夜の Komachi Vampire     | She is Legend | アイリーン・レドメインの事件簿 <br>－名探偵と森の魔女－ |                              |
+| ガラス越しのスペクタクル   | She is Legend | Silhouette of Summer Light Square                       |                              |
+| Dear R. Heinlein           | She is Legend | あんまりです めぐみさん！                               |                              |
+| ヤになって閉ざしたハート   | She is Legend | BAD GIRLS DESTRUCTION                                   |                              |
+|                            |               | 心優しき死神より                                        |                              |
+| Come on baby               |               | 丸い幸せに祈りを込めて                                  |                              |
+| Seabird Song               | 佐々木恵梨    | うみとら冒険譚                                          |                              |
+
 ### Before I Rise
 
 <pre>
@@ -235,6 +240,66 @@ Ah, it's her wish quest for me undying
 
 [Back to top](#ヘブバン)
 
+### Everlasting Night
+
+<pre>
+永い夢を今日も見ていた　　　　　　　　　　　　　　今天也作了很長的夢
+空を貫いた尖った残骸　　　　　　　　　　　　　　　看到堆積如山突破天際的殘骸
+手には剣流れる汗と　　　　　　　　　　　　　　　　手執長劍　流出來的汗以及
+硝煙の匂い焼け付くエンジン　　　　　　　　　　　　硝煙的臭味依附在發動機上
+
+落ちてゆく感覚　　　　　　　　　　　　　　　　　　感覺像在無底深淵落下
+もう休みたい　　　　　　　　　　　　　　　　　　　我已經想休息了
+
+ずっとずっと探している　　　　　　　　　　　　　　我一直在尋找
+約束を果たす為に　　　　　　　　　　　　　　　　　為了兌現承諾
+千の夜を彷徨うよ　　　　　　　　　　　　　　　　　已經徘徊了過千個晚上
+
+君とここで会えたことを　　　　　　　　　　　　　　我一直相信
+必然だって信じる　　　　　　　　　　　　　　　　　在此地與你相遇是命運使然
+別れを繰り返して　　　　　　　　　　　　　　　　　不斷重複分離
+
+ずっとずっと好きでいたよ　　　　　　　　　　　　　一直都在喜歡你
+変わり果ててしまっても　　　　　　　　　　　　　　即使你整個人都變了
+この手は離さないよ　　　　　　　　　　　　　　　　我也不會放手的
+
+夜が来たらまた眠れる　　　　　　　　　　　　　　　夜色變暗　又感睡意
+遠い夢の続きをどうか僕に見せて　　　　　　　　　　求你給我看看那個夢的延續
+
+滑らかに流線を　（なめらかに）　　　　　　　　　　流暢地把線
+描いて落ちる　　　　　　　　　　　　　　　　　　　畫了下來
+散り散りになった　悪夢の四肢　　　　　　　　　　　在惡夢中看到四分五裂的四肢
+
+落ち込むこともあった　　　　　　　　　　　　　　　既有低沉的時候
+ツイてない日もあった　　　　　　　　　　　　　　　也有不幸的日子
+とりあえず今日を昨日に　　　　　　　　　　　　　　總之先把「今天」變成「昨天」
+変え前へ進め　　　　　　　　　　　　　　　　　　　向前走吧
+
+永い夢を今日も見ていた　　　　　　　　　　　　　　今天也作了很長的夢
+吸い込まれて行く　　　　　　　　　　　　　　　　　在夢被甚麼吸走
+沢山の光　　　　　　　　　　　　　　　　　　　　　又看到很眩目的光線
+
+昨日はいつここは何処だろう　　　　　　　　　　　　昨天是甚麼時候　我又在哪
+君の匂いさえ忘れてしまう　　　　　　　　　　　　　就連你的氣味也快了忘掉
+ひたすら落ちてゆく　　　　　　　　　　　　　　　　我一直在掉落
+奈落の底へ　　　　　　　　　　　　　　　　　　　　向著地獄深淵
+
+ずっとずっと探している　　　　　　　　　　　　　　我一直在尋找
+存在する目的を　　　　　　　　　　　　　　　　　　我存在的目的
+呼吸する理由を　　　　　　　　　　　　　　　　　　我呼吸的理由
+
+君とここで戦ったことを　思い出に変えたい　　　　　在此跟你戰鬥過的記憶　我想永留心中
+出来るかな不安だ　　　　　　　　　　　　　　　　　究竟我能否記住？　令人不安
+
+船になって運んでゆく　　　　　　　　　　　　　　　化身為船隻
+遥か彼方　幾千の　　　　　　　　　　　　　　　　　把回憶運到遙遠的彼方
+季節も忘れ去って　　　　　　　　　　　　　　　　　把無數的歲月都忘了
+
+また会えたら挽回する　　　　　　　　　　　　　　　要是重遇了就回憶起來
+それがどんな奇跡か僕は知ってるから　　　　　　　　因為我知道這是多麼不可能的事
+もう少しで朝だ　　　　　　　　　　　　　　　　　　差不多就到早上了
+</pre>
+
 ### Indigo in Blue
 
 <pre>
@@ -325,6 +390,141 @@ Ah
 
 [Back to top](#ヘブバン)
 
+### 星の墓標
+
+<pre>
+空と海の彼方　　　　　　　　　　　　　　　　　　　天與海的遠方
+線と線は交わう　　　　　　　　　　　　　　　　　　線與線相交
+藻掻いては息をする　（もがいて）　　　　　　　　　爭扎代表還有氣息
+藻掻いては死を描く　　　　　　　　　　　　　　　　爭扎代表快要死了
+
+約束の地でまた会おう　　　　　　　　　　　　　　　在約定之地再會吧
+この水の底で待っていた　　　　　　　　　　　　　　我早就在水底等你
+どうかもう奪わないでと　　　　　　　　　　　　　　祈願了
+祈った　　　　　　　　　　　　　　　　　　　　　　「求你不要再奪走了」
+(ah 君は ah どこだ)  　　　　　　　　　　　　　
+祈った　　　　　　　　　　　　　　　　　　　　　　祈求了
+(あの地は ah どこだ)
+
+夜と朝の間　　　　　　　　　　　　　　　　　　　　在夜與日之間
+線と線が溶け合う　　　　　　　　　　　　　　　　　線與線溶在一起
+幸せは何処にある　　　　　　　　　　　　　　　　　幸福究竟在何處
+今もまだ迷子だよ　　　　　　　　　　　　　　　　　我到現在依舊找不到
+
+暗い闇へと誘われ　　　　　　　　　　　　　　　　　被誘向黑暗之中
+ミシミシと身体が叫んで　　　　　　　　　　　　　　快要散架的身體開始悲嗚
+どうか意識ごと奪ってと　　　　　　　　　　　　　　祈願了
+祈った　　　　　　　　　　　　　　　　　　　　　　「求你把我整個意識奪走」
+(ah 君は ah どこだ) 
+祈った　　　　　　　　　　　　　　　　　　　　　　祈求了
+(あの地は ah どこだ)
+
+地上で生きてゆくには心が脆くて　　　　　　　　　　我的心已經脆弱得無法在地上生存
+どこにも辿り着けない　　　　　　　　　　　　　　　不論哪裡都無法達到
+
+君を想い落ち込んで今日も不安定　　　　　　　　　　想你想得太沉醉　今日也是不安定
+上手く笑えているかな　　　　　　　　　　　　　　　我能夠好好地笑呢？
+
+Hello? Hello?  
+応答を　　　　　　　　　　　　　　　　　　　　　　請回答
+Hello? Hello?  
+応えて　　　　　　　　　　　　　　　　　　　　　　請回應
+
+空と海の彼方　　　　　　　　　　　　　　　　　　　天與海的遠方
+線と線は交わう　　　　　　　　　　　　　　　　　　線與線相交
+藻掻いては沈みゆく　　　　　　　　　　　　　　　　愈爭扎愈沉下去
+藻掻いては星の墓標　　　　　　　　　　　　　　　　爭扎代表繁星的墓碑
+
+約束の地でまた逢おう　　　　　　　　　　　　　　　在約定之地再會吧
+この水の底で待っていた　　　　　　　　　　　　　　我早就在水底等你
+どうかもう奪わないでと　　　　　　　　　　　　　　祈願了
+祈った　　　　　　　　　　　　　　　　　　　　　　「求你不要再奪走了」
+(ah 君は ah どこだ)  
+Ah
+
+暗い底へと誘われ　　　　　　　　　　　　　　　　　被誘向黑暗之中
+泡だけが指をすり抜けて　　　　　　　　　　　　　　只有氣泡在手指間穿過
+どうか一緒に連れて行ってと　　　　　　　　　　　　祈願了
+祈った　　　　　　　　　　　　　　　　　　　　　　「求你把我一併帶走」
+(ah 君は ah どこだ)  
+祈った　　　　　　　　　　　　　　　　　　　　　　祈求了
+ah (あの地は ah どこだ)
+</pre>
+
+[Back to top](#ヘブバン)
+
+### Particle Effect
+
+<pre>
+どれだけの居場所を　　　　　　　　　　　　　　　　究竟被奪走了多少安身之處
+奪い去ってこんな所にいる　　　　　　　　　　　　　才會到達這種地方
+どれだけの理不尽を　　　　　　　　　　　　　　　　不論被加諸多少不講理的事情
+叩きつけられここで戦っている　　　　　　　　　　　還能在這裡戰鬥
+
+あぁ　もう　　　　　　　　　　　　　　　　　　　　君だけが  啊 真是的 只有你
+全ての始まりにして終わりなのかも　　　　　　　　　可能是你把一切開始時都終結掉
+もし世界が滅び　　　　　　　　　　　　　　　　　　假如世界毀滅了
+粒子に還っても失くならないものを　　　　　　　　　打回成粒子狀態也沒有消失的東西
+教えてくれた　　　　　　　　　　　　　　　　　　　君が是你告訴我的
+
+どれだけ朝を迎えても　　　　　　　　　　　　　　　不管是迎接了多少早晨
+惨劇の季節のままだ　　　　　　　　　　　　　　　　依舊是停留在慘劇的季節
+どれだけ這い回れば　　　　　　　　　　　　　　　　到底要爬來爬去到何時
+新しい空に迎えられるだろう　　　　　　　　　　　　才能迎接新的天空呢
+
+あぁ　もう　君すらも　　　　　　　　　　　　　　　啊　真是的　即使只有你
+遠すぎてどうしようって必死に空をかくけど　　　　　說著「太遠了，怎麼辦」仍在拼命抓住這天空 
+なぜ歪んで見える　　　　　　　　　　　　　　　　　為甚麼看起來歪曲了
+拭うっても拭い切れない　　　　　　　　　　　　　　拼命拭也拭不完的
+止め処無い愛に溢れてた　なんで　　　　　　　　　　無處盛載滿溢的愛　為甚麼？
+
+どこを漂うの？　　　　　　　　　　　　　　　　　　漂流到哪去了？
+深い青を携え　　　　　　　　　　　　　　　　　　　去拿來這深藍
+どこを彷徨うの？　　　　　　　　　　　　　　　　　徘徊到哪去了？
+夜明けから逃げるように　　　　　　　　　　　　　　為逃離日出
+何を疑うの？　　　　　　　　　　　　　　　　　　　你在懷疑甚麼？
+神すらもいないのに　　　　　　　　　　　　　　　　明明連神也不在
+何を伝えるの？　　　　　　　　　　　　　　　　　　你能傳達甚麼？
+それも忘れて　　　　　　　　　　　　　　　　　　　這個也忘了
+
+Whoa oh whoa whoa  
+Whoa oh whoa whoa  
+Whoa oh whoa whoa  
+Whoa oh whoa whoa
+
+考えても解けなくて頭溶けちゃって　　　　　　　　　想破頭也想不通　頭也快溶了
+一人で悶々しても時間だけが溶けて　　　　　　　　　一個人在悶悶不樂　也只是浪費時間而已
+一人になりたくないなんてこの感情も　　　　　　　　不想獨自一人的這個感情
+今では虚像か嘘　　　　　　　　　　　　　　　　　　現在看來也是虛像或者是謊言
+
+Whoa oh whoa whoa  
+Whoa oh whoa whoa
+
+あぁ　もう　君だけが　　　　　　　　　　　　　　　啊　真是的　只有你
+全ての始まりにして終わりなんだよ　　　　　　　　　可能是你把一切開始時都終結掉
+もし世界が滅び　　　　　　　　　　　　　　　　　　假如世界毀滅了
+粒子に還っても失くならないものがあった　　　　　　打回成粒子狀態也沒有消失的東西
+
+あの青い星を　　　　　　　　　　　　　　　　　　　那個藍色星球
+目指して旅立った日がこんなに遠い　　　　　　　　　從以它為目標開始旅行已經過了這麼久
+なぜ歪んで見える　　　　　　　　　　　　　　　　　為甚麼看起來歪曲了
+拭うっても拭い切れない止め処無い愛に溢れてた　　　拼命拭也拭不完的無處盛載滿溢的愛
+
+Whoa oh whoa whoa 
+君が　　　　　　　　　　　　　　　　　　　　　　　是你
+Whoa oh whoa whoa
+なんで　　　　　　　　　　　　　　　　　　　　　　為甚麼
+Whoa oh whoa whoa
+教えて　　　　　　　　　　　　　　　　　　　　　　告訴我吧
+Whoa oh whoa whoa  
+Whoa oh whoa whoa  
+Whoa oh whoa whoa  
+Whoa oh whoa whoa  
+Whoa oh whoa whoa
+</pre>
+
+[Back to top](#ヘブバン)
+
 ### Dance! Dance! Dance!
 
 <pre>
@@ -384,7 +584,7 @@ This is me at last!
 
 [Back to top](#ヘブバン)
 
-### ありふれたBattle Song～いつも戦闘は面倒だ～
+### ありふれた Battle Song ～いつも戦闘は面倒だ～
 
 <pre>
 Ready Come or Die!
@@ -532,6 +732,7 @@ Ah…
 </pre>
 
 ### Long Long Spell
+
 <pre>
 Huh, huh, huh, huh
 Huh, huh
