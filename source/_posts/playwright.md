@@ -77,6 +77,7 @@ test.describe("GroupName", () => {
 | -------------------------------------- | ------------------------- | ------------------------------------------------------------------- |
 | Raw xPath                              | start by // or .. is same | await page.locator('..div[@class="className"]')                     |
 | followed by child                      |                           | await page.locator('//div[@class="className"]/div/a')               |
+| select parent                          | use /.. to select parent  | await page.locator('//div\[@class="className"\]/..')                |
 | only select the nth child of same type |                           | await page.locator('//div[@class="className"]/div[1]')              |
 | attribute cotains                      |                           | await page.locator('//span[contains(@class, 'keyword')]             |
 | xPath union                            |                           | await page.locator('//div(@class="className")] \| //div[@id='id']') |
@@ -84,13 +85,18 @@ test.describe("GroupName", () => {
 
 ### CSS Conditions
 
-| Conditions    | Explaination                                   | Example                                                 |
-| ------------- | ---------------------------------------------- | ------------------------------------------------------- |
-| :has-text     | find childrens<br>contains<br>case-insensitive | await page.locator('div:has-text("innerText")')         |
-| :is-text      | find childrens<br>exact text<br>case-sensitive | await page.locator('div:is-text("innerText")')          |
-| :text         | exact text<br>case-insensitive                 | await page.locator('div:text("innerText")')             |
-| :text-matches | regex                                          | await page.locator('div:text-matches("reg?ex", "i")')   |
-| :nth-match    | nth match 1-based                              | await page.locator(':nth-match(:text("innerText"), 1)') |
+| Conditions     | Explaination                                   | Example                                                           |
+| -------------- | ---------------------------------------------- | ----------------------------------------------------------------- |
+| div            | tag like \<div\>, \<p\>                        | await page.locator('div')                                         |
+| \#id           | id attribute                                   | await page.locator('div#id1')                                     |
+| .class         | .class<br>div.class                            | await page.locator('.class1')<br>await page.locator('div.class1') |
+| .class1.class2 | element with multiple class                    | await page.locator('.class1.class2')                              |
+| :has(>)        | element having matching child                  | await page.locator('.class1:has(> .class2)')                      |
+| :has-text      | find childrens<br>contains<br>case-insensitive | await page.locator('div:has-text("innerText")')                   |
+| :is-text       | find childrens<br>exact text<br>case-sensitive | await page.locator('div:is-text("innerText")')                    |
+| :text          | exact text<br>case-insensitive                 | await page.locator('div:text("innerText")')                       |
+| :text-matches  | regex                                          | await page.locator('div:text-matches("reg?ex", "i")')             |
+| :nth-match     | nth match 1-based                              | await page.locator(':nth-match(:text("innerText"), 1)')           |
 
 ### locator actions
 | Actions         | Explaination                                                                | Example                             |
