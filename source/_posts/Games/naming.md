@@ -14,6 +14,7 @@ Naming list
 - Le Silent (LS reference)
 - 得其所哉
 - うまく話せない屋
+- SomethingWentWrong
 
 ### Memorable Quote
 

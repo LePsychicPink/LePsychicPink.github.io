@@ -31,7 +31,8 @@ type newType = {
 | every((item)=>statment) | boolean       | check if every element match the statement inside |
 | join(separator?)        | string        | combine all string into one string with separator |
 | \[...array\]            |               | (spread) fill content of the array                |
-## Opeartor
+
+## Operator
 
 ### ??
 
@@ -41,3 +42,20 @@ it take the right hand side if left hand side is undefined or null.
 Difference:
 `??` → use RHS when LHS is `null` or `undefined`
 `||` → use RHS when LHS is `null` or `undefined` or `False` or `0`
+
+### keyof
+keyof object, used as type
+```
+Obj = {
+	one: '1',
+	two: '2',
+	three: '3'
+}
+```
+
+keyof typeof Obj is equal to 
+```
+type A = 'one'|'two'|'three'
+```
+### typeof
+typeof object, used as type
