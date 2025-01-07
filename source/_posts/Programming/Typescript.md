@@ -24,13 +24,15 @@ type newType = {
 ```
 
 ## Array
-| **property**            | **return**    | **usage**                                         |
-| ----------------------- | ------------- | ------------------------------------------------- |
-| pop()                   | Array element | get the last element                              |
-| includ(target)          | Boolean       | check if the array have a element match target    |
-| every((item)=>statment) | boolean       | check if every element match the statement inside |
-| join(separator?)        | string        | combine all string into one string with separator |
-| \[...array\]            |               | (spread) fill content of the array                |
+| **property**            | **return**    | **usage**                                                                                  |
+| ----------------------- | ------------- | ------------------------------------------------------------------------------------------ |
+| pop()                   | Array element | get the last element                                                                       |
+| includ(target)          | Boolean       | check if the array have a element match target                                             |
+| every((item)=>statment) | boolean       | check if every element match the statement inside                                          |
+| join(separator?)        | string        | combine all string into one string with separator                                          |
+| slice(start?,end?)      | Array         | extract and start to end elements from an array<br>(can use negative to inverse direction) |
+| splice(start?,end?)     | Array         | deleting the start to end elements from an array and return the deleted item               |
+| \[...array\]            |               | (spread) fill content of the array                                                         |
 
 ## Operator
 
