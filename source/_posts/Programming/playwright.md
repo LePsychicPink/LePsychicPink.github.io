@@ -81,7 +81,8 @@ test.describe("GroupName", () => {
 | only select the nth child of same type |                           | await page.locator('//div[@class="className"]/div[1]')              |
 | attribute cotains                      |                           | await page.locator('//span[contains(@class, 'keyword')]             |
 | xPath union                            |                           | await page.locator('//div(@class="className")] \| //div[@id='id']') |
-| page.locator()                         | id                        | await page.locator('#targetId')                                     |
+| filter by inner text                   |                           | await page.locator('//div\[contains(text(),"keyword")'\]            |
+
 
 ### CSS Conditions
 
