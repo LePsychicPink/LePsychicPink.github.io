@@ -7,7 +7,7 @@ date: 2026-1-1
 ## Daily
 - [ ] 
 ## Short Term To-do
-- [ ] !8 Jan - Charge shaver
+- [ ] !10 Jan - Prepare blender scene for simulate tournament
 - [ ] !11 Jan - Go NCB to take currency again
 - [ ] !18 Jan - 沈祖明 + 灣仔Buy SSD and enclosure in [link](https://www.price.com.hk/product.php?p=576311)(未來科技可以+38換購外置盒) for storing HBR record stuff
 - [ ] !19 Jan - pay credit card payment
@@ -18,10 +18,10 @@ date: 2026-1-1
 - [ ] Find jp hotel (Ginza?)
 - [ ] Try to get David wan videos in old phone sd card
 - [ ] Put trash to carousel
-- [ ] Write a short intro
 - [ ] Sell the old GPU and CPU
 ## Long Term To-do
 - [ ] Build a app for accounting + todo list reminder
+- [ ] !10Apr - Bring 31C watch to JP for free adjustment
 - [ ] !1May - Buy a big backpack
 - [ ] !1May - Buy walkie talkie
 - [ ] !1May - Buy a portable size manual generator
@@ -34,6 +34,7 @@ date: 2026-1-1
 
 
 ## To-do in game
+- [ ] !9 Jan Score Attack
 - [ ] Watch Chap4 day1 free time (Asamin conversation)
 ## To-Learn
 

@@ -8,7 +8,7 @@ cover: img/hisameTop.png
 
 ### Branch
 
-| Operation                    | command                            |
+| Operation                    | Command                            |
 | ---------------------------- | ---------------------------------- |
 | create new branch            | `git branch {branch name}`         |
 | check branch                 | `git branch`                       |
@@ -19,20 +19,24 @@ cover: img/hisameTop.png
 
 ### Commit
 
-| Operation                  | command                                         |
+| Operation                  | Command                                         |
 | -------------------------- | ----------------------------------------------- |
 | Commit single file         | `git commit {path_to_file} -m "commit message"` |
 | commit all                 | `git commit -a -m "message`                     |
 | amend commit               | `git commit -m "message" --amend`               |
 | Go back to specific commit | `git reset {commitID}`                          |
+|                            |                                                 |
+### Stash
+| Operation               | Command                         |
+| ----------------------- | ------------------------------- |
+| stashing untracked file | `git stash --include-untracked` |
+| stashing specifc file   | `git stash push {files}`        |
 
-Staging → `git add {files}`
-
-Unstaging → `git restore --staged {files}`
-
-Cancel git reset 
-
-Stashing untracked file → `git stash --include-untracked`
+### Staging
+| Operation | Command                        |
+| --------- | ------------------------------ |
+| Staging   | `git add {files}`              |
+| Unstaging | `git restore --staged {files}` |
 
 ### Reset
 ```

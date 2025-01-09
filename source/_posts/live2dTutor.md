@@ -4,7 +4,6 @@ tags:
   - Live2D
 categories: animation
 ---
-
 # Blinking
 
 [source](https://docs.live2d.com/cubism-editor-tutorials/eye-blink/?utm_source=L2Dmarcomm&utm_medium=youtube&utm_campaign=casual_tutorial)

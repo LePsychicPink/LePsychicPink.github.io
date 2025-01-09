@@ -47,7 +47,7 @@ Difference:
 
 ### keyof
 keyof object, used as type
-```
+```Typescript
 Obj = {
 	one: '1',
 	two: '2',
@@ -56,8 +56,16 @@ Obj = {
 ```
 
 keyof typeof Obj is equal to 
-```
+```Typescript
 type A = 'one'|'two'|'three'
 ```
 ### typeof
 typeof object, used as type
+
+## Promise
+
+### race
+```Typescript
+  const funcs: Promise<any>[] = [asyncFunction1, asyncFunction2];
+  await Promise.race(funcs); // see tither of them resolve first
+```

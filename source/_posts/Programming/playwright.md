@@ -73,15 +73,15 @@ test.describe("GroupName", () => {
 
 ### xPath Conditions
 
-| Conditions                             | Explaination              | Example                                                             |
-| -------------------------------------- | ------------------------- | ------------------------------------------------------------------- |
-| Raw xPath                              | start by // or .. is same | await page.locator('..div[@class="className"]')                     |
-| followed by child                      |                           | await page.locator('//div[@class="className"]/div/a')               |
-| select parent                          | use /.. to select parent  | await page.locator('//div\[@class="className"\]/..')                |
-| only select the nth child of same type |                           | await page.locator('//div[@class="className"]/div[1]')              |
-| attribute cotains                      |                           | await page.locator('//span[contains(@class, 'keyword')]             |
-| xPath union                            |                           | await page.locator('//div(@class="className")] \| //div[@id='id']') |
-| filter by inner text                   |                           | await page.locator('//div\[contains(text(),"keyword")'\]            |
+| Conditions                             | Explaination              | Example                                                               |
+| -------------------------------------- | ------------------------- | --------------------------------------------------------------------- |
+| Raw xPath                              | start by // or .. is same | await page.locator('..div[@class="className"]')                       |
+| followed by child                      |                           | await page.locator('//div[@class="className"]/div/a')                 |
+| select parent                          | use /.. to select parent  | await page.locator('//div\[@class="className"\]/..')                  |
+| only select the nth child of same type |                           | await page.locator('//div[@class="className"]/div[1]')                |
+| attribute cotains                      |                           | await page.locator('//span\[contains(@class, "keyword")\]             |
+| xPath union                            |                           | await page.locator('//div(@class="className")] \| //div\[@id="id"\]') |
+| filter by inner text                   |                           | await page.locator('//div\[contains(text(),"keyword")\]')             |
 
 
 ### CSS Conditions
