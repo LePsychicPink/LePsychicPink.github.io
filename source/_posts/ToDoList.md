@@ -15,18 +15,18 @@ date: 2026-1-1
 - [ ] !19 Jan - pay credit card payment
 - [ ] !19 Jan - finish jp web
 - [ ] !26 Jan Decide which day to find Geroge
-- [ ] !6Feb - See if you can spend over $80 in welcome (yuu $8 coupon)
-- [ ] !15Feb - Watch Live 2D lesson 2-15
+- [ ] !6 Feb - See if you can spend over $80 in welcome (yuu $8 coupon)
+- [ ] !15 Feb - Watch Live 2D lesson 2-15
 - [ ] Find jp hotel (Ginza?)
 - [ ] Try to get David wan videos in old phone sd card
 - [ ] Put trash to carousel
 - [ ] Sell the old GPU and CPU
 ## Long Term To-do
 - [ ] Build a app for accounting + todo list reminder
-- [ ] !10Apr - Bring 31C watch to JP for free adjustment
-- [ ] !1May - Buy a big backpack
-- [ ] !1May - Buy walkie talkie
-- [ ] !1May - Buy a portable size manual generator
+- [ ] !10 Apr - Bring 31C watch to JP for free adjustment
+- [ ] !1 May - Buy a big backpack
+- [ ] !1 May - Buy walkie talkie
+- [ ] !1 May - Buy a portable size manual generator
 - [ ] !1 Dec 2026 - Cancel WeWa / call for waive
 - [ ] Write a [widget in Android](https://dev.to/rushitjivani/react-native-ultimate-guide-to-create-a-home-screen-widget-for-ios-and-android-1h9g) to display lyrics or quotes
 - [ ] Eat 

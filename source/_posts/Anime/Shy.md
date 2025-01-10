@@ -1,5 +1,6 @@
 ---
 title: Shy
+categories: anime
 tags:
   - animeReview
 ---
