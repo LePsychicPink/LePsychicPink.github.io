@@ -26,3 +26,4 @@ Naming list
 
 > You are the solo surviver of your familty - 溫帶維
 
+花火なんて ただの焔色反応

@@ -1,7 +1,7 @@
 ---
 title: Japan trip guide
-date: 2024-09-28 15:53:46
-tags: trip
+tags:
+  - trip
 categories: travel
 ---
 

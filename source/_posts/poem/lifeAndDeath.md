@@ -1,7 +1,7 @@
 ---
 title: 生死
-date: 2024-12-10 23:00:00
-tags: Thinking
+tags:
+  - Thinking
 ---
 
 ## 內向的人可能最適合長壽

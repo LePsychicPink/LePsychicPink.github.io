@@ -27,5 +27,3 @@ A2-3: やなぎなぎ
 Q: What game do you play
 A: I like to play most turn based games that does not require my reaction speed
 A2: I like to play story rich game.
-
-Q: 

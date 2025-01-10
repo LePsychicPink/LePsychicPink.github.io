@@ -7,6 +7,8 @@ date: 2026-1-1
 ## Daily
 - [ ] 
 ## Short Term To-do
+- [ ] Song Tier List
+- [ ] Rip Long Long Spell from CD
 - [ ] !10 Jan - Prepare blender scene for simulate tournament
 - [ ] !11 Jan - Go NCB to take currency again
 - [ ] !18 Jan - 沈祖明 + 灣仔Buy SSD and enclosure in [link](https://www.price.com.hk/product.php?p=576311)(未來科技可以+38換購外置盒) for storing HBR record stuff
@@ -34,8 +36,14 @@ date: 2026-1-1
 
 
 ## To-do in game
-- [ ] !9 Jan Score Attack
 - [ ] Watch Chap4 day1 free time (Asamin conversation)
+## To-watch anime
+
+| Place  | Anime |
+| ------ | ----- |
+| Home   |       |
+| Bus    | 放學後失眠 |
+| Office |       |
 ## To-Learn
 
 | Item                    | Usage                         | Reference |

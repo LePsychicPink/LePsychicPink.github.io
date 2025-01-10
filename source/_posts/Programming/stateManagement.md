@@ -7,7 +7,7 @@ categories: programming
 
 The most popular example of state management is Redux
 
-### Altenatives for state management in React
+### Alternatives for state management in React
 
 - Zustand
 - Flux
