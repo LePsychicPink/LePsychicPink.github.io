@@ -8,16 +8,13 @@ date: 2026-1-1
 - [ ] 
 ## Short Term To-do
 - [ ] Song Tier List
-- [ ] Rip Long Long Spell from CD
-- [ ] !10 Jan - Prepare blender scene for simulate tournament
-- [ ] !11 Jan - Go NCB to take currency again
+- [ ] Find jp hotel (Ginza?)
 - [ ] !18 Jan - 沈祖明 + 灣仔Buy SSD and enclosure in [link](https://www.price.com.hk/product.php?p=576311)(未來科技可以+38換購外置盒) for storing HBR record stuff
 - [ ] !19 Jan - pay credit card payment
 - [ ] !19 Jan - finish jp web
 - [ ] !26 Jan Decide which day to find Geroge
 - [ ] !6 Feb - See if you can spend over $80 in welcome (yuu $8 coupon)
 - [ ] !15 Feb - Watch Live 2D lesson 2-15
-- [ ] Find jp hotel (Ginza?)
 - [ ] Try to get David wan videos in old phone sd card
 - [ ] Put trash to carousel
 - [ ] Sell the old GPU and CPU
