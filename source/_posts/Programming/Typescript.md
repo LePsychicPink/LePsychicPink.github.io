@@ -33,7 +33,13 @@ type newType = {
 | slice(start?,end?)      | Array         | extract and start to end elements from an array<br>(can use negative to inverse direction) |
 | splice(start?,end?)     | Array         | deleting the start to end elements from an array and return the deleted item               |
 | \[...array\]            |               | (spread) fill content of the array                                                         |
-
+## Map
+```Typescript
+const value = 1;
+const map : Map<string,number> = new Map<string,number>();
+Map.set('key',value);
+Map.get('key') //return 1
+```
 ## Operator
 
 ### ??

@@ -25,7 +25,7 @@ cover: img/hisameTop.png
 | commit all                 | `git commit -a -m "message`                     |
 | amend commit               | `git commit -m "message" --amend`               |
 | Go back to specific commit | `git reset {commitID}`                          |
-|                            |                                                 |
+
 ### Stash
 | Operation               | Command                         |
 | ----------------------- | ------------------------------- |

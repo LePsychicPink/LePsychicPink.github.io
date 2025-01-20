@@ -9,9 +9,6 @@ date: 2026-1-1
 ## Short Term To-do
 - [ ] Song Tier List
 - [ ] Find jp hotel (Ginza?)
-- [ ] !18 Jan - 沈祖明 + 灣仔Buy SSD and enclosure in [link](https://www.price.com.hk/product.php?p=576311)(未來科技可以+38換購外置盒) for storing HBR record stuff
-- [ ] !19 Jan - pay credit card payment
-- [ ] !19 Jan - finish jp web
 - [ ] !26 Jan Decide which day to find Geroge
 - [ ] !6 Feb - See if you can spend over $80 in welcome (yuu $8 coupon)
 - [ ] !15 Feb - Watch Live 2D lesson 2-15
@@ -36,11 +33,11 @@ date: 2026-1-1
 - [ ] Watch Chap4 day1 free time (Asamin conversation)
 ## To-watch anime
 
-| Place  | Anime |
-| ------ | ----- |
-| Home   |       |
-| Bus    | 放學後失眠 |
-| Office |       |
+| Place  | Anime     |
+| ------ | --------- |
+| Home   |           |
+| Bus    | 放學後失眠     |
+| Office | 我的推是壞人大小姐 |
 ## To-Learn
 
 | Item                    | Usage                         | Reference |

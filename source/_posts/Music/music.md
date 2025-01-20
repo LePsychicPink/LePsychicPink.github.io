@@ -27,7 +27,15 @@ categories: song
 | くそ暑い日の誓い                                |               |                                 |
 | ディベートソルジャー                              |               |                                 |
 | Welcome to the Front Line!              | やなぎなぎ         | 鳴らせ~じゃかじゃん                      |
-
+## Frieren OST
+| OST                          |
+| ---------------------------- |
+| A Well Earned Celebration    |
+| One Last Adventure           |
+| Time Flows Ever Onward       |
+| Grassy Turtles and Seed Rats |
+| Zoltraak                     |
+| Deep in the Dungeon          |
 ### Milgram
 
 | Song       | Character | Trial |
