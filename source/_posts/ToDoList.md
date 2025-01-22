@@ -9,7 +9,6 @@ date: 2026-1-1
 ## Short Term To-do
 - [ ] Song Tier List
 - [ ] Find jp hotel (Ginza?)
-- [ ] !26 Jan Decide which day to find Geroge
 - [ ] !28 Jan fill in the Price performance review form
 - [ ] !6 Feb - See if you can spend over $80 in welcome (yuu $8 coupon)
 - [ ] !15 Feb - Watch Live 2D lesson 2-15
