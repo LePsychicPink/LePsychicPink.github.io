@@ -22,8 +22,10 @@ npx playwright test --ui
 ```
 
 ### Run test
-
+```Powershell
 npx playwright test `filename`.spec.ts --config=`config file name`.config.ts --workers=4 --retries=3 --project="mschromium" --trace on -g "(?=.\*zh_CN)" --headed
+```
+
 
 ```Powershell
 npx playwright test merchant-directory.spec.ts --config=playwright.monocart.config.ts --workers=4 --retries=3 --project="mschromium" --trace on -g "(?=.*zh_CN)" --headed

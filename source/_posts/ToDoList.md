@@ -9,7 +9,8 @@ date: 2026-1-1
 ## Short Term To-do
 - [ ] Song Tier List
 - [ ] Find jp hotel (Ginza?)
-- [ ] !28 Jan fill in the Price performance review form
+- [ ] Check Lyrics 春眠旅團 放課後的melody 火球 もーいいかい きみのハートも撃て
+- [ ] !28 Buy anti-humid bag
 - [ ] !6 Feb - See if you can spend over $80 in welcome (yuu $8 coupon)
 - [ ] !15 Feb - Watch Live 2D lesson 2-15
 - [ ] Try to get David wan videos in old phone sd card
@@ -33,11 +34,11 @@ date: 2026-1-1
 - [ ] Watch Chap4 day1 free time (Asamin conversation)
 ## To-watch anime
 
-| Place  | Anime     |
-| ------ | --------- |
-| Home   |           |
-| Bus    | 放學後失眠     |
-| Office | 我的推是壞人大小姐 |
+| Place  | Anime         |
+| ------ | ------------- |
+| Home   | Metalic Rouge |
+| Bus    | 放學後失眠         |
+| Office | 我的推是壞人大小姐     |
 ## To-Learn
 
 | Item                    | Usage                         | Reference |

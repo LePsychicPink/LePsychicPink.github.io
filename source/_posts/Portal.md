@@ -34,10 +34,12 @@ date: 2025-12-31
 
 ### Game
 
-| Game         | Site                                                                         |     |
-| ------------ | ---------------------------------------------------------------------------- | --- |
-| Reverse:1999 | [素材周回参考](https://reverse1999.wikiru.jp/?%E7%B4%A0%E6%9D%90%E5%91%A8%E5%9B%9) |     |
-| Reverse:1999 | [GameWith](https://gamewith.jp/reverse1999/)                                 |     |
+| Game          | Site                                                                         |     |
+| ------------- | ---------------------------------------------------------------------------- | --- |
+| Reverse:1999  | [素材周回参考](https://reverse1999.wikiru.jp/?%E7%B4%A0%E6%9D%90%E5%91%A8%E5%9B%9) |     |
+| Reverse:1999  | [GameWith](https://gamewith.jp/reverse1999/)                                 |     |
+| Tactics tools | https://tactics.tools/                                                       |     |
+|               |                                                                              |     |
 
 ### Other
 
