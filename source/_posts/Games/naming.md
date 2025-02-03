@@ -24,7 +24,7 @@ Naming list
 
 > 仁者，其言也訒 - 孔子
 
-> You are the solo surviver of your family - 溫帶維
+> You are the solo survivor of your family - 溫帶維
 
 花火なんて ただの焔色反応
 
