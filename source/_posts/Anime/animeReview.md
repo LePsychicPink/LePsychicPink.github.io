@@ -8,3 +8,4 @@ tags:
 | ----------------------------- |
 | [Ragna Crimson](RagnaCrimson) |
 | [Shy](Shy)                    |
+| [Frieren](Frieren)            |
