@@ -26,7 +26,8 @@ type newType = {
 ## Array
 | **property**            | **return**    | **usage**                                                                                  |
 | ----------------------- | ------------- | ------------------------------------------------------------------------------------------ |
-| pop()                   | Array element | get the last element                                                                       |
+| pop(), shift()          | Array element | pop() and dequeue()                                                                        |
+| push(), unshift()       |               | add item to first / last element                                                           |
 | includ(target)          | Boolean       | check if the array have a element match target                                             |
 | every((item)=>statment) | boolean       | check if every element match the statement inside                                          |
 | join(separator?)        | string        | combine all string into one string with separator                                          |
