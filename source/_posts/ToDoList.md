@@ -8,6 +8,7 @@ date: 2026-1-1
 - [ ] 
 ## Short Term To-do
 - [ ] !!! Find jp hotel (Ginza?)
+- [ ] Anti-wet bag
 - [ ] Check Lyrics 春眠旅團 放課後的melody 火球 もーいいかい きみのハートも撃て
 - [ ] !12 Feb - Dinner with Alex
 - [ ] !15 Feb - Watch Live 2D lesson 2-15
@@ -35,7 +36,7 @@ date: 2026-1-1
 | Place  | Anime     |       |
 | ------ | --------- | ----- |
 | Home   |           | 天使的3P |
-| Bus    | 放學後失眠     |       |
+| Bus    | 最強肉盾      |       |
 | Office | 我的推是壞人大小姐 |       |
 ## To-Learn
 
