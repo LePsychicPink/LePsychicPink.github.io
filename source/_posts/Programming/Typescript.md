@@ -41,6 +41,16 @@ const map : Map<string,number> = new Map<string,number>();
 Map.set('key',value);
 Map.get('key') //return 1
 ```
+
+To initialize, can use `Object.entries`
+```
+const obj = { name: 'Bobby Hadz', country: 'Chile' };
+const map1 = new Map<string, string>(Object.entries(obj));
+
+// 👇️ Map(2) { 'name' => 'Bobby Hadz', 'country' => 'Chile' }
+console.log(map1);
+
+```
 ## Operator
 
 ### ??
