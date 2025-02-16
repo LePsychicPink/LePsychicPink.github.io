@@ -60,7 +60,7 @@ test.describe("GroupName", () => {
 | page.getByAltText()     | alt text                                                                  | await page.getByAltText('AltText')                       |
 | page.getByTitle()       | title                                                                     | await page.getByTitle('Title')                           |
 | page.getByTestId()      | test id                                                                   | await page.getByTestId('TestId')                         |
-| locator.nth(index)      | get the i-th element under locator                                        | await page.locator('.className').nth(1)                  |
+| locator.nth(index)      | n-th element                                                              | await page.locator('.className').nth(1)                  |
 
 ### locator iteration
 
@@ -88,18 +88,18 @@ test.describe("GroupName", () => {
 
 ### CSS Conditions
 
-| Conditions     | Explaination                                   | Example                                                           |
-| -------------- | ---------------------------------------------- | ----------------------------------------------------------------- |
-| div            | tag like \<div\>, \<p\>                        | await page.locator('div')                                         |
-| \#id           | id attribute                                   | await page.locator('div#id1')                                     |
-| .class         | .class<br>div.class                            | await page.locator('.class1')<br>await page.locator('div.class1') |
-| .class1.class2 | element with multiple class                    | await page.locator('.class1.class2')                              |
-| :has(>)        | element having matching child                  | await page.locator('.class1:has(> .class2)')                      |
-| :has-text      | find childrens<br>contains<br>case-insensitive | await page.locator('div:has-text("innerText")')                   |
-| :is-text       | find childrens<br>exact text<br>case-sensitive | await page.locator('div:is-text("innerText")')                    |
-| :text          | exact text<br>case-insensitive                 | await page.locator('div:text("innerText")')                       |
-| :text-matches  | regex                                          | await page.locator('div:text-matches("reg?ex", "i")')             |
-| :nth-match     | nth match 1-based                              | await page.locator(':nth-match(:text("innerText"), 1)')           |
+| Conditions     | Explaination                                  | Example                                                           |
+| -------------- | --------------------------------------------- | ----------------------------------------------------------------- |
+| div            | tag like \<div\>, \<p\>                       | await page.locator('div')                                         |
+| \#id           | id attribute                                  | await page.locator('div#id1')                                     |
+| .class         | .class<br>div.class                           | await page.locator('.class1')<br>await page.locator('div.class1') |
+| .class1.class2 | element with multiple class                   | await page.locator('.class1.class2')                              |
+| :has(>)        | element with matching child                   | await page.locator('.class1:has(> .class2)')                      |
+| :has-text      | find children<br>contains<br>case-insensitive | await page.locator('div:has-text("innerText")')                   |
+| :is-text       | find children<br>exact text<br>case-sensitive | await page.locator('div:is-text("innerText")')                    |
+| :text          | exact text<br>case-insensitive                | await page.locator('div:text("innerText")')                       |
+| :text-matches  | regex                                         | await page.locator('div:text-matches("reg?ex", "i")')             |
+| :nth-match     | nth match 1-based                             | await page.locator(':nth-match(:text("innerText"), 1)')           |
 
 ### locator actions
 | Actions         | Explaination                                                                | Example                             |
