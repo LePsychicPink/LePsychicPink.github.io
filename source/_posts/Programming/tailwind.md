@@ -42,15 +42,15 @@ example: `<div class="container sm">`
 
 ## [Conditional apply](https://tailwindcss.com/docs/hover-focus-and-other-states)
 
-| condition   | example | explain |
-| ------- | ----------- | ----|
-| hover | text-sm **hover:**text-base  | apply in hover
-| focus |  | 
-| active |  |
-| first |  | apply when it is the first-child
-| last |  |apply when it is the last-child
-| odd |  |apply when it is the odd-child
-| even |  |apply when it is the even-child
+| condition | example                     | explain                          |
+| --------- | --------------------------- | -------------------------------- |
+| hover     | text-sm **hover:**text-base | apply in hover                   |
+| focus     |                             |                                  |
+| active    |                             |                                  |
+| first     |                             | apply when it is the first-child |
+| last      |                             | apply when it is the last-child  |
+| odd       |                             | apply when it is the odd-child   |
+| even      |                             | apply when it is the even-child  |
 
 ## Spacing
 
@@ -103,3 +103,22 @@ example: `<div class="container sm">`
 | text-xl   | font-size:  20px <br>line-height: 28px |
 | text-2xl  | font-size:  24px <br>line-height: 32px |
 | text-3xl  | font-size:  30px <br>line-height: 36px |
+
+## border
+
+### border width
+| value    | equals                 |
+| -------- | ---------------------- |
+| border-0 | border-width: 0px;<br> |
+| border-2 | border-width: 2px;<br> |
+| border-4 | border-width: 4px;<br> |
+## Responsive design
+
+only apply when width reach requirement
+
+| condition | example | explain        |
+| --------- | ------- | -------------- |
+| sm        | sm:p-8  | width > 640px  |
+| md        | md:p-8  | width > 768px  |
+| lg        | lg:p-8  | width > 1024px |
+
