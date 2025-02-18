@@ -66,8 +66,8 @@ date: 2025-12-30
 
 | Tier |                  |                            |                      |                            |                                    |             |            |
 | ---- | ---------------- | -------------------------- | -------------------- | -------------------------- | ---------------------------------- | ----------- | ---------- |
-| S    | Long Long Spell  | 放課後のメロディ                   | 春眠旅団                 | Sailing Ship (Broken Ver.) | Bougainvillea                      | シヴァ         |            |
-| A+   | Dear R. Heinlein | Seabird Song               | Autumn Howl          | 夏気球                        | 死にゆく季節の君へ<br>                      | 死にゆく季節でぼくは  | ワルキューレの叙事詩 |
+| S    | Long Long Spell  | 放課後のメロディ                   | 春眠旅団                 | Sailing Ship (Broken Ver.) | Bougainvillea                      | シヴァ         | ワルキューレの叙事詩 |
+| A+   | Dear R. Heinlein | Seabird Song               | Autumn Howl          | 夏気球                        | 死にゆく季節の君へ<br>                      | 死にゆく季節でぼくは  |            |
 | A    | 贅沢な感情            | Welcome to the Front Line! | くそ暑い日の誓い             | ディベートソルジャー                 | ありふれた Battle Song <br> ～いつも戦闘は面倒だ～ |             |            |
 | B    | さよならの速度          | 星の墓標                       | Particle Effect      | インドラ                       | Light Years                        | White Spell | 幻想都市       |
 | C    | Indigo in Blue   | きみの横顔                      | Dance! Dance! Dance! |                            |                                    |             |            |
