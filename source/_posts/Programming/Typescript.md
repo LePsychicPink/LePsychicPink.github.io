@@ -43,7 +43,7 @@ Map.get('key') //return 1
 ```
 
 To initialize, can use `Object.entries`
-```
+```Typescript
 const obj = { name: 'Bobby Hadz', country: 'Chile' };
 const map1 = new Map<string, string>(Object.entries(obj));
 
@@ -51,6 +51,52 @@ const map1 = new Map<string, string>(Object.entries(obj));
 console.log(map1);
 
 ```
+
+## Record
+```Typescript
+type objectTypeWithDynamicNames = Record<string,any>;
+const example: objectTypeWithDynamicNames = {
+	key1: 1,
+	key2: '2'
+};
+```
+
+To specify the keys in the object
+
+```Typescript
+type keyofTheObject = 'key1' | 'key2' | 'key3'
+
+type objectWithSpecifiedKey =  Record <keyofTheObject,any>;
+
+const example: objectWithSpecifiedKey = {
+	key1: 'a',
+	key2: 1,
+}
+
+const example2: objectWithSpecifiedKey = {
+	key3: true,
+}
+```
+The object is not forced to have all the key specified
+
+To make sure the object have all non-optional keys
+```Typescript
+type keyofTheObject = 'key1' | 'key2' | 'key3'
+
+type objectWithSpecifiedKey =  Record <keyofTheObject,any>;
+
+const example = {
+	key1: 'a',
+	key2: 1,
+} satisfies objectWithSpecifiedKey; //return compile error Property 'key' is missing in type '{ 	key1: 'a',	key2: 1, }' but required in type 'objectWithSpecifiedKey'.
+
+const example2: objectWithSpecifiedKey = {
+	key1: 'a',
+	key2: 1,
+	key3: true,
+} satisfies objectWithSpecifiedKey; // correct
+```
+
 ## Operator
 
 ### ??
@@ -62,7 +108,15 @@ Difference:
 `??` → use RHS when LHS is `null` or `undefined`
 `||` → use RHS when LHS is `null` or `undefined` or `False` or `0`
 
+### ??= 
+```Typescript
+let foo = null;
+foo ??= 'foo'
+foo ??= 'bar'
+console.log(foo) //return 'foo'
+```
 ### keyof
+
 keyof object, used as type
 ```Typescript
 Obj = {
@@ -77,7 +131,25 @@ keyof typeof Obj is equal to
 type A = 'one'|'two'|'three'
 ```
 ### typeof
+
 typeof object, used as type
+
+### Unary Operator
+#### +
+Attempt to convert the operand into number
+```Typescript
+console.log(+"") // return 0
+console.log(+true) //return 1
+console.log(+false) // return 0
+console.log(+"24") // return 24
+console.log(+"31C") // return NaN
+```
+
+#### -
+Attempt to convert the operand into number and negate it
+```Typescript
+console.log(-"24") // return -24
+```
 
 ## Promise
 
