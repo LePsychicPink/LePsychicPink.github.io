@@ -8,7 +8,7 @@ tags:
 | Item |             |
 | ---- | ----------- |
 | MBTI | INFP / INTP |
-| 衫碼   |             |
+| 衫碼   | JP - L,     |
 | 鞋碼   |             |
 ## Standard Response
 

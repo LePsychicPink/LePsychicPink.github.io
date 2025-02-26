@@ -24,16 +24,18 @@ type newType = {
 ```
 
 ## Array
-| **property**            | **return**    | **usage**                                                                                  |
-| ----------------------- | ------------- | ------------------------------------------------------------------------------------------ |
-| pop(), shift()          | Array element | pop() and dequeue()                                                                        |
-| push(), unshift()       |               | add item to first / last element                                                           |
-| includ(target)          | Boolean       | check if the array have a element match target                                             |
-| every((item)=>statment) | boolean       | check if every element match the statement inside                                          |
-| join(separator?)        | string        | combine all string into one string with separator                                          |
-| slice(start?,end?)      | Array         | extract and start to end elements from an array<br>(can use negative to inverse direction) |
-| splice(start?,end?)     | Array         | deleting the start to end elements from an array and return the deleted item               |
-| \[...array\]            |               | (spread) fill content of the array                                                         |
+| **property**                                           | **return**    | **usage**                                                                                  |
+| ------------------------------------------------------ | ------------- | ------------------------------------------------------------------------------------------ |
+| pop(), shift()                                         | Array element | pop() and dequeue()                                                                        |
+| push(), unshift()                                      |               | add item to first / last element                                                           |
+| includes(target)                                       | Boolean       | check if the array have a element match target                                             |
+| every((item)=>statment)                                | boolean       | check if every element match the statement inside                                          |
+| join(separator?)                                       | string        | combine all string into one string with separator                                          |
+| slice(start?,end?)                                     | Array         | extract and start to end elements from an array<br>(can use negative to inverse direction) |
+| splice(start?,end?)                                    | Array         | deleting the start to end elements from an array and return the deleted item               |
+| \[...array\]                                           |               | (spread) fill content of the array                                                         |
+| filter(item=>statement return true)                    | array         | filter the element of array into array of element only fit the specified condition         |
+| reduce((acc,cur)=statement with acc and cur,initValue) | non-array     | process all elements in the array and return a final result of it                          |
 ## Map
 ```Typescript
 const value = 1;

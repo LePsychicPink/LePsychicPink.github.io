@@ -21,10 +21,12 @@ categories: programming
 | --------- | ------------------ | ------- | ----- |
 | SPARKLINE | (data, \[option\]) |         |       |
 ### Date functions
-| Function | input                  | Example          | usage                          |
-| -------- | ---------------------- | ---------------- | ------------------------------ |
-| DATE     | (YEAR,MONTH,DAY)       | =DATE(A1,B1,C1)  | return a date value by 3 value |
-| DAYS     | (End Date, Start Date) | =DAYS(End,Start) | return number of day between   |
+| Function | input                  | Example            | usage                          |
+| -------- | ---------------------- | ------------------ | ------------------------------ |
+| DATE     | (YEAR,MONTH,DAY)       | =DATE(A1,B1,C1)    | return a date value by 3 value |
+| DAYS     | (End Date, Start Date) | =DAYS(End,Start)   | return number of day between   |
+| EOMONTH  | (Start_date,Month)     | =EOMOBTH(1/2/2025) | e.g. return 28 if it is Feb    |
+|          |                        |                    |                                |
 ### VLOOKUP
 ```
 =VLOOKUP(search_key,range,index,is_sorted)

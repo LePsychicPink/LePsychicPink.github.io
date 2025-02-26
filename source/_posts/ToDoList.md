@@ -7,11 +7,9 @@ date: 2026-1-1
 ## Daily
 - [ ] 
 ## Short Term To-do
-- [ ] !!! Find jp hotel (Ginza?)
-- [ ] Anti-wet bag
+- [ ] !19/3 credit card payment
 - [ ] Check Lyrics 春眠旅團 放課後的melody 火球 もーいいかい きみのハートも撃て
-- [ ] !12 Feb - Dinner with Alex
-- [ ] !15 Feb - Watch Live 2D lesson 2-15
+- [ ] !4/4 handle hotel refund ( from 4 booked hotel )
 - [ ] Try to get David wan videos in old phone sd card
 - [ ] Put trash to carousel
 - [ ] Sell the old GPU and CPU
