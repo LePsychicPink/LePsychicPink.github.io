@@ -5,8 +5,33 @@ tags:
 categories: game
 ---
 
+# Version 2 (ゆんゆん→ななみん)
+
+## First DP
+
+Turn 1: 行動なし
+蒼井　めっち　タマを前に - 閃光 SP+1
+
+Turn 2: 全体攻撃 厄 / 単体攻撃
+タマ　ユイナ　ななみん
+
+Turn 3: 全体攻撃
+DP 余裕の 3 人
+
+Turn 4: 単体攻撃
+蒼井注文　ひさめっち　タマ Fill Recover
+
+Turn 5: 全体攻撃
+ななみん　タマ Fill Recover　＋DP余裕
+
+Turn 6: BREAK する ?
+シャロ専用　+ 3 hit　+ ななみんSonic Boost→ 　 OD
+シャロ専用　タマ　オープン・ザ・ロード　ひさめ　とある衝撃 → 攻撃
+
 [source](https://www.youtube.com/watch?v=2wT4BcYPFrg)
 
+![Team1](team1.png)
+![Team2](team2.png)
 ## First DP
 
 Turn 1: 行動なし
@@ -25,7 +50,7 @@ Turn 5: 全体攻撃
 ユイナ 導き　ひさめ とある衝撃
 
 Turn 6: BREAK する
-タマ　オープン・ザ・ロード　ゆんゆん　七計　 → 　ひさめ　シャロ専用　 → 　 OD
+タマ　オープン・ザ・ロード　ゆんゆん　七計 to　ひさめ　シャロ専用　 → 　 OD
 シャロ専用　演舞斬　ひさめ　とある衝撃
 
 ## Second DP
@@ -39,6 +64,7 @@ Turn 7: 単体攻撃
 攻撃されたら　 Fill Recover
 
 Turn 8:　単体攻撃
+DP 余裕の 3 人　 / Fill Recover
 
 Turn 9: 単体攻撃/全体攻撃 STUN
 ムウア 快感スプリント マリ Diamond Dust アーさん後衛
@@ -89,6 +115,12 @@ Turn 19: BREAK する
 Turn 19:　単体攻撃/溜め
 ムウア快感スプリント　五十鈴　あいな　前
 
+Turn 20:　単体攻撃　攻撃デバフ
+
+Turn 21:　単体攻撃
+
+Turn 22:　単体攻撃
+
 Turn 24: 単体攻撃　攻撃デバフ
 アーさん以外　 DP 余裕の 3 人
 
@@ -106,10 +138,10 @@ Turn 25: 行動不能
 Turn 26: 単体攻撃
 注文　七計
 
-Turn 27:
+Turn 27: 全体攻撃
 エンジェルズ・ウィング
 
-Turn 28:
+Turn 28: 全体攻撃
 蒼井クリシン　七計
 
 Turn 29: 単体攻撃
@@ -122,6 +154,8 @@ Turn 30: 全体攻撃
 
 OD 3 で攻撃
 シャロ雷属性防御力ダウン　演舞斬　夜醒
-シャロ雷属性防御力ダウン　演舞斬　残したバフ
-シャロ専用　ゆんゆん専用
+シャロ雷属性防御力ダウン　演舞斬　ライトニング
+シャロ専用　残したバフ(オープン・ザ・ロード) 自由
+残したバフ / 自由 
 きらめきエイル　蒼井攻撃
+
