@@ -112,7 +112,7 @@ Create a custom `test` object which extend the original `test()` function from p
 - setup duplicated action
 - setup action after `use`
 
-```
+```Typescript
 const myTest = test.extend({
   webApp: async({page},use) => {
     console.log('setup')
@@ -131,7 +131,7 @@ What it does is: 'setup' > the action > 'finished'
 For the predefined Fixture across multiple ts use,
 `setup.ts`
 
-```
+```Typescript
 const {test, expect} = require{"@playwright/test"}
 const {ac, pw} = process.env // take login details from .env
 
@@ -156,4 +156,10 @@ const { test , expect } = require("./setup")
 - default
 ```Typescript
 test.describe.configure({ mode: "serial" });
+```
+
+## Dialog
+Playwright default to dismiss dialog automatically. So if we want to handle the dialog, we need to setup a dialog listener before the action which trigger dialog
+```Typescript
+aiPage.page.on('dialog', (dialog) => dialog.accept());
 ```
