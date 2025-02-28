@@ -8,7 +8,7 @@ date: 2026-1-1
 - [ ] 
 ## Short Term To-do
 - [ ] !19/3 credit card payment
-- [ ] Check Lyrics 春眠旅團 放課後的melody 火球 もーいいかい きみのハートも撃て
+- [ ] Check Lyrics 春眠旅團 放課後的melody 火球 もーいいかい きみのハートも撃て じゃれ合うと思って
 - [ ] !4/4 handle hotel refund ( from 4 booked hotel )
 - [ ] Try to get David wan videos in old phone sd card
 - [ ] Put trash to carousel
