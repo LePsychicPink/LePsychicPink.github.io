@@ -5,7 +5,7 @@ tags:
 categories: animation
 ---
 ## 建議次序
-輪廓 > 鼻 > 雙眼 > 口 > 耳 > 頭髮
+輪廓 > 鼻 > 雙眼（眼、[眉](/RedSodaLive2D/Mayuge)）> 口 > 耳 > 頭髮
 
 眼、眉、嘴要有各自的曲面
 

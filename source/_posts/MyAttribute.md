@@ -3,6 +3,7 @@ title: My Attribute
 tags:
   - BMTI
   - Response
+password: otamasan
 ---
 
 | Item |             |
@@ -18,7 +19,7 @@ A: 恐縮です
 Q: どうやって日本語を勉強したの
 A: 歌詞や小説やアニメで学びました
 Q2-1: What Anime you watch
-A2-1: 色々見た、強いて言えばコードギアス(30代) / ガンダム(お年寄り) / フリーレン（哲学意味で）
+A2-1: 色々見た、強いて言えばコードギアス（30代）/ ガンダム（お年寄り）/ フリーレン（哲学意味で）
 Q2-2: What novel you read
 A2-2: 夏目漱石のこころ
 Q2-3: 好きな歌い手

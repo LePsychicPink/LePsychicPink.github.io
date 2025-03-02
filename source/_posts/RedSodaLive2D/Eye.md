@@ -58,4 +58,6 @@ E.g. Highlight should be below eyebrows
 1. Open / Close eye
 	- 閉眼被開眼時眼距較短
 	  {% asset_img EyeReference.png %}
-	- 
+2. Smile
+	1. 做完開閉眼後全選並在笑顏上開key frame
+	2. 從上眼瞼開始
