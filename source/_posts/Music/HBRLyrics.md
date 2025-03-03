@@ -43,24 +43,24 @@ date: 2025-12-30
 
 ## イベント
 
-| 歌                                | 歌手            | Remark                             | Lyrics                       |
-| -------------------------------- | ------------- | ---------------------------------- | ---------------------------- |
-| [放課後のメロディ](houKaGoNoMelody)      | She is Legend | 君に読む憧れ                             |                              |
-| Autumn Howl                      | She is Legend | 罪と罰と愛と                             |                              |
-| さよならの速度                          | She is Legend | きみはこの夏の Fairy、<br>ぼくはその姿を瞳の奥に Rec. |                              |
-| How's everything                 | She is Legend | 緋に染まる袖時雨                           |                              |
-| [Long Long Spell](longLongSpell) | She is Legend | Letters on The Back                | [Finished](#Long-Long-Spell) |
-|                                  |               | 私立セラフィム学園 \~<br>蒼井、アイドルになります！\~    |                              |
-| Sailing Ship (Broken Ver.)       |               | 怪人ノートと銀の時計                         |                              |
-| [春眠旅団](shunminryotan)            | She is Legend | 28 メートルの永遠                         |                              |
-| 闇夜の Komachi Vampire              | She is Legend | アイリーン・レドメインの事件簿 <br>－名探偵と森の魔女－     |                              |
-| ガラス越しのスペクタクル                     | She is Legend | Silhouette of Summer Light Square  |                              |
-| Dear R. Heinlein                 | She is Legend | あんまりです めぐみさん！                      |                              |
-| ヤになって閉ざしたハート                     | She is Legend | BAD GIRLS DESTRUCTION              |                              |
-|                                  |               | 心優しき死神より                           |                              |
-| Come on baby                     |               | 丸い幸せに祈りを込めて                        |                              |
-| Seabird Song                     | 佐々木恵梨         | うみとら冒険譚                            |                              |
-| Kone Kone Day by Day             | She is Legend |                                    |                              |
+| 歌                                                        | 歌手            | Remark                             | Lyrics                       |
+| -------------------------------------------------------- | ------------- | ---------------------------------- | ---------------------------- |
+| [放課後のメロディ](/Music/HeavenBurnLyrics/houKaGoNoMelody)      | She is Legend | 君に読む憧れ                             |                              |
+| Autumn Howl                                              | She is Legend | 罪と罰と愛と                             |                              |
+| さよならの速度                                                  | She is Legend | きみはこの夏の Fairy、<br>ぼくはその姿を瞳の奥に Rec. |                              |
+| How's everything                                         | She is Legend | 緋に染まる袖時雨                           |                              |
+| [Long Long Spell](/Music/HeavenBurnLyrics/longLongSpell) | She is Legend | Letters on The Back                | [Finished](#Long-Long-Spell) |
+|                                                          |               | 私立セラフィム学園 \~<br>蒼井、アイドルになります！\~    |                              |
+| Sailing Ship (Broken Ver.)                               |               | 怪人ノートと銀の時計                         |                              |
+| [春眠旅団](/Music/HeavenBurnLyrics/shunminryotan)            | She is Legend | 28 メートルの永遠                         |                              |
+| 闇夜の Komachi Vampire                                      | She is Legend | アイリーン・レドメインの事件簿 <br>－名探偵と森の魔女－     |                              |
+| ガラス越しのスペクタクル                                             | She is Legend | Silhouette of Summer Light Square  |                              |
+| Dear R. Heinlein                                         | She is Legend | あんまりです めぐみさん！                      |                              |
+| ヤになって閉ざしたハート                                             | She is Legend | BAD GIRLS DESTRUCTION              |                              |
+|                                                          |               | 心優しき死神より                           |                              |
+| Come on baby                                             |               | 丸い幸せに祈りを込めて                        |                              |
+| Seabird Song                                             | 佐々木恵梨         | うみとら冒険譚                            |                              |
+| Kone Kone Day by Day                                     | She is Legend |                                    |                              |
 
 ## Tier List
 
