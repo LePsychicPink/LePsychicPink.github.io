@@ -160,3 +160,10 @@ console.log(-"24") // return -24
   const funcs: Promise<any>[] = [asyncFunction1, asyncFunction2];
   await Promise.race(funcs); // see tither of them resolve first
 ```
+
+## To decide if property in a custom object
+```Typescript
+if ('propertyName' in CustomObject){
+	//do sth
+}
+```
