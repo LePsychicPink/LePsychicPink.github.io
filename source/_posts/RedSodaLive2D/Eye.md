@@ -55,9 +55,26 @@ E.g. Highlight should be below eyebrows
 
 ## Animation frames
 
-1. Open / Close eye
+1. Open / Close eye（開閉Keyframe）
 	- 閉眼被開眼時眼距較短
 	  {% asset_img EyeReference.png %}
-2. Smile
-	1. 做完開閉眼後全選並在笑顏上開key frame
-	2. 從上眼瞼開始
+2. Smile（笑顏Keyframe）
+	- 做完開閉眼後全選並在笑顏上開key frame
+	- 從上眼瞼開始
+3. 眼球彈跳曲面
+	- 物理演算用
+4. 眼球移動（眼球XY移動曲面）作為眼球彈跳曲面的父層
+	- 盡量把兩極的距離設定相等
+	- 四角生成後把複製四角的sin45°數值（**0.7071**）
+5. 眼球球體變形（眼球球體曲面）（Week2Day2-1, 01:13:57）
+	1. Copy眼球XY移動曲面
+	2. 在被copy的曲面上生成新的曲面
+	3. 原地放大（Alt+Shift+Drag放大）- 分割數15×15
+	4. Brush選取工具點中間（圓最好放含所有點）
+	5. 原地放大（Alt+Shift+Drag放大）
+	6. 重複步驟4-6幾次
+	7. 全體縮小
+	8. 這樣把子層曲面變成近球體形狀
+	9. 把本來的球眼XY移動曲面內的物件移到新的XY移動曲面內
+	    {% asset_img AfterStep5.png %}
+6. 虹膜XY位差曲面（Week2Day2-1, 01:20:00）
