@@ -68,32 +68,33 @@ categories: song
 
 ### アニメソン
 
-| 歌名                                                  | 歌手               | アニメ           | Remark                                            |
-| ----------------------------------------------------- | ------------------ | ---------------- | ------------------------------------------------- |
-| O2                                                    | ORANGE RANGE       | Code Geass       | op                                                |
-| 光のない街                                            | nano.RIPE          | はたらく魔王さま | op                                                |
-| ハナノイロ                                            | nano.RIPE          | 花咲くいろは     | op                                                |
-| Hazy                                                  |                    | 花咲くいろは     |                                                   |
-| 神様のシンドローム                                    | 彩音               | ひぐらし         |                                                   |
-| 不規則性エントローピー                                | 彩音               | ひぐらし         |                                                   |
-| I believe what you said                               | 亜咲花             | ひぐらし         |                                                   |
-| Resonance                                             | T.M.Revolution     | Soul Eater       | op                                                |
-| 夢の続き                                              |                    | さくら荘         | op 2                                              |
-| over and over                                         | やなぎなぎ         | Just Because     | op                                                |
-| DREAMS                                                |                    | ガンダム X       |
-| Resolution                                            |                    | ガンダム X       |
-| 羽ばたきのバースデイ                                  |                    | 天使の 3P!       |
-| Cry Baby                                              | Official 髭男 dism | 東京リベンジャー |
-| 君の知らない物語                                      | supercell          |                  |
-| Hacking to the Gate                                   | いとう かなこ      | Stein;Gate       |
-| スカイクラッドの観測者                                | いとう かなこ      | Stein;Gate       | 「0」が過去で「1」が未来 <br>「今」は何処にもない |
-| Gate of STEINER                                       | 佐々木恵梨         | Stein;Gate       |
-| 星の奏でる歌                                          | 椎名かがり         | Stein;Gate       |                                                   |
-| [Alive](https://www.youtube.com/watch?v=7jqVuqVQvvA)  | ReoNa              | Arknight         | S1 OP                                             |
-| [平行線](https://www.youtube.com/watch?v=kKOkybfh9bE) | さユり             | クズの本懐       | ED                                                |
-| ミカヅキ                                              | さユり             | 乱歩奇譚         | ED                                                |
-| フラッグを立てろ                                      | YUKI               | 3月のライオン   |
-| アンサー                                              | BUMP OF CHICKEN    | 3月のライオン   |
+| 歌名                                                   | 歌手               | アニメ           | Remark                       |
+| ---------------------------------------------------- | ---------------- | ------------- | ---------------------------- |
+| O2                                                   | ORANGE RANGE     | Code Geass    | op                           |
+| 光のない街                                                | nano.RIPE        | はたらく魔王さま      | op                           |
+| ハナノイロ                                                | nano.RIPE        | 花咲くいろは        | op                           |
+| Hazy                                                 |                  | 花咲くいろは        |                              |
+| 神様のシンドローム                                            | 彩音               | ひぐらし          |                              |
+| 不規則性エントローピー                                          | 彩音               | ひぐらし          |                              |
+| I believe what you said                              | 亜咲花              | ひぐらし          |                              |
+| Resonance                                            | T.M.Revolution   | Soul Eater    | op                           |
+| 夢の続き                                                 |                  | さくら荘          | op 2                         |
+| over and over                                        | やなぎなぎ            | Just Because  | op                           |
+| DREAMS                                               |                  | ガンダム X        |                              |
+| Resolution                                           |                  | ガンダム X        |                              |
+| 羽ばたきのバースデイ                                           |                  | 天使の 3P!       |                              |
+| Cry Baby                                             | Official 髭男 dism | 東京リベンジャー      |                              |
+| 君の知らない物語                                             | supercell        |               |                              |
+| Hacking to the Gate                                  | いとう かなこ          | Stein;Gate    |                              |
+| スカイクラッドの観測者                                          | いとう かなこ          | Stein;Gate    | 「0」が過去で「1」が未来 <br>「今」は何処にもない |
+| Gate of STEINER                                      | 佐々木恵梨            | Stein;Gate    |                              |
+| 星の奏でる歌                                               | 椎名かがり            | Stein;Gate    |                              |
+| [Alive](https://www.youtube.com/watch?v=7jqVuqVQvvA) | ReoNa            | Arknight      | S1 OP                        |
+| ガジュマル~Heaven in the Rain～                            | ReoNa            | シャングリラ・フロンティア |                              |
+| [平行線](https://www.youtube.com/watch?v=kKOkybfh9bE)   | さユり              | クズの本懐         | ED                           |
+| ミカヅキ                                                 | さユり              | 乱歩奇譚          | ED                           |
+| フラッグを立てろ                                             | YUKI             | 3月のライオン       |                              |
+| アンサー                                                 | BUMP OF CHICKEN  | 3月のライオン       |                              |
 
 ### Other song
 
