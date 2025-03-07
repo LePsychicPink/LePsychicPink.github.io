@@ -80,3 +80,6 @@ git branch -m <old-name> <new-name>
 git push origin -delete <old-name>
 git push origin -u <new-name>
 ```
+
+## Rebase
+Literally take current version to compare the target and convert a commit.  Like editing start from the target
