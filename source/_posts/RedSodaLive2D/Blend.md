@@ -16,9 +16,9 @@ categories: animation
 
 {% asset_img blendParameter.png %}
 
-![[blendParameter.png]]
 
 ### 加權設定
 
-![[BlendWeightingMenu.png]]
-![[BlendWeighting.png]]
+{% asset_img BlendWeightingMenu.png %}
+
+{% asset_img BlendWeighting.png %}
