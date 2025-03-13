@@ -121,13 +121,16 @@ categories: song
 
 ### 歌手
 
-| 歌手          | Example         | Remark |
-| ------------- | --------------- | ------ |
-| やなぎなぎ    |                 |
-| nano.RIPE     |                 |
-| She is legend |                 |
-| ReoNa         | ALive           |
-| supercell     |                 |
-| 佐々木恵梨    | Gate of Steiner |
-| さユり        | 平行線          | RIP    |
-|BUMP OF CHICKEN|
+| 歌手              | Example         | Remark |
+| --------------- | --------------- | ------ |
+| やなぎなぎ           |                 |        |
+| nano.RIPE       |                 |        |
+| She is legend   |                 |        |
+| ReoNa           | ALive           |        |
+| supercell       |                 |        |
+| 佐々木恵梨           | Gate of Steiner |        |
+| さユり             | 平行線             | RIP    |
+| BUMP OF CHICKEN |                 |        |
+| KAF             |                 |        |
+
+いのちの名前 前奏像 gate of steiner (we drift through the mountain')

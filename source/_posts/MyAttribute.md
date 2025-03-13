@@ -28,3 +28,26 @@ A2-3: やなぎなぎ
 Q: What game do you play
 A: I like to play most turn based games that does not require my reaction speed
 A2: I like to play story rich game.
+
+## 気になった声優
+| 声優    | Character example |
+| ----- | ----------------- |
+| 田村ゆかり |                   |
+| 石上静香  | 仆街龍               |
+| 悠木碧   |                   |
+| 古賀葵   |                   |
+| 楠木ともり |                   |
+| 花守ゆみり |                   |
+| 諸星すみれ | 雪                 |
+| 久野美咲  |                   |
+## 気になった男声優
+
+| 声優   | Character example |
+| ---- | ----------------- |
+| 神谷浩史 |                   |
+| 子安武人 |                   |
+|      |                   |
+|      |                   |
+|      |                   |
+|      |                   |
+|      |                   |

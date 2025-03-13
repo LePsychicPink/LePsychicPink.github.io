@@ -10,7 +10,7 @@ date: 2026-1-1
 - [ ] !23/3 credit card payment
 - [ ] !28/3 monthly 月結from Wewa card
 - [ ] Check Lyrics 春眠旅團 放課後的melody 火球 もーいいかい きみのハートも撃て じゃれ合うと思って
-- [ ] !4/4 handle hotel refund ( from 4 booked hotel )
+- [ ] !4/4 handle hotel refund ( from 2 booked hotel )
 - [ ] Try to get David wan videos in old phone sd card
 - [ ] Put trash to carousel
 - [ ] Sell the old GPU and CPU
@@ -32,11 +32,11 @@ date: 2026-1-1
 - [ ] Watch Chap4 day1 free time (Asamin conversation)
 ## To-watch anime
 
-| Place  | Anime     |       |
-| ------ | --------- | ----- |
-| Home   |           | 天使的3P |
-| Bus    | 道產子       |       |
-| Office | 我的推是壞人大小姐 |       |
+| Place  | Anime |       |
+| ------ | ----- | ----- |
+| Home   |       | 天使的3P |
+| Bus    |       |       |
+| Office |       |       |
 ## To-Learn
 
 | Item                    | Usage                         | Reference |
