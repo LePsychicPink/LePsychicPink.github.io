@@ -98,36 +98,36 @@ categories: song
 
 ### Other song
 
-| 歌名                   | 歌手                 | Remark   |
-| ---------------------- | -------------------- | -------- |
-| 馬鹿みたい             |                      | 龍が如く |
-| 24 時間シンデレラ      |                      | 龍が如く |
-| 恋のディスコクイーン   |                      | 龍が如く |
-| Only you               | 天月                 |          |
-| 打ち上げ花火           |                      |          |
-| 初恋                   | 村下孝蔵             |          |
-| What you know          | Two Door Cinema Club |          |
-| Kangaroo Court         | Capital Cities       |          |
-| Back from the Edge     | James Arthur         |          |
-| Reflect                | Gawr Gura            |          |
-| ラブストーリーは突然に | 小田和正             |          |
-| 夜空ノムコウ           | SMAP                 |          |
-| 未来へ                 | キロロ               |          |
-| 偽物勇者               | 703 号室             |
-| ロード                 | THE 虎舞竜           |
-| Numb                   | Linkin Park          |          |
-| In the end             | Linkin Park          |          |
-| 愛的故事上集           | 孫耀威               |          |
+| 歌名                 | 歌手                   | Remark |
+| ------------------ | -------------------- | ------ |
+| 馬鹿みたい              |                      | 龍が如く   |
+| 24 時間シンデレラ         |                      | 龍が如く   |
+| 恋のディスコクイーン         |                      | 龍が如く   |
+| Only you           | 天月                   |        |
+| 打ち上げ花火             |                      |        |
+| 初恋                 | 村下孝蔵                 |        |
+| What you know      | Two Door Cinema Club |        |
+| Kangaroo Court     | Capital Cities       |        |
+| Back from the Edge | James Arthur         |        |
+| Reflect            | Gawr Gura            |        |
+| ラブストーリーは突然に        | 小田和正                 |        |
+| 夜空ノムコウ             | SMAP                 |        |
+| 未来へ                | キロロ                  |        |
+| 偽物勇者               | 703 号室               |        |
+| ロード                | THE 虎舞竜              |        |
+| Numb               | Linkin Park          |        |
+| In the end         | Linkin Park          |        |
+| 愛的故事上集             | 孫耀威                  |        |
 
 ### 歌手
 
-| 歌手          | Example         | Remark |
-| ------------- | --------------- | ------ |
-| やなぎなぎ    |                 |
-| nano.RIPE     |                 |
-| She is legend |                 |
-| ReoNa         | ALive           |
-| supercell     |                 |
-| 佐々木恵梨    | Gate of Steiner |
-| さユり        | 平行線          | RIP    |
-|BUMP OF CHICKEN|
+| 歌手              | Example         | Remark |
+| --------------- | --------------- | ------ |
+| やなぎなぎ           |                 |        |
+| nano.RIPE       |                 |        |
+| She is legend   |                 |        |
+| ReoNa           | ALive           |        |
+| supercell       |                 |        |
+| 佐々木恵梨           | Gate of Steiner |        |
+| さユり             | 平行線             | RIP    |
+| BUMP OF CHICKEN |                 |        |

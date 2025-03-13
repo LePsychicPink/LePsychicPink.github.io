@@ -32,3 +32,9 @@ For reference
 8. Copy the meshing
 
 9. Click colore face and edit mesh → paste the copied mesh
+
+## 曲面
+
+- 臉輪廓隨口 - 跟隨口部變化
+	- 輪廓線
+	- 輪廓底色
