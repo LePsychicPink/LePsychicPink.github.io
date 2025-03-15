@@ -71,3 +71,8 @@ Displace border - X + Drag
 ## 參考線
 1. Right click on campus →ガイド
 2. 水平線追加/垂直線追加
+
+## Deformer smoothen
+{% asset_img smoothen.png %}
+
+建議把分割數降低才使用
