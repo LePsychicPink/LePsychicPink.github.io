@@ -41,10 +41,6 @@ cover: img/hisameTop.png
 
 ### Reset
 ```
-git reset 'HEAD@{1}'
-```
-or
-```
 git reset {commitID}
 ```
 reset the base to certain commit and keep your own working directory
@@ -77,7 +73,7 @@ git branch -m <old-name> <new-name>
 ```
 2. delete the target branch in remote and re-create the upstream of it
 ```
-git push origin -delete <old-name>
+git push origin --delete <old-name>
 git push origin -u <new-name>
 ```
 
