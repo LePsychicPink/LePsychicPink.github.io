@@ -15,6 +15,7 @@ Naming list
 - 得其所哉
 - うまく話せない屋
 - SomethingWentWrong
+- GrayWolfPascal
 
 ### Memorable Quote
 

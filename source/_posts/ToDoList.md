@@ -8,8 +8,7 @@ date: 2026-1-1
 - [ ] 
 ## Short Term To-do
 - [ ] Find out tax letter
-- [ ] !23/3 credit card payment
-- [ ] !28/3 monthly 月結from Wewa card
+- [ ] !28/4 monthly 月結from Wewa card
 - [ ] Check Lyrics 春眠旅團 放課後的melody 火球 もーいいかい きみのハートも撃て じゃれ合うと思って
 - [ ] !4/4 handle hotel refund ( from 2 booked hotel )
 - [ ] Try to get David Wan videos in old phone sd card
@@ -49,5 +48,4 @@ date: 2026-1-1
 | Python in advance       |                               |           |
 | Panda                   |                               |           |
 | Numpy                   |                               |           |
-| WordPress               |                               |           |
 | Unreal Engine           |                               |           |
