@@ -46,3 +46,4 @@ date: 2025-12-31
 | Tool names | url                                            | Remark     |
 | ---------- | ---------------------------------------------- | ---------- |
 | erynith    | https://erynith.github.io/movie-web-instances/ | anime site |
+| Doorzo     | https://www.doorzo.com/                        |            |
