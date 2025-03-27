@@ -29,7 +29,7 @@ Q: What game do you play
 A: I like to play most turn based games that does not require my reaction speed
 A2: I like to play story rich game.
 
-## 気になった声優
+## 気に入った声優
 | 声優    | Character example |
 | ----- | ----------------- |
 | 田村ゆかり |                   |
@@ -40,7 +40,7 @@ A2: I like to play story rich game.
 | 花守ゆみり |                   |
 | 諸星すみれ | 雪                 |
 | 久野美咲  |                   |
-## 気になった男声優
+## 気に入った男声優
 
 | 声優   | Character example |
 | ---- | ----------------- |

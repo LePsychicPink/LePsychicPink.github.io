@@ -37,6 +37,7 @@ type newType = {
 | filter(item=>statement return true)                    | array                          | filter the element of array into array of element only fit the specified condition         |
 | reduce((acc,cur)=statement with acc and cur,initValue) | non-array                      | process all elements in the array and return a final result of it                          |
 | flatMap((item)=>item.child)                            | Array\<element in the object\> | extract element in the original array\<object\> into array\<child of object\>              |
+| isArray(targetArray)                                   | boolean                        | check if targetArray is a array                                                            |
 ## Map
 ```Typescript
 const value = 1;
