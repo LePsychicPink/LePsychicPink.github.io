@@ -6,3 +6,4 @@ categories: animation
 ---
 Steps
 1. 臉九軸
+2. 脖子
