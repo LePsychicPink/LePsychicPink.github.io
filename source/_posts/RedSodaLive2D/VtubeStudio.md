@@ -8,4 +8,4 @@ categories: animation
 {% asset_img exportTexture.png %}
 ![[exportTexture.png]]
 {% asset_img exportmoc3.png %}
-![[Pasted image exportmoc3.png]]
+![[exportmoc3.png]]
