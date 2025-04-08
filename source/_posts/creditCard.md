@@ -4,7 +4,8 @@ tags:
   - money
 categories:
 ---
-| credit Card | usage            | remark                                                                      |
-| ----------- | ---------------- | --------------------------------------------------------------------------- |
-| wewa        | first $3572 - 6% | trip.com 8% off in [Link](https://bit.ly/3uYeJEc) with coupon code PCL2025H |
-|             |                  |                                                                             |
+| credit Card        | 回贈  | 限制              | 上限      | remark                                                                      | status  |
+| ------------------ | --- | --------------- | ------- | --------------------------------------------------------------------------- | ------- |
+| wewa               | 4%  | 旅遊/睇戲/主題公園/卡拉OK | unknown | trip.com 8% off in [Link](https://bit.ly/3uYeJEc) with coupon code PCL2025H | created |
+| AEON CARD WAKUWAKU |     |                 |         |                                                                             |         |
+| MMPower            |     |                 |         |                                                                             |         |
