@@ -9,3 +9,6 @@ tags:
 | [Ragna Crimson](RagnaCrimson) |
 | [Shy](Shy)                    |
 | [Frieren](Frieren)            |
+| [Bravern](Bravern)            |
+|                               |
+|                               |

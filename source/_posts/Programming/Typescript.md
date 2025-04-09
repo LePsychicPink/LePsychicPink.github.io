@@ -169,3 +169,10 @@ if ('propertyName' in CustomObject){
 	//do sth
 }
 ```
+
+## For loop write style
+```Typescript
+for (const index of [...Array(maxNumber).keys()]){
+	do things with index
+}
+```
