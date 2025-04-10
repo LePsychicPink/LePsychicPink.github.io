@@ -7,7 +7,6 @@ date: 2026-1-1
 ## Daily
 - [ ] 
 ## Short Term To-do
-- [ ] Setup the old iphone for pokepoke rank?
 - [ ] Query for live2d discount deadline from redsoda
 - [ ] Buy notebook
 - [ ] Buy 2nd hand iphone for faceid
@@ -16,8 +15,6 @@ date: 2026-1-1
 - [ ] !16 Apr - Buy a wrist weight
 - [ ] !28 Apr monthly 月結from Wewa card
 - [ ] sell msi notebook, GPU and CPU
-- [ ] book salon
-- [ ] borrow adaptor from kachun
 - [ ] Check Lyrics 春眠旅團 放課後的melody 火球 もーいいかい きみのハートも撃て じゃれ合うと思って
 - [ ] Try to get David Wan videos in old phone sd card
 - [ ] Put trash to carousel
