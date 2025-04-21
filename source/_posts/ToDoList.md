@@ -7,12 +7,7 @@ date: 2026-1-1
 ## Daily
 - [ ] 
 ## Short Term To-do
-- [ ] Query for live2d discount deadline from redsoda
-- [ ] Buy notebook
 - [ ] Buy 2nd hand iphone for faceid
-- [ ] !10 Apr - Bring 31C watch to JP for free adjustment
-- [ ] !13 Apr find Aoi and get Vspo mousepad
-- [ ] !16 Apr - Buy a wrist weight
 - [ ] !28 Apr monthly 月結from Wewa card
 - [ ] sell msi notebook, GPU and CPU
 - [ ] Check Lyrics 春眠旅團 放課後的melody 火球 もーいいかい きみのハートも撃て じゃれ合うと思って
