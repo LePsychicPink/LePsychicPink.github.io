@@ -8,7 +8,8 @@ date: 2026-1-1
 - [ ] 
 ## Short Term To-do
 - [ ] Buy 2nd hand iphone for faceid
-- [ ] !28 Apr monthly 月結from Wewa card
+- [ ] !5 May Pigeoncity website
+- [ ] !14 May HASE credit card
 - [ ] sell msi notebook, GPU and CPU
 - [ ] Check Lyrics 春眠旅團 放課後的melody 火球 もーいいかい きみのハートも撃て じゃれ合うと思って
 - [ ] Try to get David Wan videos in old phone sd card

@@ -175,4 +175,8 @@ if ('propertyName' in CustomObject){
 for (const index of [...Array(maxNumber).keys()]){
 	do things with index
 }
+
+for (const [index, { item }] of arrayOfSth.entries()) {
+do things with index and item
+}
 ```
