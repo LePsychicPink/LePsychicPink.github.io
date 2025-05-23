@@ -75,7 +75,7 @@ categories: song
 | Cycle Of Sorrow |
 | 視界の隅 朽ちる音       |
 | 声なき魚            |
-|                 |
+| 空白とカタルシス        |
 |                 |
 |                 |
 |                 |
