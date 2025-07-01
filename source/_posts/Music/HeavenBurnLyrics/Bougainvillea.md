@@ -5,6 +5,7 @@ tags:
   - Lyrics
 categories: song
 ---
+
 <pre>
 行け　槍が降ろうと　　　　　　　　　　　　　　　　即使矛掉在地上　上吧
 行け　歩は弛めずに　　　　　　　　　　　　　　　　不緩步伐地上前吧
