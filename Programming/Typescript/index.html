@@ -5,22 +5,144 @@
 <meta property="og:site_name" content="LePsychicPink">
 <meta property="og:description" content="Objectinterface1234interface NewInterface &amp;#123;    s : string;    n : number;&amp;#125; type1234type newType &#x3D; &amp;#123;	s : string;	n : number;&amp;#125;  Array   property return usage    pop(), shift() Array">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://lepsychicpink.github.io/img/hisameTop.png">
+<meta property="og:image" content="http://lepsychicpink.github.io/img/SHIKA.png">
 <meta property="article:published_time" content="2025-01-09T16:44:12.547Z">
-<meta property="article:modified_time" content="2025-03-09T17:51:22.721Z">
+<meta property="article:modified_time" content="2025-05-26T14:51:52.867Z">
 <meta property="article:author" content="Psychic Pink">
 <meta property="article:tag" content="Typescript">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://lepsychicpink.github.io/img/hisameTop.png"><link rel="shortcut icon" href="/img/36.png"><link rel="canonical" href="http://lepsychicpink.github.io/Programming/Typescript/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+<meta name="twitter:image" content="http://lepsychicpink.github.io/img/SHIKA.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Typescript",
+  "url": "http://lepsychicpink.github.io/Programming/Typescript/",
+  "image": "http://lepsychicpink.github.io/img/SHIKA.png",
+  "datePublished": "2025-01-09T16:44:12.547Z",
+  "dateModified": "2025-05-26T14:51:52.867Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Psychic Pink",
+      "url": "http://lepsychicpink.github.io/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/36.png"><link rel="canonical" href="http://lepsychicpink.github.io/Programming/Typescript/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=5.3.5"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
   root: '/',
   algolia: undefined,
   localSearch: undefined,
   translate: undefined,
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
   copy: {
     success: 'Copy Successful',
-    error: 'Copy Error',
+    error: 'Copy Failed',
     noSupport: 'Browser Not Supported'
   },
   relativeDate: {
@@ -36,14 +158,14 @@
     month: 'months ago'
   },
   copyright: undefined,
-  lightbox: 'fancybox',
+  lightbox: 'null',
   Snackbar: undefined,
   infinitegrid: {
-    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
     buttonText: 'Load More'
   },
   isPhotoFigcaption: false,
-  islazyload: false,
+  islazyloadPlugin: false,
   isAnchor: false,
   percent: {
     toc: true,
@@ -52,127 +174,10 @@
   autoDarkmode: true
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
   title: 'Typescript',
-  isPost: true,
-  isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2025-03-10 02:51:22'
-}</script><script>(win=>{
-      win.saveToLocal = {
-        set: (key, value, ttl) => {
-          if (ttl === 0) return
-          const now = Date.now()
-          const expiry = now + ttl * 86400000
-          const item = {
-            value,
-            expiry
-          }
-          localStorage.setItem(key, JSON.stringify(item))
-        },
-      
-        get: key => {
-          const itemStr = localStorage.getItem(key)
-      
-          if (!itemStr) {
-            return undefined
-          }
-          const item = JSON.parse(itemStr)
-          const now = Date.now()
-      
-          if (now > item.expiry) {
-            localStorage.removeItem(key)
-            return undefined
-          }
-          return item.value
-        }
-      }
-    
-      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
-        const script = document.createElement('script')
-        script.src = url
-        script.async = true
-        script.onerror = reject
-        script.onload = script.onreadystatechange = function() {
-          const loadState = this.readyState
-          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-          script.onload = script.onreadystatechange = null
-          resolve()
-        }
-
-        Object.keys(attr).forEach(key => {
-          script.setAttribute(key, attr[key])
-        })
-
-        document.head.appendChild(script)
-      })
-    
-      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
-        const link = document.createElement('link')
-        link.rel = 'stylesheet'
-        link.href = url
-        if (id) link.id = id
-        link.onerror = reject
-        link.onload = link.onreadystatechange = function() {
-          const loadState = this.readyState
-          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-          link.onload = link.onreadystatechange = null
-          resolve()
-        }
-        document.head.appendChild(link)
-      })
-    
-      win.activateDarkMode = () => {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = () => {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
-    
-          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-
-          if (t === undefined) {
-            if (isLightMode) activateLightMode()
-            else if (isDarkMode) activateDarkMode()
-            else if (isNotSpecified || hasNoSupport) {
-              const now = new Date()
-              const hour = now.getHours()
-              const isNight = hour <= 6 || hour >= 18
-              isNight ? activateDarkMode() : activateLightMode()
-            }
-            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
-              if (saveToLocal.get('theme') === undefined) {
-                e.matches ? activateDarkMode() : activateLightMode()
-              }
-            })
-          } else if (t === 'light') activateLightMode()
-          else activateDarkMode()
-        
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
-    
-      const detectApple = () => {
-        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-          document.documentElement.classList.add('apple')
-        }
-      }
-      detectApple()
-    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/36.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">73</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">32</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/hisameTop.png')"><nav id="nav"><span id="blog-info"><a href="/" title="LePsychicPink"><span class="site-name">LePsychicPink</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Typescript</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-01-09T16:44:12.547Z" title="Created 2025-01-10 01:44:12">2025-01-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-03-09T17:51:22.721Z" title="Updated 2025-03-10 02:51:22">2025-03-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/programming/">programming</a></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h2><h3 id="interface"><a href="#interface" class="headerlink" title="interface"></a>interface</h3><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> <span class="title class_">NewInterface</span> &#123;</span><br><span class="line">    s : <span class="built_in">string</span>;</span><br><span class="line">    n : <span class="built_in">number</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/36.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">85</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">34</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(img/SHIKA.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">LePsychicPink</span></a><a class="nav-page-title" href="/"><span class="site-name">Typescript</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Typescript</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-01-09T16:44:12.547Z" title="Created 2025-01-10 01:44:12">2025-01-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-05-26T14:51:52.867Z" title="Updated 2025-05-26 23:51:52">2025-05-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/programming/">programming</a></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h2><h3 id="interface"><a href="#interface" class="headerlink" title="interface"></a>interface</h3><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> <span class="title class_">NewInterface</span> &#123;</span><br><span class="line">    s : <span class="built_in">string</span>;</span><br><span class="line">    n : <span class="built_in">number</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="type"><a href="#type" class="headerlink" title="type"></a>type</h3><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> newType = &#123;</span><br><span class="line">	s : <span class="built_in">string</span>;</span><br><span class="line">	n : <span class="built_in">number</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><table>
@@ -238,6 +243,11 @@
 <td>Array&lt;element in the object&gt;</td>
 <td>extract element in the original array&lt;object&gt; into array&lt;child of object&gt;</td>
 </tr>
+<tr>
+<td>isArray(targetArray)</td>
+<td>boolean</td>
+<td>check if targetArray is a array</td>
+</tr>
 </tbody></table>
 <h2 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h2><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> value = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">const</span> map : <span class="title class_">Map</span>&lt;<span class="built_in">string</span>,<span class="built_in">number</span>&gt; = <span class="keyword">new</span> <span class="title class_">Map</span>&lt;<span class="built_in">string</span>,<span class="built_in">number</span>&gt;();</span><br><span class="line"><span class="title class_">Map</span>.<span class="title function_">set</span>(<span class="string">&#x27;key&#x27;</span>,value);</span><br><span class="line"><span class="title class_">Map</span>.<span class="title function_">get</span>(<span class="string">&#x27;key&#x27;</span>) <span class="comment">//return 1</span></span><br></pre></td></tr></table></figure>
 
@@ -269,4 +279,6 @@
 
 <h2 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h2><h3 id="race"><a href="#race" class="headerlink" title="race"></a>race</h3><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">  <span class="keyword">const</span> <span class="attr">funcs</span>: <span class="title class_">Promise</span>&lt;<span class="built_in">any</span>&gt;[] = [asyncFunction1, asyncFunction2];</span><br><span class="line">  <span class="keyword">await</span> <span class="title class_">Promise</span>.<span class="title function_">race</span>(funcs); <span class="comment">// see tither of them resolve first</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="To-decide-if-property-in-a-custom-object"><a href="#To-decide-if-property-in-a-custom-object" class="headerlink" title="To decide if property in a custom object"></a>To decide if property in a custom object</h2><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="string">&#x27;propertyName&#x27;</span> <span class="keyword">in</span> <span class="title class_">CustomObject</span>)&#123;</span><br><span class="line">	<span class="comment">//do sth</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Typescript/">Typescript</a></div><div class="post_share"><div class="social-share" data-image="/img/hisameTop.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/Programming/reactFreqError/" title="Frequent Error for React"><img class="cover" src="/img/SHIKA.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous</div><div class="prev_info">Frequent Error for React</div></div></a></div><div class="next-post pull-right"><a href="/Programming/gitOp/" title="Git operation"><img class="cover" src="/img/hisameTop.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next</div><div class="next_info">Git operation</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/Programming/GoogleAppScript/" title="Google App Script"><img class="cover" src="/img/biribiriTama.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-01-10</div><div class="title">Google App Script</div></div></a></div><div><a href="/Programming/playwright/" title="playwright"><img class="cover" src="/img/yamawakisama.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-01-10</div><div class="title">playwright</div></div></a></div><div><a href="/Programming/reactFreqError/" title="Frequent Error for React"><img class="cover" src="/img/SHIKA.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-01-10</div><div class="title">Frequent Error for React</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/36.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Psychic Pink</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">73</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">32</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Object"><span class="toc-number">1.</span> <span class="toc-text">Object</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#interface"><span class="toc-number">1.1.</span> <span class="toc-text">interface</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#type"><span class="toc-number">1.2.</span> <span class="toc-text">type</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array"><span class="toc-number">2.</span> <span class="toc-text">Array</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Map"><span class="toc-number">3.</span> <span class="toc-text">Map</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Record"><span class="toc-number">4.</span> <span class="toc-text">Record</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Operator"><span class="toc-number">5.</span> <span class="toc-text">Operator</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.1.</span> <span class="toc-text">??</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-1"><span class="toc-number">5.2.</span> <span class="toc-text">??&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#keyof"><span class="toc-number">5.3.</span> <span class="toc-text">keyof</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#typeof"><span class="toc-number">5.4.</span> <span class="toc-text">typeof</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unary-Operator"><span class="toc-number">5.5.</span> <span class="toc-text">Unary Operator</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#-2"><span class="toc-number">5.5.1.</span> <span class="toc-text">+</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#-3"><span class="toc-number">5.5.2.</span> <span class="toc-text">-</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Promise"><span class="toc-number">6.</span> <span class="toc-text">Promise</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#race"><span class="toc-number">6.1.</span> <span class="toc-text">race</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#To-decide-if-property-in-a-custom-object"><span class="toc-number">7.</span> <span class="toc-text">To decide if property in a custom object</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/ToDoList/" title="To do list"><img src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="To do list"/></a><div class="content"><a class="title" href="/ToDoList/" title="To do list">To do list</a><time datetime="2025-12-31T15:00:00.000Z" title="Created 2026-01-01 00:00:00">2026-01-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Portal/" title="UsefulPortal"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="UsefulPortal"/></a><div class="content"><a class="title" href="/Portal/" title="UsefulPortal">UsefulPortal</a><time datetime="2025-12-30T15:00:00.000Z" title="Created 2025-12-31 00:00:00">2025-12-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Music/HBRLyrics/" title="ヘブバン歌詞"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ヘブバン歌詞"/></a><div class="content"><a class="title" href="/Music/HBRLyrics/" title="ヘブバン歌詞">ヘブバン歌詞</a><time datetime="2025-12-29T15:00:00.000Z" title="Created 2025-12-30 00:00:00">2025-12-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/RedSodaLive2D/week3/" title="Redsoda Live2D Week3"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Redsoda Live2D Week3"/></a><div class="content"><a class="title" href="/RedSodaLive2D/week3/" title="Redsoda Live2D Week3">Redsoda Live2D Week3</a><time datetime="2025-03-15T17:41:21.819Z" title="Created 2025-03-16 02:41:21">2025-03-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/RedSodaLive2D/rotateAndDeform/" title="Redsoda Live2D 旋轉變形"><img src="/img/rumiEri.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Redsoda Live2D 旋轉變形"/></a><div class="content"><a class="title" href="/RedSodaLive2D/rotateAndDeform/" title="Redsoda Live2D 旋轉變形">Redsoda Live2D 旋轉變形</a><time datetime="2025-03-15T07:42:42.736Z" title="Created 2025-03-15 16:42:42">2025-03-15</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Psychic Pink</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div></div></body></html>
+<h2 id="To-decide-if-property-in-a-custom-object"><a href="#To-decide-if-property-in-a-custom-object" class="headerlink" title="To decide if property in a custom object"></a>To decide if property in a custom object</h2><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="string">&#x27;propertyName&#x27;</span> <span class="keyword">in</span> <span class="title class_">CustomObject</span>)&#123;</span><br><span class="line">	<span class="comment">//do sth</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="For-loop-write-style"><a href="#For-loop-write-style" class="headerlink" title="For loop write style"></a>For loop write style</h2><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> index <span class="keyword">of</span> [...<span class="title class_">Array</span>(maxNumber).<span class="title function_">keys</span>()])&#123;</span><br><span class="line">	<span class="keyword">do</span> things <span class="keyword">with</span> index</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> [index, &#123; item &#125;] <span class="keyword">of</span> arrayOfSth.<span class="title function_">entries</span>()) &#123;</span><br><span class="line"><span class="keyword">do</span> things <span class="keyword">with</span> index and item</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Typescript/">Typescript</a></div><div class="post-share"><div class="social-share" data-image="/img/SHIKA.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.4/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.4/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/Programming/PyQt/" title="Concept of PySide6(PyQt)"><img class="cover" src="/img/hisameTop.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">Previous</div><div class="info-item-2">Concept of PySide6(PyQt)</div></div><div class="info-2"><div class="info-item-1">Using YouTube Video from freeCodeCamp as reference UI creation can be done by QtWidget and QML, and this post is using Qt. Requirement Python3 Pyside6 Qt Designer  Step 1 - Code understandingLevel 1Here is the most basic code to create an empty window of python application with ui 12345678910from PySide6.QtWidgets import QApplication, QWidgetimport sys # mean nothing here but important if we need to handle command line argumentapp = QApplication(sys.argv)window = QWidget()window.show() #...</div></div></div></a><a class="pagination-related" href="/Programming/gitOp/" title="Git operation"><img class="cover" src="/img/hisameTop.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">Git operation</div></div><div class="info-2"><div class="info-item-1">Branch   Operation Command    create new branch git branch &#123;branch name&#125;   check branch git branch   switch branch git switch &#123;branch name&#125;   delete branch git branch -d &#123;branch name&#125;   switch and create new branch git switch -c &#123;new branch name&#125;   push branch to origin git push -u origin &#123;branch name&#125;   Commit   Operation Command    Commit single file git commit &#123;path_to_file&#125; -m &quot;commit message&quot;   commit all git commit...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/Programming/GoogleAppScript/" title="Google App Script"><img class="cover" src="/img/biribiriTama.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-01-10</div><div class="info-item-2">Google App Script</div></div><div class="info-2"><div class="info-item-1">SpreadsheetApp   function example    getSheetByName SpreadsheetApp.getActive().getSheetByName(“sheetName”)   onOpen()Call functions when script is opened Create Menu item1234SpreadsheetApp.getUi().createMenu(&quot;Custom Filter&quot;)  .addItem(&quot;Filter rows&quot;, &quot;hideWeekEnd&quot;) // hideWeekEnd() is a function defined  .addItem(&quot;Show all rows&quot;, &quot;showAllRows&quot;) // showAllRows() is a function defined  .addToUi();  or 12345678var ss =...</div></div></div></a><a class="pagination-related" href="/Programming/playwright/" title="playwright"><img class="cover" src="/img/yamawakisama.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-01-10</div><div class="info-item-2">playwright</div></div><div class="info-2"><div class="info-item-1">Setup and run PlaywrightInstall playwright1npm init playwright@latest  Run playwright in UI Mode1npx playwright test --ui  Run test1npx playwright test `filename`.spec.ts --config=`config file name`.config.ts --workers=4 --retries=3 --project=&quot;mschromium&quot; --trace on -g &quot;(?=.\*zh_CN)&quot; --headed   1npx playwright test merchant-directory.spec.ts --config=playwright.monocart.config.ts --workers=4 --retries=3 --project=&quot;mschromium&quot; --trace on -g...</div></div></div></a><a class="pagination-related" href="/Programming/reactFreqError/" title="Frequent Error for React"><img class="cover" src="/img/SHIKA.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-01-10</div><div class="info-item-2">Frequent Error for React</div></div><div class="info-2"><div class="info-item-1">ENOENT: no such file or directory  Solution 1rm package-lock.json &amp;&amp; npm i  Sth requires a peer of other package but none is installed1npm install --save-dev the other package  </div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/36.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Psychic Pink</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">85</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">34</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Object"><span class="toc-number">1.</span> <span class="toc-text">Object</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#interface"><span class="toc-number">1.1.</span> <span class="toc-text">interface</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#type"><span class="toc-number">1.2.</span> <span class="toc-text">type</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Array"><span class="toc-number">2.</span> <span class="toc-text">Array</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Map"><span class="toc-number">3.</span> <span class="toc-text">Map</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Record"><span class="toc-number">4.</span> <span class="toc-text">Record</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Operator"><span class="toc-number">5.</span> <span class="toc-text">Operator</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.1.</span> <span class="toc-text">??</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-1"><span class="toc-number">5.2.</span> <span class="toc-text">??&#x3D;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#keyof"><span class="toc-number">5.3.</span> <span class="toc-text">keyof</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#typeof"><span class="toc-number">5.4.</span> <span class="toc-text">typeof</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unary-Operator"><span class="toc-number">5.5.</span> <span class="toc-text">Unary Operator</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#-2"><span class="toc-number">5.5.1.</span> <span class="toc-text">+</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#-3"><span class="toc-number">5.5.2.</span> <span class="toc-text">-</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Promise"><span class="toc-number">6.</span> <span class="toc-text">Promise</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#race"><span class="toc-number">6.1.</span> <span class="toc-text">race</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#To-decide-if-property-in-a-custom-object"><span class="toc-number">7.</span> <span class="toc-text">To decide if property in a custom object</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#For-loop-write-style"><span class="toc-number">8.</span> <span class="toc-text">For loop write style</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/ToDoList/" title="To do list"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="To do list"/></a><div class="content"><a class="title" href="/ToDoList/" title="To do list">To do list</a><time datetime="2025-12-31T15:00:00.000Z" title="Created 2026-01-01 00:00:00">2026-01-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Portal/" title="UsefulPortal"><img src="/img/yamawakisama.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="UsefulPortal"/></a><div class="content"><a class="title" href="/Portal/" title="UsefulPortal">UsefulPortal</a><time datetime="2025-12-30T15:00:00.000Z" title="Created 2025-12-31 00:00:00">2025-12-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Music/HBRLyrics/" title="ヘブバン歌詞"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ヘブバン歌詞"/></a><div class="content"><a class="title" href="/Music/HBRLyrics/" title="ヘブバン歌詞">ヘブバン歌詞</a><time datetime="2025-12-29T15:00:00.000Z" title="Created 2025-12-30 00:00:00">2025-12-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Music/HeavenBurnLyrics/Valkyrie%20no%20jojishi/" title="ワルキューレの叙事詩"><img src="/img/rumiEri.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ワルキューレの叙事詩"/></a><div class="content"><a class="title" href="/Music/HeavenBurnLyrics/Valkyrie%20no%20jojishi/" title="ワルキューレの叙事詩">ワルキューレの叙事詩</a><time datetime="2025-07-01T15:05:24.337Z" title="Created 2025-07-02 00:05:24">2025-07-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Games/EternalRoad/" title="ジージェネ　エターナルロード"><img src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ジージェネ　エターナルロード"/></a><div class="content"><a class="title" href="/Games/EternalRoad/" title="ジージェネ　エターナルロード">ジージェネ　エターナルロード</a><time datetime="2025-07-01T07:50:49.266Z" title="Created 2025-07-01 16:50:49">2025-07-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Psychic Pink</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 5.4.2</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.3.5"></script><script src="/js/main.js?v=5.3.5"></script><div class="js-pjax"></div></div></body></html>

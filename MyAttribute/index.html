@@ -5,23 +5,145 @@
 <meta property="og:site_name" content="LePsychicPink">
 <meta property="og:description" content="Here&#39;s something encrypted, password is required to continue reading.">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://lepsychicpink.github.io/img/SHIKA.png">
+<meta property="og:image" content="http://lepsychicpink.github.io/img/hisameTop.png">
 <meta property="article:published_time" content="2024-12-30T16:38:25.697Z">
-<meta property="article:modified_time" content="2025-03-15T07:51:51.907Z">
+<meta property="article:modified_time" content="2025-03-27T14:37:40.271Z">
 <meta property="article:author" content="Psychic Pink">
 <meta property="article:tag" content="BMTI">
 <meta property="article:tag" content="Response">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://lepsychicpink.github.io/img/SHIKA.png"><link rel="shortcut icon" href="/img/36.png"><link rel="canonical" href="http://lepsychicpink.github.io/MyAttribute/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+<meta name="twitter:image" content="http://lepsychicpink.github.io/img/hisameTop.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "My Attribute",
+  "url": "http://lepsychicpink.github.io/MyAttribute/",
+  "image": "http://lepsychicpink.github.io/img/hisameTop.png",
+  "datePublished": "2024-12-30T16:38:25.697Z",
+  "dateModified": "2025-03-27T14:37:40.271Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Psychic Pink",
+      "url": "http://lepsychicpink.github.io/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/36.png"><link rel="canonical" href="http://lepsychicpink.github.io/MyAttribute/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=5.3.5"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
   root: '/',
   algolia: undefined,
   localSearch: undefined,
   translate: undefined,
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
   copy: {
     success: 'Copy Successful',
-    error: 'Copy Error',
+    error: 'Copy Failed',
     noSupport: 'Browser Not Supported'
   },
   relativeDate: {
@@ -37,14 +159,14 @@
     month: 'months ago'
   },
   copyright: undefined,
-  lightbox: 'fancybox',
+  lightbox: 'null',
   Snackbar: undefined,
   infinitegrid: {
-    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
     buttonText: 'Load More'
   },
   isPhotoFigcaption: false,
-  islazyload: false,
+  islazyloadPlugin: false,
   isAnchor: false,
   percent: {
     toc: true,
@@ -53,128 +175,11 @@
   autoDarkmode: true
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
   title: 'My Attribute',
-  isPost: true,
-  isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2025-03-15 16:51:51'
-}</script><script>(win=>{
-      win.saveToLocal = {
-        set: (key, value, ttl) => {
-          if (ttl === 0) return
-          const now = Date.now()
-          const expiry = now + ttl * 86400000
-          const item = {
-            value,
-            expiry
-          }
-          localStorage.setItem(key, JSON.stringify(item))
-        },
-      
-        get: key => {
-          const itemStr = localStorage.getItem(key)
-      
-          if (!itemStr) {
-            return undefined
-          }
-          const item = JSON.parse(itemStr)
-          const now = Date.now()
-      
-          if (now > item.expiry) {
-            localStorage.removeItem(key)
-            return undefined
-          }
-          return item.value
-        }
-      }
-    
-      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
-        const script = document.createElement('script')
-        script.src = url
-        script.async = true
-        script.onerror = reject
-        script.onload = script.onreadystatechange = function() {
-          const loadState = this.readyState
-          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-          script.onload = script.onreadystatechange = null
-          resolve()
-        }
-
-        Object.keys(attr).forEach(key => {
-          script.setAttribute(key, attr[key])
-        })
-
-        document.head.appendChild(script)
-      })
-    
-      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
-        const link = document.createElement('link')
-        link.rel = 'stylesheet'
-        link.href = url
-        if (id) link.id = id
-        link.onerror = reject
-        link.onload = link.onreadystatechange = function() {
-          const loadState = this.readyState
-          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-          link.onload = link.onreadystatechange = null
-          resolve()
-        }
-        document.head.appendChild(link)
-      })
-    
-      win.activateDarkMode = () => {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = () => {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
-    
-          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-
-          if (t === undefined) {
-            if (isLightMode) activateLightMode()
-            else if (isDarkMode) activateDarkMode()
-            else if (isNotSpecified || hasNoSupport) {
-              const now = new Date()
-              const hour = now.getHours()
-              const isNight = hour <= 6 || hour >= 18
-              isNight ? activateDarkMode() : activateLightMode()
-            }
-            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
-              if (saveToLocal.get('theme') === undefined) {
-                e.matches ? activateDarkMode() : activateLightMode()
-              }
-            })
-          } else if (t === 'light') activateLightMode()
-          else activateDarkMode()
-        
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
-    
-      const detectApple = () => {
-        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-          document.documentElement.classList.add('apple')
-        }
-      }
-      detectApple()
-    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/36.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">73</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">32</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/SHIKA.png')"><nav id="nav"><span id="blog-info"><a href="/" title="LePsychicPink"><span class="site-name">LePsychicPink</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">My Attribute</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-12-30T16:38:25.697Z" title="Created 2024-12-31 01:38:25">2024-12-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-03-15T07:51:51.907Z" title="Updated 2025-03-15 16:51:51">2025-03-15</time></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="50c616063e6c412bdf5060f37c5472d1be90d1a4a24430de722fdb24f279075f">5d2d81603f5674c78687b3bfa9227d1f7f55f6942b212402e03e8c66009cd4560a2871df8830d8baffe06a9565c572b0b1a35f158758d278d5adb0a9cd4c1bd3d2e1b05068807bf95e7f06a023a11ce2040024fedc73b5640589748f31051545c3de3c0fdbd85ce7a83e96f819a9807f2fd725b18de77db06dea033c8d276026a407ae2856b4c0576a0aec078bca433bb11b805ea952360df7f1c5bf80dd23c8ef44b13a32aa97a2ba0e03d17778057458d3d8c24ae832e0abdce31d2549710344377386c11b538d522f31ca88eced3d3cc2ffb57d1b0178a0876dc23d20c2691ae92e20136d247dc2c50f84aad65f654af052573a0b9a52664d57c698e530c13b3418c459749d2e3539a3a172fafb16cb6669abcae52a07ad900f462dac88a051e409704c8b5ad09800b63d293a5cfff6ca8a5834740dc6d8fc60a15cd76abe21491a08c8cdba09bdd326449a76f7693df193c1e0807a541218d004d335a9845378033d73e4167d6ece5aafd345c0b83eba6f5e8401da67885aa97221bc9ab6bea80dca2ee05f6151472cc7d2b35d5bce0e0654e54de22216614259b87295f45708af0a6105fe27c9c3b0a810e3fdc84adf04d92c8dfa9ac13e53d329c1742bdf0b9e890bb44747a83d981fc0c1bfc82cef524a1ef6fa336a591a1b437f879db5d10a4404fbe528bb01706792526decfe958de3481fa19bec2583debb39d2d8dce2c65dbe95f80f12e9d5ab301d3078c03aca2def9390744b96e1eba20a2f3ab5e13fe28401e8b9ab9720147fbb1d296e5480e5323001d7dc14c2fcf35e14151853e01fb58016a1fe253d8cca044bb31b057fe9b55ab9e6e73f2235e49b04bc3b07387c906e683717a23da3f35cdad0f2f31ac169d80dbef20bebdcc884a772b50a2a59a8fcd27683ef0f79b39c8b363aa1c736ce1bbeb301a03bf5426c6cc9cefd87d6f0bee77a2de0eaad15d9d7b95e2002b4fb65add44f028d3e3c938a636f2fc80f55d771e3b9c4399c1a8737caa31e186fec20e5083617db78e199b898b3e41ffc95899c27f9169d199c8f73eab7d752923e058b332541e602db963fde1183d0248c4068226d9b9c457c94074e8d65da4d5469ee5227e9d986d64a0dfda645cba7917a4cbdb6223d8b570c7248bed6abee1687d723d6451d46b13fbdf22f6042f2b4b1b7049b5aebcde01fd08b02c3cc770f85a2f723ae4fd044b9c11a7117ec36e7f1783e18d54062538569737ad4b1578bf64c8310a9d2254c624a92cc27a1b82c449811ccd2b2aaa39f9bb87135bba82fc29d64393ce90031b106d25ed01846d60b0d6dd7ce305d93b3083302640f179e0de06b46c7f26380f3277dbcb013ac18c7ad78466c0778ab20e747b4aca44d81a684ba00b891b75a8f1769f1c305292af8bc22af507408e1f3205bc3b17dfc48c374ef8ec0726244392672f55044866933b9a25aecd5b083cd77c98e0e5b34124ed9f4c78927f193cc8b95f8d9a8bb781c9c17dca4f476b099e8c5c3cc009c2b6d2b2d2dd62e4cab4ac569bb13d1101f0419a5563545f55ba378ced313132e4d50d11e37c8ffde8de4d4316182ac25f91d82ba4b5c129e0adb717e6d86fd6cb61287359f8d351f1652c221533a758da0924ea6bd61274b8998db1f253b06231871a7cfa6880ec9007abc5be9cbff42ad4a9800b78f0c1012a9aa3c9b2ba72f72fa6953a0e17ec67e5bb7b44a3165a0677569502d763eaa0bea4c23f72cccbf93b08d4f85cd4014c74143c800b98f9346e374bee102405c93990e2490da33235ab273eea271c5a83895cefe9add5a50212c9891c181d25b71211a263b46f3fdccbbf1f87dbfb5c53e86b2cdcd120c42397e50cc1f64c143474d55bb57690720821dae2a4e2eb7013d151f2dea6282b9f04b29ae7304374ca8d4a1bf2542e2bee381a634ebdc72bdc4fd9f572c9ff697667d34c51b3e1dc06ded3a9018a476b5f4ecd7de2b49484b635a92172eb28772ff1957e83d8de27c9ed8c5accea69fb259eb0cd4abdd454b91fd8598450f8719d9c945127c07067d53535582ee8486639a46441f44db02117bd59194ea76e95a61d07c35ac45f63c43c1a2f5c4a852b2ecb8556e7a4005995f2d706d84c22a6440898f7119260ee3cca89e74ea568134a5dd5bc39cdfaa391a7cf2305184a2b420693bfbdfc2eb63b57ef92428958223505fc453dc6c8895ccb818dac91cc31ed8f3a534a4d6477dba542ca34bc53827051f7a3e31db8f7202461a59a23ac94aedc30305729c796fb0b1eb76efb2e8547951f2c6d0019a60deeba52a29d1727d935cc990b290b1623987c1fb2ede4a1ce7bdc8431848c86f1497f52bf3e91f9debc7ca1743d9ce9f3ed9c2dacae35a3e2aa60b47032b69b5d42aa3a59350c0c15e6a612586cb12c1b785b3e51af91cc60b00c7da1dd6a6d8fd365c64550a70eb2a9c2d02368a567d93690d48895789b8e6dd4ee2f492acc63829d064e3d2332f16e653e2cba8df2203c40bc47604c8864c1e3446a5500e6658d30268f75bee8b6c3a864dfda0a3c3ce51a668ec436ac654cbc6cbe8f6b4008f0fab09b62abfa687d2842239e55ccac8488c588aa632230d11f599f58290aa1842f34c6783ded75ba7e82198aeb0c4be7626b413ce09e552a3bed345adabacbe1ecf1cb0fa76e0a56d0bc58c7742e79c24a89de34feed6c62138590e4b3bbfcb347195f4745e1581ed2ca43992efde8bd30545fd4d064712210c6c9b636ff3396ee54f0139c91fc87376a766880f99885d7671ce61fa216d595ffd6edbd7a629676cafa3479ce74b48cc98dcb89d60f8663a0b0a0932016c45b951b1fda7607e715f705b1447a25c965ad0aef7865e5952bf50e1d67965ebca835d8c5a2ff26b22097952ec52055feba66976d35e0d9dd550616964f8c6a160d723ad44d51d46d27619efa6b36c1b95a32ed240d3ed6cf182db</script>
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/36.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">85</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">34</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(img/hisameTop.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">LePsychicPink</span></a><a class="nav-page-title" href="/"><span class="site-name">My Attribute</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">My Attribute</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-12-30T16:38:25.697Z" title="Created 2024-12-31 01:38:25">2024-12-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-03-27T14:37:40.271Z" title="Updated 2025-03-27 23:37:40">2025-03-27</time></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="80f963a515a91bb4601f7798fe5409eb9765f618c1820671e6e7588e175e58ca">5d2d81603f5674c78687b3bfa9227d1f7f55f6942b212402e03e8c66009cd4560a2871df8830d8baffe06a9565c572b0b1a35f158758d278d5adb0a9cd4c1bd3d2e1b05068807bf95e7f06a023a11ce2040024fedc73b5640589748f31051545c3de3c0fdbd85ce7a83e96f819a9807f2fd725b18de77db06dea033c8d276026a407ae2856b4c0576a0aec078bca433bb11b805ea952360df7f1c5bf80dd23c8ef44b13a32aa97a2ba0e03d17778057458d3d8c24ae832e0abdce31d2549710344377386c11b538d522f31ca88eced3d3cc2ffb57d1b0178a0876dc23d20c2691ae92e20136d247dc2c50f84aad65f654af052573a0b9a52664d57c698e530c13b3418c459749d2e3539a3a172fafb16cb6669abcae52a07ad900f462dac88a051e409704c8b5ad09800b63d293a5cfff6ca8a5834740dc6d8fc60a15cd76abe21491a08c8cdba09bdd326449a76f7693df193c1e0807a541218d004d335a9845378033d73e4167d6ece5aafd345c0b83eba6f5e8401da67885aa97221bc9ab6bea80dca2ee05f6151472cc7d2b35d5bce0e0654e54de22216614259b87295f45708af0a6105fe27c9c3b0a810e3fdc84adf04d92c8dfa9ac13e53d329c1742bdf0b9e890bb44747a83d981fc0c1bfc82cef524a1ef6fa336a591a1b437f879db5d10a4404fbe528bb01706792526decfe958de3481fa19bec2583debb39d2d8dce2c65dbe95f80f12e9d5ab301d3078c03aca2def9390744b96e1eba20a2f3ab5e13fe28401e8b9ab9720147fbb1d296e5480e5323001d7dc14c2fcf35e14151853e01fb58016a1fe253d8cca044bb31b057fe9b55ab9e6e73f2235e49b04bc3b07387c906e683717a23da3f35cdad0f2f31ac169d80dbef20bebdcc884a772b50a2a59a8fcd27683ef0f79b39c8b363aa1c736ce1bbeb301a03bf5426c6cc9cefd87d6f0bee77a2de0eaad15d9d7b95e2002b4fb65add44f028d3e3c938a636f2fc80f55d771e3b9c4399c1a8737caa31e186fec20e5083617db78e199b898b3e41ffc95899c27f9169d199c8f73eab7d752923e058b332541e602db963fde1183d0248c4068226d9b9c457c94074e8d65da4d5469ee5227e9d986d64a0dfda645cba7917a4cbdb6223d8b570c7248bed6abee1687d723d6451d46b13fbdf22f6042f2b4b1b7049b5aebcde01fd08b02c3cc770f85a2f723ae4fd044b9c11a7117ec36e7f1783e18d54062538569737ad4b1578bf64c8310a9d2254c624a92cc27a1b82c449811ccd2b2aaa39f9bb87135bba82fc29d64393ce90031b106d25ed01846d60b0d6dd7ce305d93b3083302640f179e0de06b46c7f26380f3277dbcb013ac18c7ad78466c0778ab20e7475ba1ff778b86b6c488aba0e9d1c969e25b1f765515e0dad791d632cdadb1cc2510a3bfd6607e8bccf7bd7dd3e739549a0e2ef41fc24d154c24ef5d595f4ba1f1a8a28e29c7f9ec1a4f39f62312eca5b61683a845e0e31b2ea312519077462cb96d12cf8e66af9277db7fb37b495e12e243255a2e4441fb71a7dba0db4f306697eeedee1a11382ba45057c6bdcbf9677047f456de9bec4ce0827d688232a1eb7d89801a0f8ed3792d10cbb1d95792fe6783124b6954c3029c0c23f5fb7984a7e5115c2219471880c507905bb13a5f3078d900f20e24c88245683ce3271705f9ce34602ea4f216e83bbbc482186af334452a13e43dec3851898f379c9a99a106e9701ab3650c772c26cb27de5c630b8867095dc67793a6646027034cff85e8cb164284a897b857ef2d21795731369d9eff44070d9bf08d706d64e93a783b4bdccea63d02216bcd034d629739266d67b973eda3a707265314f0578076277e6c607f3520335e9077bc13e1c2fb355bb48a2aa5ed107900e2530801942812e41d19b117c77ada3241fe6dc63a3bfd47aef9c91cb957b2ea2f09873517603d2cc01a25cd8b53d3f2e91edd1867431a67612a849ef5d084e817c6851244b74858484400188ef752b546588b47c94e85a274bc60162bfac28804891b6b53504b8eca46ac4ddaedbae49f9f50f060db147ae8bd8ce50eddbb80eb4fe58e2e6c2192677c78270eff4061b238bf609ca445c53fbd41278327601eb12fae230812a03a1bd242765073a31b8c6384a3c68e67eb2c4c6e04e9c9e5066792b03a0bfb201749bd69cd7d7bcea42634cd080992c80953fd7d31fe13b8276a1c79b613ecaa073d0fafbd515f4e2406534667eeaa15c044356e5d7d0a2746cf8fdd8fb6ea77b7b728405a70d7d6574d8ddd7ec6b58779d7cd1f869c792df68b38180b5502a65334a1a1e78525bdd03b7e8c6c80653aba3f672d0d047fdadd4a2f7ac8c7f31d8959b63187df94963d06833f3d10e8cfc1804c803eb389bba3f157d1eb0076641d7305bf3a7b9f30d39a3303fc75857fdf91f3e20e1ba08b434a486e70c6179165a53c38c6cae92034e0c1f5c5ed5f8a1a32b011380aebac4ce154cb38ca7b31c8627d2e7fea76d75b2522e99543952cea6b671ff076ef61a1a1b32a2bfebd5146305b11a82ed4fd29c40c7b9006bf7feb471e1ff5fb57be6872f7bb5ced565dfc5c1191e4b8545bfa2e6183fb63b96fa259f193bb152918cfb2e5bf1c4ba506b3cfafd2fbc4c5cafb6f5dcf005c3a716d4f333fb8008785890e1a215a6f8c9012ac63c4b06dd12feaf80731ee7b8231f4d4e505f0e3f782864f8e13b6f8c6c65e963fff915af29fd52259ca61fb10ff3aed710ab050e19edbb91e36170dd4cfd12bdbcdae559616ec1e0395e81f06bb5b63acbb2471f3a3c2fef2c26f648befde6d12c7c174db6d9430a55918efbf8823b2c205aa34d6cf2948e5cd02099bf708edf20e98263bc82f63040592fd9d3f6ea5dd2823e132624e0d4a076f3ea763f7a1e8ffc6f9e5537eb695f291f103cf43a499e7426884a50253fe564402a46b37259049</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -184,4 +189,4 @@
     </div>
   </div>
 </div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css"></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/BMTI/">BMTI</a><a class="post-meta__tags" href="/tags/Response/">Response</a></div><div class="post_share"><div class="social-share" data-image="/img/SHIKA.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/Anime/Shy/" title="Shy"><img class="cover" src="/img/hisameTop.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous</div><div class="prev_info">Shy</div></div></a></div><div class="next-post pull-right"><a href="/Traffic/TrafficPrice/" title="交通收費"><img class="cover" src="/img/hisameTop.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next</div><div class="next_info">交通收費</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/36.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Psychic Pink</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">73</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">32</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content toc-div-class" style="display:none"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Standard-Response"><span class="toc-number">1.</span> <span class="toc-text">Standard Response</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B0%97%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9F%E5%A3%B0%E5%84%AA"><span class="toc-number">2.</span> <span class="toc-text">気になった声優</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B0%97%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9F%E7%94%B7%E5%A3%B0%E5%84%AA"><span class="toc-number">3.</span> <span class="toc-text">気になった男声優</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/ToDoList/" title="To do list"><img src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="To do list"/></a><div class="content"><a class="title" href="/ToDoList/" title="To do list">To do list</a><time datetime="2025-12-31T15:00:00.000Z" title="Created 2026-01-01 00:00:00">2026-01-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Portal/" title="UsefulPortal"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="UsefulPortal"/></a><div class="content"><a class="title" href="/Portal/" title="UsefulPortal">UsefulPortal</a><time datetime="2025-12-30T15:00:00.000Z" title="Created 2025-12-31 00:00:00">2025-12-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Music/HBRLyrics/" title="ヘブバン歌詞"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ヘブバン歌詞"/></a><div class="content"><a class="title" href="/Music/HBRLyrics/" title="ヘブバン歌詞">ヘブバン歌詞</a><time datetime="2025-12-29T15:00:00.000Z" title="Created 2025-12-30 00:00:00">2025-12-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/RedSodaLive2D/week3/" title="Redsoda Live2D Week3"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Redsoda Live2D Week3"/></a><div class="content"><a class="title" href="/RedSodaLive2D/week3/" title="Redsoda Live2D Week3">Redsoda Live2D Week3</a><time datetime="2025-03-15T17:41:21.819Z" title="Created 2025-03-16 02:41:21">2025-03-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/RedSodaLive2D/rotateAndDeform/" title="Redsoda Live2D 旋轉變形"><img src="/img/rumiEri.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Redsoda Live2D 旋轉變形"/></a><div class="content"><a class="title" href="/RedSodaLive2D/rotateAndDeform/" title="Redsoda Live2D 旋轉變形">Redsoda Live2D 旋轉變形</a><time datetime="2025-03-15T07:42:42.736Z" title="Created 2025-03-15 16:42:42">2025-03-15</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Psychic Pink</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div></div></body></html>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css"></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/BMTI/">BMTI</a><a class="post-meta__tags" href="/tags/Response/">Response</a></div><div class="post-share"><div class="social-share" data-image="/img/hisameTop.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.4/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.4/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/Traffic/TrafficPrice/" title="交通收費"><img class="cover" src="/img/biribiriTama.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">Previous</div><div class="info-item-2">交通收費</div></div><div class="info-2"><div class="info-item-1">地鐵八達通2蚊優惠   地點 詳細 適用    鳳德商場 百佳出面 鑽石山站   MTR   起點 終點 收費 需時（大約） 站數    X（同站入） X（同站出） 10 0 0   黃大仙 石門 8.7 30分鐘    黃大仙 太子 5.9 15分鐘    鑽石山 石門 9.8     鑽石山 宋皇臺 4.9     石門 紅磡 8.6     石門 旺角東 8.6     石門 宋皇臺 11.1     石門 土瓜灣 11.1     石門 深水埗 8.7     青衣 黃大仙 11     何文田 太子 5.9            </div></div></div></a><a class="pagination-related" href="/Anime/RagnaCrimson/" title="Ragna Crimson"><img class="cover" src="/img/SHIKA.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">Ragna Crimson</div></div><div class="info-2"><div class="info-item-1">Started with a 2 episode character, showing the strength of her. Depict how strong Ragna become as a dragon slayer. Fighting ueda reina, dejavu of JoJo vs Dio 可惜銀器公主沒有真正死 </div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/36.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Psychic Pink</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">85</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">34</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content toc-div-class" style="display:none"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Standard-Response"><span class="toc-number">1.</span> <span class="toc-text">Standard Response</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B0%97%E3%81%AB%E5%85%A5%E3%81%A3%E3%81%9F%E5%A3%B0%E5%84%AA"><span class="toc-number">2.</span> <span class="toc-text">気に入った声優</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B0%97%E3%81%AB%E5%85%A5%E3%81%A3%E3%81%9F%E7%94%B7%E5%A3%B0%E5%84%AA"><span class="toc-number">3.</span> <span class="toc-text">気に入った男声優</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/ToDoList/" title="To do list"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="To do list"/></a><div class="content"><a class="title" href="/ToDoList/" title="To do list">To do list</a><time datetime="2025-12-31T15:00:00.000Z" title="Created 2026-01-01 00:00:00">2026-01-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Portal/" title="UsefulPortal"><img src="/img/yamawakisama.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="UsefulPortal"/></a><div class="content"><a class="title" href="/Portal/" title="UsefulPortal">UsefulPortal</a><time datetime="2025-12-30T15:00:00.000Z" title="Created 2025-12-31 00:00:00">2025-12-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Music/HBRLyrics/" title="ヘブバン歌詞"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ヘブバン歌詞"/></a><div class="content"><a class="title" href="/Music/HBRLyrics/" title="ヘブバン歌詞">ヘブバン歌詞</a><time datetime="2025-12-29T15:00:00.000Z" title="Created 2025-12-30 00:00:00">2025-12-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Music/HeavenBurnLyrics/Valkyrie%20no%20jojishi/" title="ワルキューレの叙事詩"><img src="/img/rumiEri.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ワルキューレの叙事詩"/></a><div class="content"><a class="title" href="/Music/HeavenBurnLyrics/Valkyrie%20no%20jojishi/" title="ワルキューレの叙事詩">ワルキューレの叙事詩</a><time datetime="2025-07-01T15:05:24.337Z" title="Created 2025-07-02 00:05:24">2025-07-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Games/EternalRoad/" title="ジージェネ　エターナルロード"><img src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ジージェネ　エターナルロード"/></a><div class="content"><a class="title" href="/Games/EternalRoad/" title="ジージェネ　エターナルロード">ジージェネ　エターナルロード</a><time datetime="2025-07-01T07:50:49.266Z" title="Created 2025-07-01 16:50:49">2025-07-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Psychic Pink</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 5.4.2</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.3.5"></script><script src="/js/main.js?v=5.3.5"></script><div class="js-pjax"></div></div></body></html>
