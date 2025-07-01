@@ -5,6 +5,7 @@ tags:
   - ヘブバン
 categories: song
 ---
+
 <pre>
 Now the cruelty begins  
 死ぬ覚悟が出来ないだけ　　　　　　　　　　　　　只是無法做好死的覺悟　
