@@ -9,11 +9,9 @@ top_img: img/hisameTop.png
 
 ## Expert 1
 
-![[Eternal-1_Team1.png]]
 {% asset_img Eternal-1_Team1.png %}
 スレッタ代用　‐　支援2回必須　射撃高め
 
-![[Eternal-1_Team2.png]]
 {% asset_img Eternal-1_Team2.png %}
 ジ・オのパイロット　ー　HP回復/フォースガード
 支援パイロット　ー　なるべく支援2回
