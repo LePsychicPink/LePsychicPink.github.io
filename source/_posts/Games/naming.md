@@ -9,12 +9,13 @@ categories: game
 Naming list
 
 - Psychic Pink (ヘブバン)
+- 佐藤ブリアン
+- 壺漬ギアラ
 - だる (Baden's neru)
 - たらこパスタ (ぶっさん)
-- Le Silent (LS reference)
+- メガデストロイ屋
 - 得其所哉
 - うまく話せない屋
-- SomethingWentWrong
 - GrayWolfPascal
 
 ### Memorable Quote
