@@ -4,7 +4,7 @@ tags:
   - trip
 categories: travel
 ---
-![[Eternal-1_Team2.png]]# Gourmet
+# Gourmet
 
 | Restaurant                            | Theme | Place    | Price Range |
 | ------------------------------------- | ----- | -------- | ----------- |
