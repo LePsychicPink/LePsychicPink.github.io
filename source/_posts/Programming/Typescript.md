@@ -180,3 +180,10 @@ for (const [index, { item }] of arrayOfSth.entries()) {
 do things with index and item
 }
 ```
+
+## Array to union
+```typescript
+const possibleValue = ["Yamawaki", "Wakki", "Satouburian"]
+
+type yamawaki = typeof possibleValue[number]; //"Yamawaki" | "Wakki" | "Satouburian"
+``` 

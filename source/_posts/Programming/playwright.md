@@ -6,7 +6,7 @@ tags:
   - Testing
 categories: programming
 ---
-
+ 
 ## Setup and run [Playwright](https://playwright.dev/)
 
 ### Install playwright
@@ -84,6 +84,7 @@ test.describe("GroupName", () => {
 | attribute cotains                      |                           | await page.locator('//span\[contains(@class, "keyword")\]             |     |
 | xPath union                            |                           | await page.locator('//div(@class="className")] \| //div\[@id="id"\]') |     |
 | filter by inner text                   |                           | await page.locator('//div\[contains(text(),"keyword")\]')             |     |
+| following sibling                      | /following-sibling::      | {xpath}//following-sibling::div                                       |     |
 
 
 ### CSS Conditions
