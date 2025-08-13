@@ -46,43 +46,43 @@ date: 2025-12-30
 
 ## イベント
 
-| 歌                                | 歌手            | Remark                             | Lyrics                       |
-| -------------------------------- | ------------- | ---------------------------------- | ---------------------------- |
-|                                  |               | 優しさと切なさと心強さと                       |                              |
-|                                  |               | Requiem for the Blue               |                              |
-|                                  |               | この星に紡ぐ一手                           |                              |
-|                                  |               | 行動観察報告書 第1186号                     |                              |
-|                                  |               | 進めちびっ子大作戦 U140                     |                              |
-|                                  |               | 小さな涙 忘れられた記憶                       |                              |
-|                                  |               | 夏だ！水着だ！トロピカル祭りだ！                   |                              |
-|                                  |               | Dear My Little HERO                |                              |
-| Judgement Day                    |               | 神託と白百合の花                           |                              |
-| 過眠症                              |               | That day's Friend                  |                              |
-| Muramasa Blade                   |               | セラフ剣刀武術祭                           |                              |
-| Arch of Light                    |               | 新春！31A無人島サバイバル生活〜時々ゲームオーバー〜        |                              |
-|                                  |               | コスモスが咲き続けた場所                       |                              |
-|                                  |               | 大島屋物語                              |                              |
-| [放課後のメロディ](houkagonoMelody)      | She is Legend | 君に読む憧れ                             |                              |
-| Autumn Howl                      | She is Legend | 罪と罰と愛と                             |                              |
-| さよならの速度                          | She is Legend | きみはこの夏の Fairy、<br>ぼくはその姿を瞳の奥に Rec. |                              |
-| How's everything                 | She is Legend | 緋に染まる袖時雨                           |                              |
-| [Long Long Spell](longLongSpell) | She is Legend | Letters on The Back                | [Finished](#Long-Long-Spell) |
-|                                  |               | 私立セラフィム学園 \~<br>蒼井、アイドルになります！\~    |                              |
-| Sailing Ship (Broken Ver.)       |               | 怪人ノートと銀の時計                         |                              |
-| [春眠旅団](shunminryotan)            | She is Legend | 28 メートルの永遠                         |                              |
-| 闇夜の Komachi Vampire              | She is Legend | アイリーン・レドメインの事件簿 <br>－名探偵と森の魔女－     |                              |
-| ガラス越しのスペクタクル                     | She is Legend | Silhouette of Summer Light Square  |                              |
-| Dear R. Heinlein                 | She is Legend | あんまりです めぐみさん！                      |                              |
-| ヤになって閉ざしたハート                     | She is Legend | BAD GIRLS DESTRUCTION              |                              |
-|                                  |               | 心優しき死神より                           |                              |
-| Come on baby                     |               | 丸い幸せに祈りを込めて                        |                              |
-| Seabird Song                     | 佐々木恵梨         | うみとら冒険譚                            |                              |
-| Kone Kone Day by Day             | She is Legend | 唐突にファザー ～オカンとアタシと弟と、ずっとアルコール依存〜    |                              |
-| Moon Day Real Escape             |               | あの娘ぼくが唯一の光だと言ったらどんな顔するだろう          |                              |
-| 本能寺、ドレスコードで。                     |               | プロジェクト・フェンリル‐千の恵みをきみに‐             |                              |
-| Melancholic Blue                 |               | 贖いの子羊に温もりを                         |                              |
-|                                  |               | 追憶を花と忘却を檻                          |                              |
-|                                  |               | サマータイムな無人島はバカンスでシャーニー              |                              |
+| 歌                                 | 歌手            | Remark                             | Lyrics                       |
+| --------------------------------- | ------------- | ---------------------------------- | ---------------------------- |
+|                                   |               | 優しさと切なさと心強さと                       |                              |
+|                                   |               | Requiem for the Blue               |                              |
+|                                   |               | この星に紡ぐ一手                           |                              |
+|                                   |               | 行動観察報告書 第1186号                     |                              |
+|                                   |               | 進めちびっ子大作戦 U140                     |                              |
+|                                   |               | 小さな涙 忘れられた記憶                       |                              |
+|                                   |               | 夏だ！水着だ！トロピカル祭りだ！                   |                              |
+|                                   |               | Dear My Little HERO                |                              |
+| Judgement Day                     |               | 神託と白百合の花                           |                              |
+| 過眠症                               |               | That day's Friend                  |                              |
+| Muramasa Blade                    |               | セラフ剣刀武術祭                           |                              |
+| Arch of Light                     |               | 新春！31A無人島サバイバル生活〜時々ゲームオーバー〜        |                              |
+|                                   |               | コスモスが咲き続けた場所                       |                              |
+|                                   |               | 大島屋物語                              |                              |
+| [放課後のメロディ](houkagonoMelody)       | She is Legend | 君に読む憧れ                             |                              |
+| Autumn Howl                       | She is Legend | 罪と罰と愛と                             |                              |
+| さよならの速度                           | She is Legend | きみはこの夏の Fairy、<br>ぼくはその姿を瞳の奥に Rec. |                              |
+| How's everything                  | She is Legend | 緋に染まる袖時雨                           |                              |
+| [Long Long Spell](longLongSpell)  | She is Legend | Letters on The Back                | [Finished](#Long-Long-Spell) |
+|                                   |               | 私立セラフィム学園 \~<br>蒼井、アイドルになります！\~    |                              |
+| Sailing Ship (Broken Ver.)        |               | 怪人ノートと銀の時計                         |                              |
+| [春眠旅団](shunminryotan)             | She is Legend | 28 メートルの永遠                         |                              |
+| 闇夜の Komachi Vampire               | She is Legend | アイリーン・レドメインの事件簿 <br>－名探偵と森の魔女－     |                              |
+| ガラス越しのスペクタクル                      | She is Legend | Silhouette of Summer Light Square  |                              |
+| [Dear R. Heinlein](DearRHeinlein) | She is Legend | あんまりです めぐみさん！                      |                              |
+| ヤになって閉ざしたハート                      | She is Legend | BAD GIRLS DESTRUCTION              |                              |
+|                                   |               | 心優しき死神より                           |                              |
+| Come on baby                      |               | 丸い幸せに祈りを込めて                        |                              |
+| Seabird Song                      | 佐々木恵梨         | うみとら冒険譚                            |                              |
+| Kone Kone Day by Day              | She is Legend | 唐突にファザー ～オカンとアタシと弟と、ずっとアルコール依存〜    |                              |
+| Moon Day Real Escape              |               | あの娘ぼくが唯一の光だと言ったらどんな顔するだろう          |                              |
+| 本能寺、ドレスコードで。                      |               | プロジェクト・フェンリル‐千の恵みをきみに‐             |                              |
+| Melancholic Blue                  |               | 贖いの子羊に温もりを                         |                              |
+|                                   |               | 追憶を花と忘却を檻                          |                              |
+|                                   |               | サマータイムな無人島はバカンスでシャーニー              |                              |
 
 ## Tier List
 
