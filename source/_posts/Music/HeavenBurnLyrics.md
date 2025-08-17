@@ -36,11 +36,11 @@ date: 2025-12-30
 | 陽のさす向こうへ                           | XAI                             | 五章前編               |                                                |
 | World We Changed                   | She is Legend                   | 五章前編               |                                                |
 | Bougainvillea                      | やなぎなぎ                           | 五章前編               |                                                |
-| [ワルキューレの叙事詩](Valkyrie_nojojishi)   |                                 | 五章前編               |                                                |
+| [ワルキューレの叙事詩](Valkyrie_nojojishi/)   |                                 | 五章前編               |                                                |
 | くそ暑い日の誓い                           |                                 | 五章前編               |                                                |
 | ディベートソルジャー                         |                                 | 五章前編               |                                                |
 | Welcome to the Front Line!         | やなぎなぎ                           | 五章前編               |                                                |
-| [オールトの雲](oortCloud)                | やなぎなぎ                           | 五章中編               |                                                |
+| [オールトの雲](oortCloud/)                | やなぎなぎ                           | 五章中編               |                                                |
 | 忘れられた線路                            |                                 |                    |                                                |
 | Perfect Goodbye                    |                                 |                    |                                                |
 
@@ -62,17 +62,17 @@ date: 2025-12-30
 | Arch of Light                     |               | 新春！31A無人島サバイバル生活〜時々ゲームオーバー〜        |                              |
 |                                   |               | コスモスが咲き続けた場所                       |                              |
 |                                   |               | 大島屋物語                              |                              |
-| [放課後のメロディ](houkagonoMelody)       | She is Legend | 君に読む憧れ                             |                              |
+| [放課後のメロディ](houkagonoMelody/)       | She is Legend | 君に読む憧れ                             |                              |
 | Autumn Howl                       | She is Legend | 罪と罰と愛と                             |                              |
 | さよならの速度                           | She is Legend | きみはこの夏の Fairy、<br>ぼくはその姿を瞳の奥に Rec. |                              |
 | How's everything                  | She is Legend | 緋に染まる袖時雨                           |                              |
-| [Long Long Spell](longLongSpell)  | She is Legend | Letters on The Back                | [Finished](#Long-Long-Spell) |
+| [Long Long Spell](longLongSpell/)  | She is Legend | Letters on The Back                | [Finished](#Long-Long-Spell) |
 |                                   |               | 私立セラフィム学園 \~<br>蒼井、アイドルになります！\~    |                              |
 | Sailing Ship (Broken Ver.)        |               | 怪人ノートと銀の時計                         |                              |
-| [春眠旅団](shunminryotan)             | She is Legend | 28 メートルの永遠                         |                              |
+| [春眠旅団](shunminryotan/)             | She is Legend | 28 メートルの永遠                         |                              |
 | 闇夜の Komachi Vampire               | She is Legend | アイリーン・レドメインの事件簿 <br>－名探偵と森の魔女－     |                              |
 | ガラス越しのスペクタクル                      | She is Legend | Silhouette of Summer Light Square  |                              |
-| [Dear R. Heinlein](DearRHeinlein) | She is Legend | あんまりです めぐみさん！                      |                              |
+| [Dear R. Heinlein](DearRHeinlein/) | She is Legend | あんまりです めぐみさん！                      |                              |
 | ヤになって閉ざしたハート                      | She is Legend | BAD GIRLS DESTRUCTION              |                              |
 |                                   |               | 心優しき死神より                           |                              |
 | Come on baby                      |               | 丸い幸せに祈りを込めて                        |                              |
