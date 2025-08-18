@@ -27,6 +27,7 @@ categories: song
 | くそ暑い日の誓い                                |               |                                 |
 | ディベートソルジャー                              |               |                                 |
 | Welcome to the Front Line!              | やなぎなぎ         | 鳴らせ~じゃかじゃん                      |
+| オールトの雲                                  |               |                                 |
 ## Frieren OST
 | OST                          |
 | ---------------------------- |
@@ -99,6 +100,7 @@ categories: song
 | Resonance                                            | T.M.Revolution   | Soul Eater              | op                           |
 | 夢の続き                                                 |                  | さくら荘                    | op 2                         |
 | over and over                                        | やなぎなぎ            | Just Because            | op                           |
+| Rhythm emotion                                       |                  | ガンダム W                  |                              |
 | DREAMS                                               |                  | ガンダム X                  |                              |
 | Resolution                                           |                  | ガンダム X                  |                              |
 | 羽ばたきのバースデイ                                           |                  | 天使の 3P!                 |                              |
