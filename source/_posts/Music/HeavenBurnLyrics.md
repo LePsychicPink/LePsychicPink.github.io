@@ -40,9 +40,10 @@ date: 2025-12-30
 | くそ暑い日の誓い                                                |                                 | 五章前編               |
 | ディベートソルジャー                                              |                                 | 五章前編               |
 | Welcome to the Front Line!                              | やなぎなぎ                           | 五章前編               |
+| Asian Soul                                              | やなぎなぎ                           |                    |
 | [オールトの雲](oortCloud/)                                    | やなぎなぎ                           | 五章中編               |
 | 忘れられた線路                                                 |                                 |                    |
-| Perfect Goodbye                                         |                                 |                    |
+| Perfect Goodbye                                         | 鈴木このみ                           | 五章中編               |
 
 ## イベント
 
@@ -83,6 +84,7 @@ date: 2025-12-30
 | Melancholic Blue                   |               | 贖いの子羊に温もりを                         |
 |                                    |               | 追憶を花と忘却を檻                          |
 |                                    |               | サマータイムな無人島はバカンスでシャーニー              |
+| 太陽航路                               |               | Honey baby Love me I Love you      |
 
 ## Tier List
 
