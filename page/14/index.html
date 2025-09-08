@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>LePsychicPink - 救世主様のお出ましや</title><meta name="author" content="Psychic Pink"><meta name="copyright" content="Psychic Pink"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="LePsychicPink">
+<meta property="og:url" content="http://lepsychicpink.github.io/page/14/index.html">
+<meta property="og:site_name" content="LePsychicPink">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://lepsychicpink.github.io/img/36.png">
+<meta property="article:author" content="Psychic Pink">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://lepsychicpink.github.io/img/36.png"><link rel="shortcut icon" href="/img/36.png"><link rel="canonical" href="http://lepsychicpink.github.io/page/14/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=5.3.5"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'LePsychicPink',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/36.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">101</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">35</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">LePsychicPink</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><h1 class="title-seo">LePsychicPink</h1></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover left"><a href="/University/Confucianism/" title="儒家"><img class="post-bg" src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="儒家"></a></div><div class="recent-post-info"><a class="article-title" href="/University/Confucianism/" title="儒家">儒家</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-11-05T14:50:10.840Z" title="Created 2024-11-05 23:50:10">2024-11-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/school/">school</a></span></div><div class="content">禮崩樂壞先秦問題︰禮崩樂壞，民不聊生，社會動盪，以至於價值崩潰，一個長期穩定的社會制度不再有效。人在這情況應該如何生活？如何重建社會秩序？ 儒︰問題不在於禮，在於執行不善。因此應該復禮。道︰禮制不行？其實不單是禮制問題，只要是制度就有問題。所以應小國寡民。 周禮維繫宗法制度的工具 宗法制度宗 - 嫡長子（正室所生的長子）宗法制度 &#x3D; 嫡長子繼承制 父親的財產、權力、社會地位完全由嫡長子繼承。 → 權力與財富的分配原則→ 大家不用爭→ 早已決定由嫡長子繼承（解決紛爭的第一原則） 問題︰嫡長子無才無德，怎麼辦？ → 小的要輔助他問題︰為甚麼要輔助無能之人？ → 無他，純粹是禮的規範 禮禮儀具體的行為規範 （日常生活 至 公眾地方）→具體禮儀 → 要求人不論私人場合、公眾場合也要執行 → 提醒自己「你算老幾」 禮儀分五種︰吉兇軍賓嘉 天子分封諸侯 → 親戚 + 通婚 → 自己人以宗法制度確保後世繼承者都是堂兄弟 → 以血脈關係、親屬關係維繫執權者 諸侯為甚麼不攻打天子或其他諸侯？周禮的教訓上表示，這種行為不太道德。「自己堂兄也打，不太好吧？」→...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/SecondarySchool/ForceAndMotion/" title="Force and Motion"><img class="post-bg" src="/img/biribiriTama.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Force and Motion"></a></div><div class="recent-post-info"><a class="article-title" href="/SecondarySchool/ForceAndMotion/" title="Force and Motion">Force and Motion</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-11-05T14:50:10.839Z" title="Created 2024-11-05 23:50:10">2024-11-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/school/">school</a></span></div><div class="content">CheatsheetEquation of unitformly accelerated motionAssume that a is constant,$$ s&#x3D;\frac{1}{2}(u+v)\times t$$$$ v&#x3D;u + at$$$$ s &#x3D; ut+\frac{1}{2}at^2$$$$v^2 - u^2 &#x3D; 2as$$$g &#x3D; 9.81 ms^{-2}$ or $g &#x3D; 10 ms^{-2}$, depends on question provide※ Remember to identify the direction compare to the motion Percenatage Error$$PercentageError &#x3D; \frac{T_R}{T_M} \times 100 % $$where ${T_R}$ is reaction time and ${T_M}$ is measured time Distance and DisplacementDistance (距離) -...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/live2dTutor/" title="Live2D Tutorials"><img class="post-bg" src="/img/yamawakisama.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Live2D Tutorials"></a></div><div class="recent-post-info"><a class="article-title" href="/live2dTutor/" title="Live2D Tutorials">Live2D Tutorials</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-25T15:30:19.327Z" title="Created 2024-10-26 00:30:19">2024-10-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/animation/">animation</a></span></div><div class="content">Blinkingsource Meshing Select your target object Click the manual meshing button to enter meshing mode (Ctrl+E)     Delete the default vertices by Ctrl+A → Delete  Change to the add vertex pencil  Add mesh by Manual or by Stroke   Manual meshing  Add vertices inside and surround the pictures and press Ctrl+R to connect the vertices (Its recommand to add even amount of vertices with same offset when you add vertices outside)   Stroke meshing      Tune the details by setting offsets   Auto...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/DrBerg/toothpaste/" title="Toothpaste"><img class="post-bg" src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Toothpaste"></a></div><div class="recent-post-info"><a class="article-title" href="/DrBerg/toothpaste/" title="Toothpaste">Toothpaste</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-14T14:03:42.448Z" title="Created 2024-10-14 23:03:42">2024-10-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/healthy/">healthy</a></span></div><div class="content">Source Ingredients   Ingredients Remark    Coconut Oil 1 tea spoon   Baking soda 1&#x2F;2 tea spoon   H₂O₂ (3% food grade) (not 35%) 1&#x2F;4 tea spoon   Clove &#x2F; cinnamon &#x2F; oregano 3 drops   </div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/DrBerg/FoodToEat/" title="Recommanding food"><img class="post-bg" src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Recommanding food"></a></div><div class="recent-post-info"><a class="article-title" href="/DrBerg/FoodToEat/" title="Recommanding food">Recommanding food</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-13T18:11:53.422Z" title="Created 2024-10-14 03:11:53">2024-10-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/healthy/">healthy</a></span></div><div class="content">Source1 For those who have bad teethSource    Food Item Key Nutrients Remark    Grass-fed Butter Vit D,F,K2,A pasture &#x2F; grass-fed on the label, Irish butter(Kerrygold) often grass-fed   Cod liver &#x2F; Cod liver oil Vit D,A,F    Eggs     Greens     Carbonated water (no sugar)CO2 water </div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/poem/seisha/" title="正射必中"><img class="post-bg" src="/img/biribiriTama.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="正射必中"></a></div><div class="recent-post-info"><a class="article-title" href="/poem/seisha/" title="正射必中">正射必中</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-10-08T08:26:19.000Z" title="Created 2024-10-08 17:26:19">2024-10-08</time></span></div><div class="content">...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/flight/" title="Japan trip guide"><img class="post-bg" src="/img/rumiEri.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Japan trip guide"></a></div><div class="recent-post-info"><a class="article-title" href="/flight/" title="Japan trip guide">Japan trip guide</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-09-28T06:53:46.372Z" title="Created 2024-09-28 15:53:46">2024-09-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/travel/">travel</a></span></div><div class="content">Preparation必須品   物品 備註    護照 不要放行李箱   身份證 不要放行李箱   現金    IC card    填表    散銀包    生活系   物品 備註    替換衣服 考慮當地投幣洗衣機   牙膏牙刷    牙線棒    指甲鉗    水樽 Optional | 過關後可用機場水機   沖牙機 Optional   洗面乳 Optional   飛機頸枕 Optional   常備藥 Optional   電子類   物品 備註    轉插    充電線    拖被 Optional   隨差 Optional   娛樂用品（書、電腦、耳機） Optional   BoardingNRTOption 1: SkyaccessOption 2: SkylinerPrice: 2580 yenLast record: 09:24 (from NRT) → 1031 (to 浅草橋) 07:34 arrived 09:00 Able to leave airport 09:24 Skyliner departure 1031 arrived...</div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/13/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/#content-inner">13</a><span class="page-number current">14</span><a class="page-number" href="/page/15/#content-inner">15</a><a class="extend next" rel="next" href="/page/15/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/36.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Psychic Pink</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">101</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">35</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">12</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/ToDoList/" title="To do list"><img src="/img/biribiriTama.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="To do list"/></a><div class="content"><a class="title" href="/ToDoList/" title="To do list">To do list</a><time datetime="2025-12-31T15:00:00.000Z" title="Created 2026-01-01 00:00:00">2026-01-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Portal/" title="UsefulPortal"><img src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="UsefulPortal"/></a><div class="content"><a class="title" href="/Portal/" title="UsefulPortal">UsefulPortal</a><time datetime="2025-12-30T15:00:00.000Z" title="Created 2025-12-31 00:00:00">2025-12-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Music/HeavenBurnLyrics/" title="ヘブバン歌詞"><img src="/img/yamawakisama.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ヘブバン歌詞"/></a><div class="content"><a class="title" href="/Music/HeavenBurnLyrics/" title="ヘブバン歌詞">ヘブバン歌詞</a><time datetime="2025-12-29T15:00:00.000Z" title="Created 2025-12-30 00:00:00">2025-12-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Programming/Flutter/" title="Flutter"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Flutter"/></a><div class="content"><a class="title" href="/Programming/Flutter/" title="Flutter">Flutter</a><time datetime="2025-09-08T03:31:07.317Z" title="Created 2025-09-08 12:31:07">2025-09-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Music/HeavenBurnLyrics/Sad_Creature/" title="Sad Creature"><img src="/img/biribiriTama.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Sad Creature"/></a><div class="content"><a class="title" href="/Music/HeavenBurnLyrics/Sad_Creature/" title="Sad Creature">Sad Creature</a><time datetime="2025-09-08T03:31:07.315Z" title="Created 2025-09-08 12:31:07">2025-09-08</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/animation/"><span class="card-category-list-name">animation</span><span class="card-category-list-count">22</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/anime/"><span class="card-category-list-name">anime</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/dsp/"><span class="card-category-list-name">dsp</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/game/"><span class="card-category-list-name">game</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/healthy/"><span class="card-category-list-name">healthy</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/language/"><span class="card-category-list-name">language</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/programming/"><span class="card-category-list-name">programming</span><span class="card-category-list-count">11</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/school/"><span class="card-category-list-name">school</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/song/"><span class="card-category-list-name">song</span><span class="card-category-list-count">22</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/tool/"><span class="card-category-list-name">tool</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/traffic/"><span class="card-category-list-name">traffic</span><span class="card-category-list-count">9</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/travel/"><span class="card-category-list-name">travel</span><span class="card-category-list-count">2</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/playwright/" style="font-size: 1.1em; color: #999">playwright</a> <a href="/tags/Portal/" style="font-size: 1.1em; color: #999">Portal</a> <a href="/tags/DrBerg/" style="font-size: 1.21em; color: #999ea4">DrBerg</a> <a href="/tags/Live2D/" style="font-size: 1.44em; color: #99a7ba">Live2D</a> <a href="/tags/DailyCheck/" style="font-size: 1.1em; color: #999">DailyCheck</a> <a href="/tags/Flutter/" style="font-size: 1.1em; color: #999">Flutter</a> <a href="/tags/Response/" style="font-size: 1.1em; color: #999">Response</a> <a href="/tags/Force/" style="font-size: 1.1em; color: #999">Force</a> <a href="/tags/secondary-school/" style="font-size: 1.1em; color: #999">secondary-school</a> <a href="/tags/Typescript/" style="font-size: 1.27em; color: #99a0a9">Typescript</a> <a href="/tags/Testing/" style="font-size: 1.1em; color: #999">Testing</a> <a href="/tags/Eat/" style="font-size: 1.16em; color: #999b9e">Eat</a> <a href="/tags/trip/" style="font-size: 1.16em; color: #999b9e">trip</a> <a href="/tags/Learning/" style="font-size: 1.1em; color: #999">Learning</a> <a href="/tags/git/" style="font-size: 1.1em; color: #999">git</a> <a href="/tags/github-page/" style="font-size: 1.1em; color: #999">github-page</a> <a href="/tags/Tailwind/" style="font-size: 1.1em; color: #999">Tailwind</a> <a href="/tags/GoogleSpreadSheet/" style="font-size: 1.16em; color: #999b9e">GoogleSpreadSheet</a> <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="font-size: 1.1em; color: #999">日本語</a> <a href="/tags/BMTI/" style="font-size: 1.1em; color: #999">BMTI</a> <a href="/tags/Lyrics/" style="font-size: 1.39em; color: #99a4b4">Lyrics</a> <a href="/tags/DentalHealth/" style="font-size: 1.1em; color: #999">DentalHealth</a> <a href="/tags/%E6%BA%AB%E5%B8%B6%E7%B6%AD/" style="font-size: 1.21em; color: #999ea4">溫帶維</a> <a href="/tags/React/" style="font-size: 1.16em; color: #999b9e">React</a> <a href="/tags/%E3%82%AD%E3%83%A3%E3%83%A9%E4%BD%9C%E3%82%8A/" style="font-size: 1.1em; color: #999">キャラ作り</a> <a href="/tags/Physics/" style="font-size: 1.1em; color: #999">Physics</a> <a href="/tags/animeReview/" style="font-size: 1.33em; color: #99a2af">animeReview</a> <a href="/tags/GameTheme/" style="font-size: 1.1em; color: #999">GameTheme</a> <a href="/tags/%E3%82%B8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%8D/" style="font-size: 1.16em; color: #999b9e">ジージェネ</a> <a href="/tags/Quote/" style="font-size: 1.16em; color: #999b9e">Quote</a> <a href="/tags/university/" style="font-size: 1.21em; color: #999ea4">university</a> <a href="/tags/%E3%83%98%E3%83%96%E3%83%90%E3%83%B3/" style="font-size: 1.5em; color: #99a9bf">ヘブバン</a> <a href="/tags/Thinking/" style="font-size: 1.27em; color: #99a0a9">Thinking</a> <a href="/tags/money/" style="font-size: 1.1em; color: #999">money</a> <a href="/tags/python/" style="font-size: 1.1em; color: #999">python</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>Archives</span>
+      <a class="card-more-btn" href="/archives/"
+            title="View More">
+            <i class="fas fa-angle-right"></i>
+          </a>
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/01/">
+            <span class="card-archive-list-date">
+              January 2026
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/12/">
+            <span class="card-archive-list-date">
+              December 2025
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/09/">
+            <span class="card-archive-list-date">
+              September 2025
+            </span>
+            <span class="card-archive-list-count">12</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/08/">
+            <span class="card-archive-list-date">
+              August 2025
+            </span>
+            <span class="card-archive-list-count">6</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/07/">
+            <span class="card-archive-list-date">
+              July 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/05/">
+            <span class="card-archive-list-date">
+              May 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/04/">
+            <span class="card-archive-list-date">
+              April 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/03/">
+            <span class="card-archive-list-date">
+              March 2025
+            </span>
+            <span class="card-archive-list-count">23</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">101</div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-09-08T03:34:33.913Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By Psychic Pink</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 5.4.2</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.3.5"></script><script src="/js/main.js?v=5.3.5"></script><div class="js-pjax"></div></div></body></html>
