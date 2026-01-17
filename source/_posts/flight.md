@@ -66,10 +66,10 @@ Last record: 09:24 (from NRT) → 1031 (to 浅草橋)
 | From check-in to the gate        |                |                                            |
 | Plane Departure to arrival       |                | 4 hour + 1 hour delay buffer               |
 | arrival to ready to leave        | NRT            | 90 mins                                    |
-|                                  | HND            |                                            |
+|                                  | HND            | 25 + 20 mins                                           |
 | leave airport to Tokyo city      | skyliner(NRT)  | 40mins + 20mins buy ticket and wait buffer |
 |                                  | Skyaccess(NRT) |                                            |
-|                                  | (HND)          |                                            |
+|                                  | (HND)          | 22min to 浜松町                                           |
 | Return to airport                | NRT            | 90mins                                     |
 |                                  | HND            |                                            |
 | From check-in to the gate        |                |                                            |
