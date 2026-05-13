@@ -1,0 +1,463 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>playwright | LePsychicPink</title><meta name="author" content="Psychic Pink"><meta name="copyright" content="Psychic Pink"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Setup and run PlaywrightInstall playwright1npm init playwright@latest  Run playwright in UI Mode1npx playwright test --ui  Run test1npx playwright test &#96;filename&#96;.spec.ts --config&#x3D;&#96;config file name&#96;.c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="playwright">
+<meta property="og:url" content="http://lepsychicpink.github.io/_posts/shared/computing/playwright.html">
+<meta property="og:site_name" content="LePsychicPink">
+<meta property="og:description" content="Setup and run PlaywrightInstall playwright1npm init playwright@latest  Run playwright in UI Mode1npx playwright test --ui  Run test1npx playwright test &#96;filename&#96;.spec.ts --config&#x3D;&#96;config file name&#96;.c">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://lepsychicpink.github.io/img/36.png">
+<meta property="article:published_time" content="2026-05-13T16:40:13.194Z">
+<meta property="article:modified_time" content="2026-05-13T16:40:13.194Z">
+<meta property="article:author" content="Psychic Pink">
+<meta property="article:tag" content="playwright">
+<meta property="article:tag" content="Typescript">
+<meta property="article:tag" content="Testing">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://lepsychicpink.github.io/img/36.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/36.png"><link rel="canonical" href="http://lepsychicpink.github.io/_posts/shared/computing/playwright.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=5.5.5-b1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'playwright',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/36.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">116</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">38</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">11</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url(/img/hisameTop.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">LePsychicPink</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">playwright</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><h2 id="Setup-and-run-Playwright"><a href="#Setup-and-run-Playwright" class="headerlink" title="Setup and run Playwright"></a>Setup and run <a target="_blank" rel="noopener" href="https://playwright.dev/">Playwright</a></h2><h3 id="Install-playwright"><a href="#Install-playwright" class="headerlink" title="Install playwright"></a>Install playwright</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init playwright@latest</span><br></pre></td></tr></table></figure>
+
+<h3 id="Run-playwright-in-UI-Mode"><a href="#Run-playwright-in-UI-Mode" class="headerlink" title="Run playwright in UI Mode"></a>Run playwright in UI Mode</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx playwright test <span class="literal">--ui</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Run-test"><a href="#Run-test" class="headerlink" title="Run test"></a>Run test</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx playwright test `filename`.spec.ts <span class="literal">--config</span>=`config file name`.config.ts <span class="literal">--workers</span>=<span class="number">4</span> <span class="literal">--retries</span>=<span class="number">3</span> <span class="literal">--project</span>=<span class="string">&quot;mschromium&quot;</span> <span class="literal">--trace</span> on <span class="literal">-g</span> <span class="string">&quot;(?=.\*zh_CN)&quot;</span> <span class="literal">--headed</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx playwright test merchant<span class="literal">-directory</span>.spec.ts <span class="literal">--config</span>=playwright.monocart.config.ts <span class="literal">--workers</span>=<span class="number">4</span> <span class="literal">--retries</span>=<span class="number">3</span> <span class="literal">--project</span>=<span class="string">&quot;mschromium&quot;</span> <span class="literal">--trace</span> on <span class="literal">-g</span> <span class="string">&quot;(?=.*zh_CN)&quot;</span> <span class="literal">--headed</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Standard-ts-script-with-playwright"><a href="#Standard-ts-script-with-playwright" class="headerlink" title="Standard ts script with playwright"></a>Standard ts script with playwright</h2><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; chromium &#125; <span class="keyword">from</span> <span class="string">&#x27;playwright&#x27;</span>;</span><br><span class="line"></span><br><span class="line">(<span class="title function_">async</span> () =&gt; &#123;</span><br><span class="line">	<span class="keyword">const</span> browser = <span class="keyword">await</span> chromium.<span class="title function_">launch</span>(&#123; <span class="attr">headless</span>: <span class="literal">false</span> &#125;);</span><br><span class="line">	<span class="keyword">const</span> context = <span class="keyword">await</span> browser.<span class="title function_">newContext</span>(&#123; <span class="attr">storageState</span>: <span class="string">&#x27;auth.json&#x27;</span> &#125;);</span><br><span class="line">	<span class="keyword">const</span> page = <span class="keyword">await</span> context.<span class="title function_">newPage</span>();</span><br><span class="line"></span><br><span class="line">	<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`\nStart `</span>);</span><br><span class="line">	<span class="keyword">try</span> &#123;</span><br><span class="line">		<span class="comment">//do sth</span></span><br><span class="line">	&#125; <span class="keyword">catch</span> (err) &#123;</span><br><span class="line">	  <span class="variable language_">console</span>.<span class="title function_">log</span>(err);</span><br><span class="line">	&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">		<span class="comment">// finally backup</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  <span class="keyword">await</span> browser.<span class="title function_">close</span>();</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;\nAll tasks finished!&#x27;</span>);</span><br><span class="line">&#125;)();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="Basic-Syntax"><a href="#Basic-Syntax" class="headerlink" title="Basic Syntax"></a>Basic Syntax</h2><p>test Describer - group tests</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">test.<span class="title function_">describe</span>(<span class="string">&quot;GroupName&quot;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    test.<span class="title function_">beforeEach</span>(<span class="title function_">async</span> (&#123; page &#125;) =&gt; &#123;</span><br><span class="line">    <span class="comment">//reload target page for each test</span></span><br><span class="line">    <span class="keyword">await</span> page.<span class="title function_">goto</span>(<span class="string">&quot;https://playwright.dev&quot;</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="title function_">test</span>(<span class="string">&quot;testName&quot;</span>, <span class="title function_">async</span> (&#123; page &#125;) =&gt; &#123;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>Element Retriver</th>
+<th>Explaination</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>page.locator()</td>
+<td><a target="_blank" rel="noopener" href="https://playwright.dev/docs/other-locators#react-locator">React locator</a></td>
+<td>await page.locator(‘_react&#x3D;ComponentName[enabled&#x3D;true])</td>
+</tr>
+<tr>
+<td>page.locator()</td>
+<td><a target="_blank" rel="noopener" href="https://playwright.dev/docs/other-locators#xpath-locator">xPath</a></td>
+<td>await page.locator(‘&#x2F;&#x2F;div[@class&#x3D;”className”]’)</td>
+</tr>
+<tr>
+<td>page.locator()</td>
+<td>id</td>
+<td>await page.locator(‘#targetId’)</td>
+</tr>
+<tr>
+<td>page.locator()</td>
+<td>class name</td>
+<td>await page.locator(‘.className &gt; div &gt; a’)</td>
+</tr>
+<tr>
+<td>page.locator()</td>
+<td>css</td>
+<td>await page.locator(‘div:text(“innerText”)’)</td>
+</tr>
+<tr>
+<td>page.getByRole()</td>
+<td>role</td>
+<td>await page.getByRole(‘button’, { name: ‘Submit’ })</td>
+</tr>
+<tr>
+<td>page.getByText()</td>
+<td>text</td>
+<td>await page.getByText(‘Text’)</td>
+</tr>
+<tr>
+<td>page.getByLabel()</td>
+<td>label</td>
+<td>await page.getByLabel(‘Label’)</td>
+</tr>
+<tr>
+<td>page.getByPlaceholder()</td>
+<td>placeholder</td>
+<td>await page.getByPlaceholder(‘Placeholder’)</td>
+</tr>
+<tr>
+<td>page.getByAltText()</td>
+<td>alt text</td>
+<td>await page.getByAltText(‘AltText’)</td>
+</tr>
+<tr>
+<td>page.getByTitle()</td>
+<td>title</td>
+<td>await page.getByTitle(‘Title’)</td>
+</tr>
+<tr>
+<td>page.getByTestId()</td>
+<td>test id</td>
+<td>await page.getByTestId(‘TestId’)</td>
+</tr>
+<tr>
+<td>locator.nth(index)</td>
+<td>n-th element</td>
+<td>await page.locator(‘.className’).nth(1)</td>
+</tr>
+</tbody></table>
+<h3 id="locator-iteration"><a href="#locator-iteration" class="headerlink" title="locator iteration"></a>locator iteration</h3><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// selectedBrand = xpath locator with multiple results</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> brands = <span class="keyword">new</span> <span class="title class_">Set</span>(); <span class="comment">//in case you want to get value</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> item <span class="keyword">of</span> <span class="keyword">await</span> selectedBrand.<span class="title function_">all</span>()) &#123;</span><br><span class="line">  <span class="keyword">if</span> (item) brands.<span class="title function_">add</span>(item.<span class="title function_">getAttribute</span>(<span class="string">&quot;value&quot;</span>));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="xPath-Conditions"><a href="#xPath-Conditions" class="headerlink" title="xPath Conditions"></a>xPath Conditions</h3><table>
+<thead>
+<tr>
+<th>Conditions</th>
+<th>Explaination</th>
+<th>Example</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Raw xPath</td>
+<td>start by &#x2F;&#x2F; or .. is same</td>
+<td>await page.locator(‘..div[@class&#x3D;”className”]’)</td>
+<td></td>
+</tr>
+<tr>
+<td>followed by child</td>
+<td></td>
+<td>await page.locator(‘&#x2F;&#x2F;div[@class&#x3D;”className”]&#x2F;div&#x2F;a’)</td>
+<td></td>
+</tr>
+<tr>
+<td>select parent</td>
+<td>use &#x2F;.. to select parent</td>
+<td>await page.locator(‘&#x2F;&#x2F;div[@class&#x3D;”className”]&#x2F;..’)</td>
+<td></td>
+</tr>
+<tr>
+<td>only select the nth child of same type</td>
+<td></td>
+<td>await page.locator(‘&#x2F;&#x2F;div[@class&#x3D;”className”]&#x2F;div[1]’)</td>
+<td></td>
+</tr>
+<tr>
+<td>attribute cotains</td>
+<td></td>
+<td>await page.locator(‘&#x2F;&#x2F;span[contains(@class, “keyword”)]</td>
+<td></td>
+</tr>
+<tr>
+<td>xPath union</td>
+<td></td>
+<td>await page.locator(‘&#x2F;&#x2F;div(@class&#x3D;”className”)] | &#x2F;&#x2F;div[@id&#x3D;”id”]‘)</td>
+<td></td>
+</tr>
+<tr>
+<td>filter by inner text</td>
+<td></td>
+<td>await page.locator(‘&#x2F;&#x2F;div[contains(text(),”keyword”)]‘)</td>
+<td></td>
+</tr>
+<tr>
+<td>following sibling</td>
+<td>&#x2F;following-sibling::</td>
+<td>{xpath}&#x2F;&#x2F;following-sibling::div</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="CSS-Conditions"><a href="#CSS-Conditions" class="headerlink" title="CSS Conditions"></a>CSS Conditions</h3><table>
+<thead>
+<tr>
+<th>Conditions</th>
+<th>Explaination</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>div</td>
+<td>tag like &lt;div&gt;, &lt;p&gt;</td>
+<td>await page.locator(‘div’)</td>
+</tr>
+<tr>
+<td>#id</td>
+<td>id attribute</td>
+<td>await page.locator(‘div#id1’)</td>
+</tr>
+<tr>
+<td>.class</td>
+<td>.class<br>div.class</td>
+<td>await page.locator(‘.class1’)<br>await page.locator(‘div.class1’)</td>
+</tr>
+<tr>
+<td>.class1.class2</td>
+<td>element with multiple class</td>
+<td>await page.locator(‘.class1.class2’)</td>
+</tr>
+<tr>
+<td>:has(&gt;)</td>
+<td>element with matching child</td>
+<td>await page.locator(‘.class1:has(&gt; .class2)’)</td>
+</tr>
+<tr>
+<td>:has-text</td>
+<td>find children<br>contains<br>case-insensitive</td>
+<td>await page.locator(‘div:has-text(“innerText”)’)</td>
+</tr>
+<tr>
+<td>:is-text</td>
+<td>find children<br>exact text<br>case-sensitive</td>
+<td>await page.locator(‘div:is-text(“innerText”)’)</td>
+</tr>
+<tr>
+<td>:text</td>
+<td>exact text<br>case-insensitive</td>
+<td>await page.locator(‘div:text(“innerText”)’)</td>
+</tr>
+<tr>
+<td>:text-matches</td>
+<td>regex</td>
+<td>await page.locator(‘div:text-matches(“reg?ex”, “i”)’)</td>
+</tr>
+<tr>
+<td>:nth-match</td>
+<td>nth match 1-based</td>
+<td>await page.locator(‘:nth-match(:text(“innerText”), 1)’)</td>
+</tr>
+</tbody></table>
+<h3 id="locator-actions"><a href="#locator-actions" class="headerlink" title="locator actions"></a>locator actions</h3><table>
+<thead>
+<tr>
+<th>Actions</th>
+<th>Explaination</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>.click(option?)</td>
+<td>optional to specify position of element<br>x,y where 0,0 is top-left corner</td>
+<td>await page.locator.click({x:1,y:1})</td>
+</tr>
+</tbody></table>
+<h2 id="Fixture"><a href="#Fixture" class="headerlink" title="Fixture"></a><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=2O7dyz6XO2s">Fixture</a></h2><p>Create a custom <code>test</code> object which extend the original <code>test()</code> function from playwright</p>
+<ul>
+<li>setup duplicated action</li>
+<li>setup action after <code>use</code></li>
+</ul>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> myTest = test.<span class="title function_">extend</span>(&#123;</span><br><span class="line">  <span class="attr">webApp</span>: <span class="title function_">async</span>(&#123;page&#125;,use) =&gt; &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;setup&#x27;</span>)</span><br><span class="line">    <span class="keyword">await</span> <span class="title function_">use</span>(page)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;finished&#x27;</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="title function_">myTest</span>(<span class="string">&quot;Test Description&quot;</span>, <span class="title function_">async</span> (&#123;webApp&#125;) =&gt; &#123;</span><br><span class="line">  <span class="keyword">await</span> <span class="title function_">expect</span>(webApp.<span class="title function_">getByTestId</span>(<span class="string">&quot;TestID&quot;</span>)).<span class="title function_">toBeVisible</span>() <span class="comment">//action</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>What it does is: ‘setup’ &gt; the action &gt; ‘finished’</p>
+<p>For the predefined Fixture across multiple ts use,<br><code>setup.ts</code></p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123;test, expect&#125; = <span class="built_in">require</span>&#123;<span class="string">&quot;@playwright/test&quot;</span>&#125;</span><br><span class="line"><span class="keyword">const</span> &#123;ac, pw&#125; = process.<span class="property">env</span> <span class="comment">// take login details from .env</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">exports</span>.<span class="property">expect</span> = expect <span class="comment">// export the original expect from original playwright</span></span><br><span class="line"><span class="built_in">exports</span>.<span class="property">test</span> = test.<span class="title function_">extends</span>(&#123;</span><br><span class="line">  <span class="attr">webApp</span>: <span class="title function_">async</span> (&#123;page&#125;,use)=&gt;&#123;</span><br><span class="line">    <span class="comment">// do all the login things here</span></span><br><span class="line">    <span class="keyword">await</span> <span class="title function_">use</span>(page)</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>and import the custom test and expect from other ts</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const &#123; test , expect &#125; = require(&quot;./setup&quot;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Test-mode"><a href="#Test-mode" class="headerlink" title="Test mode"></a>Test mode</h2><ul>
+<li>serial</li>
+<li>parallel</li>
+<li>default</li>
+</ul>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">test.<span class="property">describe</span>.<span class="title function_">configure</span>(&#123; <span class="attr">mode</span>: <span class="string">&quot;serial&quot;</span> &#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="Dialog"><a href="#Dialog" class="headerlink" title="Dialog"></a>Dialog</h2><p>Playwright default to dismiss dialog automatically. So if we want to handle the dialog, we need to setup a dialog listener before the action which trigger dialog</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aiPage.<span class="property">page</span>.<span class="title function_">on</span>(<span class="string">&#x27;dialog&#x27;</span>, <span class="function">(<span class="params">dialog</span>) =&gt;</span> dialog.<span class="title function_">accept</span>());</span><br></pre></td></tr></table></figure>
+</div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/36.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Psychic Pink</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">116</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">38</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">11</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/shared/poem/lifeAndDeath/" title="生死"><img src="/img/hisameTop.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="生死"/></a><div class="content"><a class="title" href="/shared/poem/lifeAndDeath/" title="生死">生死</a><time datetime="2026-05-13T16:40:13.220Z" title="Created 2026-05-13 16:40:13">2026-05-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/shared/travel/Japan/" title="日本旅遊"><img src="/img/yamawakisama.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日本旅遊"/></a><div class="content"><a class="title" href="/shared/travel/Japan/" title="日本旅遊">日本旅遊</a><time datetime="2026-05-13T16:40:13.220Z" title="Created 2026-05-13 16:40:13">2026-05-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/shared/poem/bully/" title="對小時候被欺凌的看法"><img src="/img/biribiriTama.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="對小時候被欺凌的看法"/></a><div class="content"><a class="title" href="/shared/poem/bully/" title="對小時候被欺凌的看法">對小時候被欺凌的看法</a><time datetime="2026-05-13T16:40:13.219Z" title="Created 2026-05-13 16:40:13">2026-05-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/shared/poem/kokorononaka/" title="心中不敢說的發洩"><img src="/img/SHIKA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="心中不敢說的發洩"/></a><div class="content"><a class="title" href="/shared/poem/kokorononaka/" title="心中不敢說的發洩">心中不敢說的發洩</a><time datetime="2026-05-13T16:40:13.219Z" title="Created 2026-05-13 16:40:13">2026-05-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/shared/learn/tango/" title="日本語単語"><img src="/img/rumiEri.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日本語単語"/></a><div class="content"><a class="title" href="/shared/learn/tango/" title="日本語単語">日本語単語</a><time datetime="2026-05-13T16:40:13.219Z" title="Created 2026-05-13 16:40:13">2026-05-13</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/animation/"><span class="card-category-list-name">animation</span><span class="card-category-list-count">22</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/anime/"><span class="card-category-list-name">anime</span><span class="card-category-list-count">8</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/game/"><span class="card-category-list-name">game</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/healthy/"><span class="card-category-list-name">healthy</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/language/"><span class="card-category-list-name">language</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/programming/"><span class="card-category-list-name">programming</span><span class="card-category-list-count">12</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/school/"><span class="card-category-list-name">school</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/song/"><span class="card-category-list-name">song</span><span class="card-category-list-count">22</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/tool/"><span class="card-category-list-name">tool</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/traffic/"><span class="card-category-list-name">traffic</span><span class="card-category-list-count">9</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/travel/"><span class="card-category-list-name">travel</span><span class="card-category-list-count">2</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/Physics/" style="font-size: 1.1em; color: #999">Physics</a> <a href="/tags/Typescript/" style="font-size: 1.25em; color: #999fa7">Typescript</a> <a href="/tags/Portal/" style="font-size: 1.1em; color: #999">Portal</a> <a href="/tags/Testing/" style="font-size: 1.1em; color: #999">Testing</a> <a href="/tags/playwright/" style="font-size: 1.1em; color: #999">playwright</a> <a href="/tags/animeReview/" style="font-size: 1.3em; color: #99a1ac">animeReview</a> <a href="/tags/Flutter/" style="font-size: 1.35em; color: #99a3b1">Flutter</a> <a href="/tags/DentalHealth/" style="font-size: 1.1em; color: #999">DentalHealth</a> <a href="/tags/secondary-school/" style="font-size: 1.1em; color: #999">secondary-school</a> <a href="/tags/%E3%82%AD%E3%83%A3%E3%83%A9%E4%BD%9C%E3%82%8A/" style="font-size: 1.1em; color: #999">キャラ作り</a> <a href="/tags/BMTI/" style="font-size: 1.1em; color: #999">BMTI</a> <a href="/tags/GoogleSpreadSheet/" style="font-size: 1.15em; color: #999b9e">GoogleSpreadSheet</a> <a href="/tags/Lyrics/" style="font-size: 1.4em; color: #99a5b6">Lyrics</a> <a href="/tags/Eat/" style="font-size: 1.15em; color: #999b9e">Eat</a> <a href="/tags/git/" style="font-size: 1.1em; color: #999">git</a> <a href="/tags/python/" style="font-size: 1.1em; color: #999">python</a> <a href="/tags/Anime/" style="font-size: 1.1em; color: #999">Anime</a> <a href="/tags/trip/" style="font-size: 1.15em; color: #999b9e">trip</a> <a href="/tags/Quote/" style="font-size: 1.15em; color: #999b9e">Quote</a> <a href="/tags/GameTheme/" style="font-size: 1.1em; color: #999">GameTheme</a> <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="font-size: 1.1em; color: #999">日本語</a> <a href="/tags/Learning/" style="font-size: 1.2em; color: #999da3">Learning</a> <a href="/tags/Force/" style="font-size: 1.1em; color: #999">Force</a> <a href="/tags/React/" style="font-size: 1.1em; color: #999">React</a> <a href="/tags/Thinking/" style="font-size: 1.2em; color: #999da3">Thinking</a> <a href="/tags/github-page/" style="font-size: 1.1em; color: #999">github-page</a> <a href="/tags/money/" style="font-size: 1.1em; color: #999">money</a> <a href="/tags/%E6%BA%AB%E5%B8%B6%E7%B6%AD/" style="font-size: 1.2em; color: #999da3">溫帶維</a> <a href="/tags/DrBerg/" style="font-size: 1.2em; color: #999da3">DrBerg</a> <a href="/tags/Response/" style="font-size: 1.1em; color: #999">Response</a> <a href="/tags/%E3%83%98%E3%83%96%E3%83%90%E3%83%B3/" style="font-size: 1.5em; color: #99a9bf">ヘブバン</a> <a href="/tags/Live2D/" style="font-size: 1.45em; color: #99a7ba">Live2D</a> <a href="/tags/university/" style="font-size: 1.2em; color: #999da3">university</a> <a href="/tags/Cipher/" style="font-size: 1.1em; color: #999">Cipher</a> <a href="/tags/League/" style="font-size: 1.15em; color: #999b9e">League</a> <a href="/tags/Plugin/" style="font-size: 1.1em; color: #999">Plugin</a> <a href="/tags/Sqlite/" style="font-size: 1.1em; color: #999">Sqlite</a> <a href="/tags/Tailwind/" style="font-size: 1.1em; color: #999">Tailwind</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>Archives</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/05/">
+            <span class="card-archive-list-date">
+              May 2026
+            </span>
+            <span class="card-archive-list-count">112</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/12/">
+            <span class="card-archive-list-date">
+              December 2025
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/10/">
+            <span class="card-archive-list-date">
+              October 2024
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/09/">
+            <span class="card-archive-list-date">
+              September 2024
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">116</div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-05-13T16:40:25.019Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2020 - 2026 By Psychic Pink</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.5-b1"></script><script src="/js/main.js?v=5.5.5-b1"></script><div class="js-pjax"></div></div></body></html>
