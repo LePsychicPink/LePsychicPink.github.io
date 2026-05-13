@@ -3,9 +3,10 @@ name: Deploy Hexo Blog
 on:
   push:
     branches:
-      - main # Triggers when you change the blog theme/config
+      - main
+  # 🟢 CHANGE THIS SECTION TO LISTEN TO THE NATIVE WEBHOOK FORMAT:
   repository_dispatch:
-    types: [shared_repo_update] # Triggers when the shared Markdown repo updates
+    types: [public]
 
 jobs:
   build-and-deploy:
