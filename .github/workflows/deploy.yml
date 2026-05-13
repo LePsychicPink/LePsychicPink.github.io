@@ -34,7 +34,7 @@ jobs:
         with:
           repository: jeffreytano/MyMarkdowns # Change this
           token: ${{ secrets.DEPENDENCY_TOKEN }}
-          path: "source/_posts/shared" # Puts them inside a subfolder in _posts to avoid overwriting local files
+          path: "source/_posts" # Puts them inside a subfolder in _posts to avoid overwriting local files
 
       # 5. Clean and Generate Hexo Files
       - name: Build Hexo Site
