@@ -1,3 +1,7 @@
 [submodule "themes/butterfly"]
     path = themes/butterfly
     url = https://github.com/jerryc127/hexo-theme-butterfly.git
+
+[submodule "source/_posts/shared"]
+	path = source/_posts/shared
+	url = https://github.com/jeffreytano/MyMarkdowns.git
