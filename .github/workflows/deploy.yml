@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
-  # 🟢 CHANGE THIS SECTION TO LISTEN TO THE NATIVE WEBHOOK FORMAT:
-  repository_dispatch:
-    types: [public]
+  # 🟢 Wakes up automatically once every 24 hours (At 00:00 / Midnight UTC)
+  schedule:
+    - cron: "0 0 * * *"
+  # Keeps your manual "Run workflow" button active
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
