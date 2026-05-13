@@ -5,6 +5,7 @@
 # Ignore files/folders from being tracked and rendered
 ignore:
   - "**/_posts/hidden/**"
+  - "**/_posts/shared/mkdocs/**"
 
 # Site
 title: LePsychicPink
@@ -16,7 +17,7 @@ language: en
 timezone:
 
 include:
-  - _posts/shared/**/*.md
+  - _posts/shared/reviews/*.md
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
