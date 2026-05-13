@@ -1,0 +1,47 @@
+name: Deploy Hexo Blog
+
+on:
+  push:
+    branches:
+      - main # Triggers when you change the blog theme/config
+  repository_dispatch:
+    types: [shared_repo_update] # Triggers when the shared Markdown repo updates
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout the Main Blog Repository
+      - name: Checkout Blog Repo
+        uses: actions/checkout@v4
+
+      # 2. Setup Node.js
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      # 3. Install Hexo Dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # 4. Fetch Posts From the Shared Repository directly into source/_posts
+      - name: Fetch Shared Markdown Posts
+        uses: actions/checkout@v4
+        with:
+          repository: jeffreytano/MyMarkdowns # Change this
+          token: ${{ secrets.DEPENDENCY_TOKEN }}
+          path: "source/_posts/shared" # Puts them inside a subfolder in _posts to avoid overwriting local files
+
+      # 5. Clean and Generate Hexo Files
+      - name: Build Hexo Site
+        run: |
+          npx hexo clean
+          npx hexo generate
+
+      # 6. Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
